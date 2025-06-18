@@ -1,0 +1,1186 @@
+24-10-09 18:30-INFO-Range of userId is [0, 942]
+24-10-09 18:30-INFO-Range of itemId is [0, 1681]
+24-10-09 18:30-INFO-FedMLP
+24-10-09 18:30-INFO-dataset: ml-100k, num_users: 943, num_items: 1682, clients_sample_ratio: 0.2, clients_sample_num: 0, num_round: 1000, local_epoch: 1, test_per_epoch: 1, log_path: log/ml-100k/, lr: 0.001, lr_eta: 80, batch_size: 256, latent_dim: 32, num_negative: 4, l2_regularization: 0.0, autoencoder_train_epoch: 100, autoencoder_lr: 0.001, user_device_migration: False, user_migration_epoch: 1, temperature: 2.0, alpha: 0.33, beta: 0.33, KD_epoch: 10, original_type: small, target_type: large, use_cuda: True, device_id: 0
+24-10-09 18:30-INFO---------------------------------------------------------------------------------
+24-10-09 18:30-INFO-Round 0 starts !
+24-10-09 18:30-INFO-[Training Epoch 0] tr_loss = 282.30128658
+24-10-09 18:30-INFO-[Epoch 0] Test_Recall = 0.00967300, Test_NDCG = 0.01089695
+24-10-09 18:30-INFO-The Best Test Metrics is at [Epoch 0] Recall = 0.00967300, NDCG = 0.01089695
+24-10-09 18:30-INFO---------------------------------------------------------------------------------
+24-10-09 18:30-INFO-Round 1 starts !
+24-10-09 18:30-INFO-[Training Epoch 1] tr_loss = 292.10658908
+24-10-09 18:30-INFO-[Epoch 1] Test_Recall = 0.01753062, Test_NDCG = 0.01569495
+24-10-09 18:30-INFO-The Best Test Metrics is at [Epoch 1] Recall = 0.01753062, NDCG = 0.01569495
+24-10-09 18:30-INFO---------------------------------------------------------------------------------
+24-10-09 18:30-INFO-Round 2 starts !
+24-10-09 18:30-INFO-[Training Epoch 2] tr_loss = 296.93238384
+24-10-09 18:30-INFO-[Epoch 2] Test_Recall = 0.02199160, Test_NDCG = 0.02214507
+24-10-09 18:30-INFO-The Best Test Metrics is at [Epoch 2] Recall = 0.02199160, NDCG = 0.02214507
+24-10-09 18:30-INFO---------------------------------------------------------------------------------
+24-10-09 18:30-INFO-Round 3 starts !
+24-10-09 18:30-INFO-[Training Epoch 3] tr_loss = 298.83358514
+24-10-09 18:30-INFO-[Epoch 3] Test_Recall = 0.02662027, Test_NDCG = 0.02542688
+24-10-09 18:30-INFO-The Best Test Metrics is at [Epoch 3] Recall = 0.02662027, NDCG = 0.02542688
+24-10-09 18:30-INFO---------------------------------------------------------------------------------
+24-10-09 18:30-INFO-Round 4 starts !
+24-10-09 18:31-INFO-[Training Epoch 4] tr_loss = 294.99879146
+24-10-09 18:31-INFO-[Epoch 4] Test_Recall = 0.02558024, Test_NDCG = 0.02834390
+24-10-09 18:31-INFO-The Best Test Metrics is at [Epoch 3] Recall = 0.02662027, NDCG = 0.02542688
+24-10-09 18:31-INFO---------------------------------------------------------------------------------
+24-10-09 18:31-INFO-Round 5 starts !
+24-10-09 18:31-INFO-[Training Epoch 5] tr_loss = 287.67081845
+24-10-09 18:31-INFO-[Epoch 5] Test_Recall = 0.03936236, Test_NDCG = 0.04325992
+24-10-09 18:31-INFO-The Best Test Metrics is at [Epoch 5] Recall = 0.03936236, NDCG = 0.04325992
+24-10-09 18:31-INFO---------------------------------------------------------------------------------
+24-10-09 18:31-INFO-Round 6 starts !
+24-10-09 18:31-INFO-[Training Epoch 6] tr_loss = 287.24624926
+24-10-09 18:31-INFO-[Epoch 6] Test_Recall = 0.03711975, Test_NDCG = 0.04200481
+24-10-09 18:31-INFO-The Best Test Metrics is at [Epoch 5] Recall = 0.03936236, NDCG = 0.04325992
+24-10-09 18:31-INFO---------------------------------------------------------------------------------
+24-10-09 18:31-INFO-Round 7 starts !
+24-10-09 18:31-INFO-[Training Epoch 7] tr_loss = 293.98170984
+24-10-09 18:31-INFO-[Epoch 7] Test_Recall = 0.05952466, Test_NDCG = 0.06451269
+24-10-09 18:31-INFO-The Best Test Metrics is at [Epoch 7] Recall = 0.05952466, NDCG = 0.06451269
+24-10-09 18:31-INFO---------------------------------------------------------------------------------
+24-10-09 18:31-INFO-Round 8 starts !
+24-10-09 18:31-INFO-[Training Epoch 8] tr_loss = 273.80983514
+24-10-09 18:31-INFO-[Epoch 8] Test_Recall = 0.06703608, Test_NDCG = 0.07402581
+24-10-09 18:31-INFO-The Best Test Metrics is at [Epoch 8] Recall = 0.06703608, NDCG = 0.07402581
+24-10-09 18:31-INFO---------------------------------------------------------------------------------
+24-10-09 18:31-INFO-Round 9 starts !
+24-10-09 18:31-INFO-[Training Epoch 9] tr_loss = 297.15940535
+24-10-09 18:31-INFO-[Epoch 9] Test_Recall = 0.07161492, Test_NDCG = 0.09520838
+24-10-09 18:31-INFO-The Best Test Metrics is at [Epoch 9] Recall = 0.07161492, NDCG = 0.09520838
+24-10-09 18:31-INFO---------------------------------------------------------------------------------
+24-10-09 18:31-INFO-Round 10 starts !
+24-10-09 18:31-INFO-[Training Epoch 10] tr_loss = 279.01804256
+24-10-09 18:31-INFO-[Epoch 10] Test_Recall = 0.06903471, Test_NDCG = 0.08800864
+24-10-09 18:31-INFO-The Best Test Metrics is at [Epoch 9] Recall = 0.07161492, NDCG = 0.09520838
+24-10-09 18:31-INFO---------------------------------------------------------------------------------
+24-10-09 18:31-INFO-Round 11 starts !
+24-10-09 18:31-INFO-[Training Epoch 11] tr_loss = 272.77939242
+24-10-09 18:31-INFO-[Epoch 11] Test_Recall = 0.09030171, Test_NDCG = 0.11024612
+24-10-09 18:31-INFO-The Best Test Metrics is at [Epoch 11] Recall = 0.09030171, NDCG = 0.11024612
+24-10-09 18:31-INFO---------------------------------------------------------------------------------
+24-10-09 18:31-INFO-Round 12 starts !
+24-10-09 18:31-INFO-[Training Epoch 12] tr_loss = 310.74603689
+24-10-09 18:31-INFO-[Epoch 12] Test_Recall = 0.08284686, Test_NDCG = 0.12776863
+24-10-09 18:31-INFO-The Best Test Metrics is at [Epoch 11] Recall = 0.09030171, NDCG = 0.11024612
+24-10-09 18:31-INFO---------------------------------------------------------------------------------
+24-10-09 18:31-INFO-Round 13 starts !
+24-10-09 18:31-INFO-[Training Epoch 13] tr_loss = 279.60291231
+24-10-09 18:31-INFO-[Epoch 13] Test_Recall = 0.08459287, Test_NDCG = 0.11935728
+24-10-09 18:31-INFO-The Best Test Metrics is at [Epoch 11] Recall = 0.09030171, NDCG = 0.11024612
+24-10-09 18:31-INFO---------------------------------------------------------------------------------
+24-10-09 18:31-INFO-Round 14 starts !
+24-10-09 18:31-INFO-[Training Epoch 14] tr_loss = 274.32343858
+24-10-09 18:31-INFO-[Epoch 14] Test_Recall = 0.10568064, Test_NDCG = 0.13682962
+24-10-09 18:31-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.10568064, NDCG = 0.13682962
+24-10-09 18:31-INFO---------------------------------------------------------------------------------
+24-10-09 18:31-INFO-Round 15 starts !
+24-10-09 18:31-INFO-[Training Epoch 15] tr_loss = 286.14894748
+24-10-09 18:31-INFO-[Epoch 15] Test_Recall = 0.10344086, Test_NDCG = 0.14177318
+24-10-09 18:31-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.10568064, NDCG = 0.13682962
+24-10-09 18:31-INFO---------------------------------------------------------------------------------
+24-10-09 18:31-INFO-Round 16 starts !
+24-10-09 18:31-INFO-[Training Epoch 16] tr_loss = 253.29688656
+24-10-09 18:31-INFO-[Epoch 16] Test_Recall = 0.10099996, Test_NDCG = 0.12164687
+24-10-09 18:31-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.10568064, NDCG = 0.13682962
+24-10-09 18:31-INFO---------------------------------------------------------------------------------
+24-10-09 18:31-INFO-Round 17 starts !
+24-10-09 18:32-INFO-[Training Epoch 17] tr_loss = 278.39397466
+24-10-09 18:32-INFO-[Epoch 17] Test_Recall = 0.12636232, Test_NDCG = 0.16584522
+24-10-09 18:32-INFO-The Best Test Metrics is at [Epoch 17] Recall = 0.12636232, NDCG = 0.16584522
+24-10-09 18:32-INFO---------------------------------------------------------------------------------
+24-10-09 18:32-INFO-Round 18 starts !
+24-10-09 18:32-INFO-[Training Epoch 18] tr_loss = 278.28721964
+24-10-09 18:32-INFO-[Epoch 18] Test_Recall = 0.11590285, Test_NDCG = 0.15415215
+24-10-09 18:32-INFO-The Best Test Metrics is at [Epoch 17] Recall = 0.12636232, NDCG = 0.16584522
+24-10-09 18:32-INFO---------------------------------------------------------------------------------
+24-10-09 18:32-INFO-Round 19 starts !
+24-10-09 18:32-INFO-[Training Epoch 19] tr_loss = 258.97682184
+24-10-09 18:32-INFO-[Epoch 19] Test_Recall = 0.11904558, Test_NDCG = 0.14462605
+24-10-09 18:32-INFO-The Best Test Metrics is at [Epoch 17] Recall = 0.12636232, NDCG = 0.16584522
+24-10-09 18:32-INFO---------------------------------------------------------------------------------
+24-10-09 18:32-INFO-Round 20 starts !
+24-10-09 18:32-INFO-[Training Epoch 20] tr_loss = 271.83335161
+24-10-09 18:32-INFO-[Epoch 20] Test_Recall = 0.12040723, Test_NDCG = 0.17037652
+24-10-09 18:32-INFO-The Best Test Metrics is at [Epoch 17] Recall = 0.12636232, NDCG = 0.16584522
+24-10-09 18:32-INFO---------------------------------------------------------------------------------
+24-10-09 18:32-INFO-Round 21 starts !
+24-10-09 18:32-INFO-[Training Epoch 21] tr_loss = 265.60605955
+24-10-09 18:32-INFO-[Epoch 21] Test_Recall = 0.12571557, Test_NDCG = 0.16813702
+24-10-09 18:32-INFO-The Best Test Metrics is at [Epoch 17] Recall = 0.12636232, NDCG = 0.16584522
+24-10-09 18:32-INFO---------------------------------------------------------------------------------
+24-10-09 18:32-INFO-Round 22 starts !
+24-10-09 18:32-INFO-[Training Epoch 22] tr_loss = 272.49902809
+24-10-09 18:32-INFO-[Epoch 22] Test_Recall = 0.12037432, Test_NDCG = 0.17382573
+24-10-09 18:32-INFO-The Best Test Metrics is at [Epoch 17] Recall = 0.12636232, NDCG = 0.16584522
+24-10-09 18:32-INFO---------------------------------------------------------------------------------
+24-10-09 18:32-INFO-Round 23 starts !
+24-10-09 18:32-INFO-[Training Epoch 23] tr_loss = 278.09481615
+24-10-09 18:32-INFO-[Epoch 23] Test_Recall = 0.12425367, Test_NDCG = 0.17757134
+24-10-09 18:32-INFO-The Best Test Metrics is at [Epoch 17] Recall = 0.12636232, NDCG = 0.16584522
+24-10-09 18:32-INFO---------------------------------------------------------------------------------
+24-10-09 18:32-INFO-Round 24 starts !
+24-10-09 18:32-INFO-[Training Epoch 24] tr_loss = 257.63886309
+24-10-09 18:32-INFO-[Epoch 24] Test_Recall = 0.13821548, Test_NDCG = 0.18442801
+24-10-09 18:32-INFO-The Best Test Metrics is at [Epoch 24] Recall = 0.13821548, NDCG = 0.18442801
+24-10-09 18:32-INFO---------------------------------------------------------------------------------
+24-10-09 18:32-INFO-Round 25 starts !
+24-10-09 18:32-INFO-[Training Epoch 25] tr_loss = 286.39926529
+24-10-09 18:32-INFO-[Epoch 25] Test_Recall = 0.13700242, Test_NDCG = 0.19464818
+24-10-09 18:32-INFO-The Best Test Metrics is at [Epoch 24] Recall = 0.13821548, NDCG = 0.18442801
+24-10-09 18:32-INFO---------------------------------------------------------------------------------
+24-10-09 18:32-INFO-Round 26 starts !
+24-10-09 18:32-INFO-[Training Epoch 26] tr_loss = 270.48100692
+24-10-09 18:32-INFO-[Epoch 26] Test_Recall = 0.12393019, Test_NDCG = 0.17489495
+24-10-09 18:32-INFO-The Best Test Metrics is at [Epoch 24] Recall = 0.13821548, NDCG = 0.18442801
+24-10-09 18:32-INFO---------------------------------------------------------------------------------
+24-10-09 18:32-INFO-Round 27 starts !
+24-10-09 18:32-INFO-[Training Epoch 27] tr_loss = 256.95191824
+24-10-09 18:32-INFO-[Epoch 27] Test_Recall = 0.12821005, Test_NDCG = 0.17577615
+24-10-09 18:32-INFO-The Best Test Metrics is at [Epoch 24] Recall = 0.13821548, NDCG = 0.18442801
+24-10-09 18:32-INFO---------------------------------------------------------------------------------
+24-10-09 18:32-INFO-Round 28 starts !
+24-10-09 18:32-INFO-[Training Epoch 28] tr_loss = 265.60103405
+24-10-09 18:32-INFO-[Epoch 28] Test_Recall = 0.13823945, Test_NDCG = 0.18904851
+24-10-09 18:32-INFO-The Best Test Metrics is at [Epoch 28] Recall = 0.13823945, NDCG = 0.18904851
+24-10-09 18:32-INFO---------------------------------------------------------------------------------
+24-10-09 18:32-INFO-Round 29 starts !
+24-10-09 18:33-INFO-[Training Epoch 29] tr_loss = 259.18429619
+24-10-09 18:33-INFO-[Epoch 29] Test_Recall = 0.13170265, Test_NDCG = 0.18537913
+24-10-09 18:33-INFO-The Best Test Metrics is at [Epoch 28] Recall = 0.13823945, NDCG = 0.18904851
+24-10-09 18:33-INFO---------------------------------------------------------------------------------
+24-10-09 18:33-INFO-Round 30 starts !
+24-10-09 18:33-INFO-[Training Epoch 30] tr_loss = 244.13294142
+24-10-09 18:33-INFO-[Epoch 30] Test_Recall = 0.14018344, Test_NDCG = 0.18798160
+24-10-09 18:33-INFO-The Best Test Metrics is at [Epoch 30] Recall = 0.14018344, NDCG = 0.18798160
+24-10-09 18:33-INFO---------------------------------------------------------------------------------
+24-10-09 18:33-INFO-Round 31 starts !
+24-10-09 18:33-INFO-[Training Epoch 31] tr_loss = 254.02530998
+24-10-09 18:33-INFO-[Epoch 31] Test_Recall = 0.14995585, Test_NDCG = 0.20359176
+24-10-09 18:33-INFO-The Best Test Metrics is at [Epoch 31] Recall = 0.14995585, NDCG = 0.20359176
+24-10-09 18:33-INFO---------------------------------------------------------------------------------
+24-10-09 18:33-INFO-Round 32 starts !
+24-10-09 18:33-INFO-[Training Epoch 32] tr_loss = 264.47877550
+24-10-09 18:33-INFO-[Epoch 32] Test_Recall = 0.14500790, Test_NDCG = 0.19591980
+24-10-09 18:33-INFO-The Best Test Metrics is at [Epoch 31] Recall = 0.14995585, NDCG = 0.20359176
+24-10-09 18:33-INFO---------------------------------------------------------------------------------
+24-10-09 18:33-INFO-Round 33 starts !
+24-10-09 18:33-INFO-[Training Epoch 33] tr_loss = 252.11001265
+24-10-09 18:33-INFO-[Epoch 33] Test_Recall = 0.13344412, Test_NDCG = 0.18518933
+24-10-09 18:33-INFO-The Best Test Metrics is at [Epoch 31] Recall = 0.14995585, NDCG = 0.20359176
+24-10-09 18:33-INFO---------------------------------------------------------------------------------
+24-10-09 18:33-INFO-Round 34 starts !
+24-10-09 18:33-INFO-[Training Epoch 34] tr_loss = 258.59207082
+24-10-09 18:33-INFO-[Epoch 34] Test_Recall = 0.13758891, Test_NDCG = 0.19613644
+24-10-09 18:33-INFO-The Best Test Metrics is at [Epoch 31] Recall = 0.14995585, NDCG = 0.20359176
+24-10-09 18:33-INFO---------------------------------------------------------------------------------
+24-10-09 18:33-INFO-Round 35 starts !
+24-10-09 18:33-INFO-[Training Epoch 35] tr_loss = 247.98661536
+24-10-09 18:33-INFO-[Epoch 35] Test_Recall = 0.14684328, Test_NDCG = 0.18967320
+24-10-09 18:33-INFO-The Best Test Metrics is at [Epoch 31] Recall = 0.14995585, NDCG = 0.20359176
+24-10-09 18:33-INFO---------------------------------------------------------------------------------
+24-10-09 18:33-INFO-Round 36 starts !
+24-10-09 18:33-INFO-[Training Epoch 36] tr_loss = 246.69926804
+24-10-09 18:33-INFO-[Epoch 36] Test_Recall = 0.13173423, Test_NDCG = 0.17487191
+24-10-09 18:33-INFO-The Best Test Metrics is at [Epoch 31] Recall = 0.14995585, NDCG = 0.20359176
+24-10-09 18:33-INFO---------------------------------------------------------------------------------
+24-10-09 18:33-INFO-Round 37 starts !
+24-10-09 18:33-INFO-[Training Epoch 37] tr_loss = 270.67574841
+24-10-09 18:33-INFO-[Epoch 37] Test_Recall = 0.14260886, Test_NDCG = 0.21027077
+24-10-09 18:33-INFO-The Best Test Metrics is at [Epoch 31] Recall = 0.14995585, NDCG = 0.20359176
+24-10-09 18:33-INFO---------------------------------------------------------------------------------
+24-10-09 18:33-INFO-Round 38 starts !
+24-10-09 18:33-INFO-[Training Epoch 38] tr_loss = 273.57620883
+24-10-09 18:33-INFO-[Epoch 38] Test_Recall = 0.14341652, Test_NDCG = 0.21269307
+24-10-09 18:33-INFO-The Best Test Metrics is at [Epoch 31] Recall = 0.14995585, NDCG = 0.20359176
+24-10-09 18:33-INFO---------------------------------------------------------------------------------
+24-10-09 18:33-INFO-Round 39 starts !
+24-10-09 18:33-INFO-[Training Epoch 39] tr_loss = 266.57548499
+24-10-09 18:33-INFO-[Epoch 39] Test_Recall = 0.14186645, Test_NDCG = 0.19982960
+24-10-09 18:33-INFO-The Best Test Metrics is at [Epoch 31] Recall = 0.14995585, NDCG = 0.20359176
+24-10-09 18:33-INFO---------------------------------------------------------------------------------
+24-10-09 18:33-INFO-Round 40 starts !
+24-10-09 18:33-INFO-[Training Epoch 40] tr_loss = 273.68969703
+24-10-09 18:33-INFO-[Epoch 40] Test_Recall = 0.13741110, Test_NDCG = 0.20565795
+24-10-09 18:33-INFO-The Best Test Metrics is at [Epoch 31] Recall = 0.14995585, NDCG = 0.20359176
+24-10-09 18:33-INFO---------------------------------------------------------------------------------
+24-10-09 18:33-INFO-Round 41 starts !
+24-10-09 18:33-INFO-[Training Epoch 41] tr_loss = 249.60660464
+24-10-09 18:33-INFO-[Epoch 41] Test_Recall = 0.16033999, Test_NDCG = 0.21270461
+24-10-09 18:33-INFO-The Best Test Metrics is at [Epoch 41] Recall = 0.16033999, NDCG = 0.21270461
+24-10-09 18:33-INFO---------------------------------------------------------------------------------
+24-10-09 18:33-INFO-Round 42 starts !
+24-10-09 18:34-INFO-[Training Epoch 42] tr_loss = 250.05246845
+24-10-09 18:34-INFO-[Epoch 42] Test_Recall = 0.14242310, Test_NDCG = 0.18739960
+24-10-09 18:34-INFO-The Best Test Metrics is at [Epoch 41] Recall = 0.16033999, NDCG = 0.21270461
+24-10-09 18:34-INFO---------------------------------------------------------------------------------
+24-10-09 18:34-INFO-Round 43 starts !
+24-10-09 18:34-INFO-[Training Epoch 43] tr_loss = 257.40456259
+24-10-09 18:34-INFO-[Epoch 43] Test_Recall = 0.13855700, Test_NDCG = 0.20228187
+24-10-09 18:34-INFO-The Best Test Metrics is at [Epoch 41] Recall = 0.16033999, NDCG = 0.21270461
+24-10-09 18:34-INFO---------------------------------------------------------------------------------
+24-10-09 18:34-INFO-Round 44 starts !
+24-10-09 18:34-INFO-[Training Epoch 44] tr_loss = 253.02396029
+24-10-09 18:34-INFO-[Epoch 44] Test_Recall = 0.15455756, Test_NDCG = 0.20256399
+24-10-09 18:34-INFO-The Best Test Metrics is at [Epoch 41] Recall = 0.16033999, NDCG = 0.21270461
+24-10-09 18:34-INFO---------------------------------------------------------------------------------
+24-10-09 18:34-INFO-Round 45 starts !
+24-10-09 18:34-INFO-[Training Epoch 45] tr_loss = 234.72873798
+24-10-09 18:34-INFO-[Epoch 45] Test_Recall = 0.14978358, Test_NDCG = 0.19298983
+24-10-09 18:34-INFO-The Best Test Metrics is at [Epoch 41] Recall = 0.16033999, NDCG = 0.21270461
+24-10-09 18:34-INFO---------------------------------------------------------------------------------
+24-10-09 18:34-INFO-Round 46 starts !
+24-10-09 18:34-INFO-[Training Epoch 46] tr_loss = 278.09677774
+24-10-09 18:34-INFO-[Epoch 46] Test_Recall = 0.16045650, Test_NDCG = 0.23331325
+24-10-09 18:34-INFO-The Best Test Metrics is at [Epoch 46] Recall = 0.16045650, NDCG = 0.23331325
+24-10-09 18:34-INFO---------------------------------------------------------------------------------
+24-10-09 18:34-INFO-Round 47 starts !
+24-10-09 18:34-INFO-[Training Epoch 47] tr_loss = 232.72021931
+24-10-09 18:34-INFO-[Epoch 47] Test_Recall = 0.16719128, Test_NDCG = 0.20272301
+24-10-09 18:34-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:34-INFO---------------------------------------------------------------------------------
+24-10-09 18:34-INFO-Round 48 starts !
+24-10-09 18:34-INFO-[Training Epoch 48] tr_loss = 232.41691953
+24-10-09 18:34-INFO-[Epoch 48] Test_Recall = 0.13235384, Test_NDCG = 0.17773744
+24-10-09 18:34-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:34-INFO---------------------------------------------------------------------------------
+24-10-09 18:34-INFO-Round 49 starts !
+24-10-09 18:34-INFO-[Training Epoch 49] tr_loss = 258.07376611
+24-10-09 18:34-INFO-[Epoch 49] Test_Recall = 0.16032368, Test_NDCG = 0.23152272
+24-10-09 18:34-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:34-INFO---------------------------------------------------------------------------------
+24-10-09 18:34-INFO-Round 50 starts !
+24-10-09 18:34-INFO-[Training Epoch 50] tr_loss = 240.71213651
+24-10-09 18:34-INFO-[Epoch 50] Test_Recall = 0.16518811, Test_NDCG = 0.20801183
+24-10-09 18:34-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:34-INFO---------------------------------------------------------------------------------
+24-10-09 18:34-INFO-Round 51 starts !
+24-10-09 18:34-INFO-[Training Epoch 51] tr_loss = 224.25536370
+24-10-09 18:34-INFO-[Epoch 51] Test_Recall = 0.16370602, Test_NDCG = 0.20282333
+24-10-09 18:34-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:34-INFO---------------------------------------------------------------------------------
+24-10-09 18:34-INFO-Round 52 starts !
+24-10-09 18:34-INFO-[Training Epoch 52] tr_loss = 252.47806072
+24-10-09 18:34-INFO-[Epoch 52] Test_Recall = 0.15589213, Test_NDCG = 0.22650594
+24-10-09 18:34-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:34-INFO---------------------------------------------------------------------------------
+24-10-09 18:34-INFO-Round 53 starts !
+24-10-09 18:35-INFO-[Training Epoch 53] tr_loss = 256.12028360
+24-10-09 18:35-INFO-[Epoch 53] Test_Recall = 0.16253925, Test_NDCG = 0.22060835
+24-10-09 18:35-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:35-INFO---------------------------------------------------------------------------------
+24-10-09 18:35-INFO-Round 54 starts !
+24-10-09 18:35-INFO-[Training Epoch 54] tr_loss = 219.31999066
+24-10-09 18:35-INFO-[Epoch 54] Test_Recall = 0.15263493, Test_NDCG = 0.19477733
+24-10-09 18:35-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:35-INFO---------------------------------------------------------------------------------
+24-10-09 18:35-INFO-Round 55 starts !
+24-10-09 18:35-INFO-[Training Epoch 55] tr_loss = 222.16386342
+24-10-09 18:35-INFO-[Epoch 55] Test_Recall = 0.13635625, Test_NDCG = 0.18073735
+24-10-09 18:35-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:35-INFO---------------------------------------------------------------------------------
+24-10-09 18:35-INFO-Round 56 starts !
+24-10-09 18:35-INFO-[Training Epoch 56] tr_loss = 230.45231786
+24-10-09 18:35-INFO-[Epoch 56] Test_Recall = 0.15256786, Test_NDCG = 0.19655529
+24-10-09 18:35-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:35-INFO---------------------------------------------------------------------------------
+24-10-09 18:35-INFO-Round 57 starts !
+24-10-09 18:35-INFO-[Training Epoch 57] tr_loss = 241.31386101
+24-10-09 18:35-INFO-[Epoch 57] Test_Recall = 0.16383461, Test_NDCG = 0.22738314
+24-10-09 18:35-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:35-INFO---------------------------------------------------------------------------------
+24-10-09 18:35-INFO-Round 58 starts !
+24-10-09 18:35-INFO-[Training Epoch 58] tr_loss = 226.17445511
+24-10-09 18:35-INFO-[Epoch 58] Test_Recall = 0.14687276, Test_NDCG = 0.19711929
+24-10-09 18:35-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:35-INFO---------------------------------------------------------------------------------
+24-10-09 18:35-INFO-Round 59 starts !
+24-10-09 18:35-INFO-[Training Epoch 59] tr_loss = 235.82278258
+24-10-09 18:35-INFO-[Epoch 59] Test_Recall = 0.14461836, Test_NDCG = 0.20958947
+24-10-09 18:35-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:35-INFO---------------------------------------------------------------------------------
+24-10-09 18:35-INFO-Round 60 starts !
+24-10-09 18:35-INFO-[Training Epoch 60] tr_loss = 217.20964599
+24-10-09 18:35-INFO-[Epoch 60] Test_Recall = 0.14822815, Test_NDCG = 0.19458978
+24-10-09 18:35-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:35-INFO---------------------------------------------------------------------------------
+24-10-09 18:35-INFO-Round 61 starts !
+24-10-09 18:35-INFO-[Training Epoch 61] tr_loss = 229.93038434
+24-10-09 18:35-INFO-[Epoch 61] Test_Recall = 0.14148167, Test_NDCG = 0.19885909
+24-10-09 18:35-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:35-INFO---------------------------------------------------------------------------------
+24-10-09 18:35-INFO-Round 62 starts !
+24-10-09 18:35-INFO-[Training Epoch 62] tr_loss = 206.51812780
+24-10-09 18:35-INFO-[Epoch 62] Test_Recall = 0.16453691, Test_NDCG = 0.19990181
+24-10-09 18:35-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:35-INFO---------------------------------------------------------------------------------
+24-10-09 18:35-INFO-Round 63 starts !
+24-10-09 18:35-INFO-[Training Epoch 63] tr_loss = 234.53375188
+24-10-09 18:35-INFO-[Epoch 63] Test_Recall = 0.16196105, Test_NDCG = 0.21537083
+24-10-09 18:35-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:35-INFO---------------------------------------------------------------------------------
+24-10-09 18:35-INFO-Round 64 starts !
+24-10-09 18:35-INFO-[Training Epoch 64] tr_loss = 227.15608495
+24-10-09 18:35-INFO-[Epoch 64] Test_Recall = 0.15621934, Test_NDCG = 0.21076290
+24-10-09 18:35-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:35-INFO---------------------------------------------------------------------------------
+24-10-09 18:35-INFO-Round 65 starts !
+24-10-09 18:35-INFO-[Training Epoch 65] tr_loss = 214.10578781
+24-10-09 18:35-INFO-[Epoch 65] Test_Recall = 0.15054712, Test_NDCG = 0.20384380
+24-10-09 18:35-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:35-INFO---------------------------------------------------------------------------------
+24-10-09 18:35-INFO-Round 66 starts !
+24-10-09 18:36-INFO-[Training Epoch 66] tr_loss = 216.06746081
+24-10-09 18:36-INFO-[Epoch 66] Test_Recall = 0.15580023, Test_NDCG = 0.20047063
+24-10-09 18:36-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:36-INFO---------------------------------------------------------------------------------
+24-10-09 18:36-INFO-Round 67 starts !
+24-10-09 18:36-INFO-[Training Epoch 67] tr_loss = 228.62043494
+24-10-09 18:36-INFO-[Epoch 67] Test_Recall = 0.14293649, Test_NDCG = 0.21158148
+24-10-09 18:36-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:36-INFO---------------------------------------------------------------------------------
+24-10-09 18:36-INFO-Round 68 starts !
+24-10-09 18:36-INFO-[Training Epoch 68] tr_loss = 221.93615294
+24-10-09 18:36-INFO-[Epoch 68] Test_Recall = 0.15144955, Test_NDCG = 0.21306076
+24-10-09 18:36-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:36-INFO---------------------------------------------------------------------------------
+24-10-09 18:36-INFO-Round 69 starts !
+24-10-09 18:36-INFO-[Training Epoch 69] tr_loss = 231.59881544
+24-10-09 18:36-INFO-[Epoch 69] Test_Recall = 0.15848753, Test_NDCG = 0.22797033
+24-10-09 18:36-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:36-INFO---------------------------------------------------------------------------------
+24-10-09 18:36-INFO-Round 70 starts !
+24-10-09 18:36-INFO-[Training Epoch 70] tr_loss = 210.81732190
+24-10-09 18:36-INFO-[Epoch 70] Test_Recall = 0.15247993, Test_NDCG = 0.19898298
+24-10-09 18:36-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:36-INFO---------------------------------------------------------------------------------
+24-10-09 18:36-INFO-Round 71 starts !
+24-10-09 18:36-INFO-[Training Epoch 71] tr_loss = 201.66660658
+24-10-09 18:36-INFO-[Epoch 71] Test_Recall = 0.14837688, Test_NDCG = 0.19826282
+24-10-09 18:36-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:36-INFO---------------------------------------------------------------------------------
+24-10-09 18:36-INFO-Round 72 starts !
+24-10-09 18:36-INFO-[Training Epoch 72] tr_loss = 207.80387238
+24-10-09 18:36-INFO-[Epoch 72] Test_Recall = 0.14470010, Test_NDCG = 0.19521136
+24-10-09 18:36-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:36-INFO---------------------------------------------------------------------------------
+24-10-09 18:36-INFO-Round 73 starts !
+24-10-09 18:36-INFO-[Training Epoch 73] tr_loss = 230.77338439
+24-10-09 18:36-INFO-[Epoch 73] Test_Recall = 0.15560417, Test_NDCG = 0.21132952
+24-10-09 18:36-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:36-INFO---------------------------------------------------------------------------------
+24-10-09 18:36-INFO-Round 74 starts !
+24-10-09 18:36-INFO-[Training Epoch 74] tr_loss = 211.21844086
+24-10-09 18:36-INFO-[Epoch 74] Test_Recall = 0.14819486, Test_NDCG = 0.20117214
+24-10-09 18:36-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:36-INFO---------------------------------------------------------------------------------
+24-10-09 18:36-INFO-Round 75 starts !
+24-10-09 18:36-INFO-[Training Epoch 75] tr_loss = 214.08791617
+24-10-09 18:36-INFO-[Epoch 75] Test_Recall = 0.14975080, Test_NDCG = 0.21115772
+24-10-09 18:36-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:36-INFO---------------------------------------------------------------------------------
+24-10-09 18:36-INFO-Round 76 starts !
+24-10-09 18:36-INFO-[Training Epoch 76] tr_loss = 212.88795874
+24-10-09 18:36-INFO-[Epoch 76] Test_Recall = 0.16076471, Test_NDCG = 0.21711840
+24-10-09 18:36-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:36-INFO---------------------------------------------------------------------------------
+24-10-09 18:36-INFO-Round 77 starts !
+24-10-09 18:36-INFO-[Training Epoch 77] tr_loss = 200.42571416
+24-10-09 18:36-INFO-[Epoch 77] Test_Recall = 0.15815384, Test_NDCG = 0.21026696
+24-10-09 18:36-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:36-INFO---------------------------------------------------------------------------------
+24-10-09 18:36-INFO-Round 78 starts !
+24-10-09 18:37-INFO-[Training Epoch 78] tr_loss = 212.52740535
+24-10-09 18:37-INFO-[Epoch 78] Test_Recall = 0.16287166, Test_NDCG = 0.21771729
+24-10-09 18:37-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:37-INFO---------------------------------------------------------------------------------
+24-10-09 18:37-INFO-Round 79 starts !
+24-10-09 18:37-INFO-[Training Epoch 79] tr_loss = 196.91414258
+24-10-09 18:37-INFO-[Epoch 79] Test_Recall = 0.15222770, Test_NDCG = 0.20298379
+24-10-09 18:37-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:37-INFO---------------------------------------------------------------------------------
+24-10-09 18:37-INFO-Round 80 starts !
+24-10-09 18:37-INFO-[Training Epoch 80] tr_loss = 210.45688522
+24-10-09 18:37-INFO-[Epoch 80] Test_Recall = 0.15904319, Test_NDCG = 0.22863402
+24-10-09 18:37-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:37-INFO---------------------------------------------------------------------------------
+24-10-09 18:37-INFO-Round 81 starts !
+24-10-09 18:37-INFO-[Training Epoch 81] tr_loss = 209.28594989
+24-10-09 18:37-INFO-[Epoch 81] Test_Recall = 0.15412752, Test_NDCG = 0.21074519
+24-10-09 18:37-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:37-INFO---------------------------------------------------------------------------------
+24-10-09 18:37-INFO-Round 82 starts !
+24-10-09 18:37-INFO-[Training Epoch 82] tr_loss = 212.40066975
+24-10-09 18:37-INFO-[Epoch 82] Test_Recall = 0.16100857, Test_NDCG = 0.22214769
+24-10-09 18:37-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:37-INFO---------------------------------------------------------------------------------
+24-10-09 18:37-INFO-Round 83 starts !
+24-10-09 18:37-INFO-[Training Epoch 83] tr_loss = 201.85934556
+24-10-09 18:37-INFO-[Epoch 83] Test_Recall = 0.16130651, Test_NDCG = 0.22862561
+24-10-09 18:37-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:37-INFO---------------------------------------------------------------------------------
+24-10-09 18:37-INFO-Round 84 starts !
+24-10-09 18:37-INFO-[Training Epoch 84] tr_loss = 214.43850255
+24-10-09 18:37-INFO-[Epoch 84] Test_Recall = 0.13660637, Test_NDCG = 0.21159401
+24-10-09 18:37-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:37-INFO---------------------------------------------------------------------------------
+24-10-09 18:37-INFO-Round 85 starts !
+24-10-09 18:37-INFO-[Training Epoch 85] tr_loss = 188.04605266
+24-10-09 18:37-INFO-[Epoch 85] Test_Recall = 0.13588478, Test_NDCG = 0.18404452
+24-10-09 18:37-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:37-INFO---------------------------------------------------------------------------------
+24-10-09 18:37-INFO-Round 86 starts !
+24-10-09 18:37-INFO-[Training Epoch 86] tr_loss = 216.88402906
+24-10-09 18:37-INFO-[Epoch 86] Test_Recall = 0.14574033, Test_NDCG = 0.21372616
+24-10-09 18:37-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:37-INFO---------------------------------------------------------------------------------
+24-10-09 18:37-INFO-Round 87 starts !
+24-10-09 18:37-INFO-[Training Epoch 87] tr_loss = 219.66520438
+24-10-09 18:37-INFO-[Epoch 87] Test_Recall = 0.14755852, Test_NDCG = 0.21645781
+24-10-09 18:37-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:37-INFO---------------------------------------------------------------------------------
+24-10-09 18:37-INFO-Round 88 starts !
+24-10-09 18:37-INFO-[Training Epoch 88] tr_loss = 196.36076763
+24-10-09 18:37-INFO-[Epoch 88] Test_Recall = 0.14877832, Test_NDCG = 0.21359456
+24-10-09 18:37-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:37-INFO---------------------------------------------------------------------------------
+24-10-09 18:37-INFO-Round 89 starts !
+24-10-09 18:37-INFO-[Training Epoch 89] tr_loss = 207.07123280
+24-10-09 18:37-INFO-[Epoch 89] Test_Recall = 0.15830349, Test_NDCG = 0.22095814
+24-10-09 18:37-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:37-INFO---------------------------------------------------------------------------------
+24-10-09 18:37-INFO-Round 90 starts !
+24-10-09 18:38-INFO-[Training Epoch 90] tr_loss = 200.70687041
+24-10-09 18:38-INFO-[Epoch 90] Test_Recall = 0.15085079, Test_NDCG = 0.20739042
+24-10-09 18:38-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:38-INFO---------------------------------------------------------------------------------
+24-10-09 18:38-INFO-Round 91 starts !
+24-10-09 18:38-INFO-[Training Epoch 91] tr_loss = 197.10667786
+24-10-09 18:38-INFO-[Epoch 91] Test_Recall = 0.14361353, Test_NDCG = 0.20875293
+24-10-09 18:38-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:38-INFO---------------------------------------------------------------------------------
+24-10-09 18:38-INFO-Round 92 starts !
+24-10-09 18:38-INFO-[Training Epoch 92] tr_loss = 208.39684522
+24-10-09 18:38-INFO-[Epoch 92] Test_Recall = 0.15867813, Test_NDCG = 0.22995486
+24-10-09 18:38-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:38-INFO---------------------------------------------------------------------------------
+24-10-09 18:38-INFO-Round 93 starts !
+24-10-09 18:38-INFO-[Training Epoch 93] tr_loss = 204.21297520
+24-10-09 18:38-INFO-[Epoch 93] Test_Recall = 0.15249691, Test_NDCG = 0.21891137
+24-10-09 18:38-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:38-INFO---------------------------------------------------------------------------------
+24-10-09 18:38-INFO-Round 94 starts !
+24-10-09 18:38-INFO-[Training Epoch 94] tr_loss = 203.92231163
+24-10-09 18:38-INFO-[Epoch 94] Test_Recall = 0.14844127, Test_NDCG = 0.21430734
+24-10-09 18:38-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:38-INFO---------------------------------------------------------------------------------
+24-10-09 18:38-INFO-Round 95 starts !
+24-10-09 18:38-INFO-[Training Epoch 95] tr_loss = 185.10780981
+24-10-09 18:38-INFO-[Epoch 95] Test_Recall = 0.13726483, Test_NDCG = 0.18860584
+24-10-09 18:38-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:38-INFO---------------------------------------------------------------------------------
+24-10-09 18:38-INFO-Round 96 starts !
+24-10-09 18:38-INFO-[Training Epoch 96] tr_loss = 200.68560937
+24-10-09 18:38-INFO-[Epoch 96] Test_Recall = 0.15895001, Test_NDCG = 0.23027128
+24-10-09 18:38-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:38-INFO---------------------------------------------------------------------------------
+24-10-09 18:38-INFO-Round 97 starts !
+24-10-09 18:38-INFO-[Training Epoch 97] tr_loss = 219.06595677
+24-10-09 18:38-INFO-[Epoch 97] Test_Recall = 0.15498787, Test_NDCG = 0.23627183
+24-10-09 18:38-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:38-INFO---------------------------------------------------------------------------------
+24-10-09 18:38-INFO-Round 98 starts !
+24-10-09 18:38-INFO-[Training Epoch 98] tr_loss = 188.09382281
+24-10-09 18:38-INFO-[Epoch 98] Test_Recall = 0.15582743, Test_NDCG = 0.21416841
+24-10-09 18:38-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:38-INFO---------------------------------------------------------------------------------
+24-10-09 18:38-INFO-Round 99 starts !
+24-10-09 18:38-INFO-[Training Epoch 99] tr_loss = 216.65804493
+24-10-09 18:38-INFO-[Epoch 99] Test_Recall = 0.15085207, Test_NDCG = 0.22741165
+24-10-09 18:38-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:38-INFO---------------------------------------------------------------------------------
+24-10-09 18:38-INFO-Round 100 starts !
+24-10-09 18:38-INFO-[Training Epoch 100] tr_loss = 191.51924857
+24-10-09 18:38-INFO-[Epoch 100] Test_Recall = 0.15160491, Test_NDCG = 0.20978303
+24-10-09 18:38-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:38-INFO---------------------------------------------------------------------------------
+24-10-09 18:38-INFO-Round 101 starts !
+24-10-09 18:38-INFO-[Training Epoch 101] tr_loss = 192.07016122
+24-10-09 18:38-INFO-[Epoch 101] Test_Recall = 0.14625809, Test_NDCG = 0.20127639
+24-10-09 18:38-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:38-INFO---------------------------------------------------------------------------------
+24-10-09 18:38-INFO-Round 102 starts !
+24-10-09 18:38-INFO-[Training Epoch 102] tr_loss = 191.08464855
+24-10-09 18:38-INFO-[Epoch 102] Test_Recall = 0.14578249, Test_NDCG = 0.20811473
+24-10-09 18:38-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:38-INFO---------------------------------------------------------------------------------
+24-10-09 18:38-INFO-Round 103 starts !
+24-10-09 18:39-INFO-[Training Epoch 103] tr_loss = 210.15709063
+24-10-09 18:39-INFO-[Epoch 103] Test_Recall = 0.14893405, Test_NDCG = 0.23032612
+24-10-09 18:39-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:39-INFO---------------------------------------------------------------------------------
+24-10-09 18:39-INFO-Round 104 starts !
+24-10-09 18:39-INFO-[Training Epoch 104] tr_loss = 199.20601311
+24-10-09 18:39-INFO-[Epoch 104] Test_Recall = 0.15788560, Test_NDCG = 0.21994691
+24-10-09 18:39-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.16719128, NDCG = 0.20272301
+24-10-09 18:39-INFO---------------------------------------------------------------------------------
+24-10-09 18:39-INFO-Round 105 starts !
+24-10-09 18:39-INFO-[Training Epoch 105] tr_loss = 188.34004973
+24-10-09 18:39-INFO-[Epoch 105] Test_Recall = 0.17127179, Test_NDCG = 0.24521430
+24-10-09 18:39-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:39-INFO---------------------------------------------------------------------------------
+24-10-09 18:39-INFO-Round 106 starts !
+24-10-09 18:39-INFO-[Training Epoch 106] tr_loss = 192.32486542
+24-10-09 18:39-INFO-[Epoch 106] Test_Recall = 0.14737154, Test_NDCG = 0.21742084
+24-10-09 18:39-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:39-INFO---------------------------------------------------------------------------------
+24-10-09 18:39-INFO-Round 107 starts !
+24-10-09 18:39-INFO-[Training Epoch 107] tr_loss = 178.16957870
+24-10-09 18:39-INFO-[Epoch 107] Test_Recall = 0.14386092, Test_NDCG = 0.20505834
+24-10-09 18:39-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:39-INFO---------------------------------------------------------------------------------
+24-10-09 18:39-INFO-Round 108 starts !
+24-10-09 18:39-INFO-[Training Epoch 108] tr_loss = 185.39171402
+24-10-09 18:39-INFO-[Epoch 108] Test_Recall = 0.14696034, Test_NDCG = 0.20007604
+24-10-09 18:39-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:39-INFO---------------------------------------------------------------------------------
+24-10-09 18:39-INFO-Round 109 starts !
+24-10-09 18:39-INFO-[Training Epoch 109] tr_loss = 191.21541737
+24-10-09 18:39-INFO-[Epoch 109] Test_Recall = 0.13039282, Test_NDCG = 0.19522434
+24-10-09 18:39-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:39-INFO---------------------------------------------------------------------------------
+24-10-09 18:39-INFO-Round 110 starts !
+24-10-09 18:39-INFO-[Training Epoch 110] tr_loss = 183.26340455
+24-10-09 18:39-INFO-[Epoch 110] Test_Recall = 0.14510022, Test_NDCG = 0.20525123
+24-10-09 18:39-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:39-INFO---------------------------------------------------------------------------------
+24-10-09 18:39-INFO-Round 111 starts !
+24-10-09 18:39-INFO-[Training Epoch 111] tr_loss = 202.42454937
+24-10-09 18:39-INFO-[Epoch 111] Test_Recall = 0.15957472, Test_NDCG = 0.23445311
+24-10-09 18:39-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:39-INFO---------------------------------------------------------------------------------
+24-10-09 18:39-INFO-Round 112 starts !
+24-10-09 18:39-INFO-[Training Epoch 112] tr_loss = 180.79598022
+24-10-09 18:39-INFO-[Epoch 112] Test_Recall = 0.15119986, Test_NDCG = 0.21577894
+24-10-09 18:39-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:39-INFO---------------------------------------------------------------------------------
+24-10-09 18:39-INFO-Round 113 starts !
+24-10-09 18:39-INFO-[Training Epoch 113] tr_loss = 188.07280153
+24-10-09 18:39-INFO-[Epoch 113] Test_Recall = 0.16676276, Test_NDCG = 0.22311099
+24-10-09 18:39-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:39-INFO---------------------------------------------------------------------------------
+24-10-09 18:39-INFO-Round 114 starts !
+24-10-09 18:39-INFO-[Training Epoch 114] tr_loss = 176.52809146
+24-10-09 18:39-INFO-[Epoch 114] Test_Recall = 0.15460621, Test_NDCG = 0.19867378
+24-10-09 18:39-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:39-INFO---------------------------------------------------------------------------------
+24-10-09 18:39-INFO-Round 115 starts !
+24-10-09 18:40-INFO-[Training Epoch 115] tr_loss = 181.79491709
+24-10-09 18:40-INFO-[Epoch 115] Test_Recall = 0.15862582, Test_NDCG = 0.21643614
+24-10-09 18:40-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:40-INFO---------------------------------------------------------------------------------
+24-10-09 18:40-INFO-Round 116 starts !
+24-10-09 18:40-INFO-[Training Epoch 116] tr_loss = 196.12775573
+24-10-09 18:40-INFO-[Epoch 116] Test_Recall = 0.15305955, Test_NDCG = 0.22589546
+24-10-09 18:40-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:40-INFO---------------------------------------------------------------------------------
+24-10-09 18:40-INFO-Round 117 starts !
+24-10-09 18:40-INFO-[Training Epoch 117] tr_loss = 179.09552342
+24-10-09 18:40-INFO-[Epoch 117] Test_Recall = 0.15438651, Test_NDCG = 0.21836937
+24-10-09 18:40-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:40-INFO---------------------------------------------------------------------------------
+24-10-09 18:40-INFO-Round 118 starts !
+24-10-09 18:40-INFO-[Training Epoch 118] tr_loss = 174.68261737
+24-10-09 18:40-INFO-[Epoch 118] Test_Recall = 0.15142974, Test_NDCG = 0.20263490
+24-10-09 18:40-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:40-INFO---------------------------------------------------------------------------------
+24-10-09 18:40-INFO-Round 119 starts !
+24-10-09 18:40-INFO-[Training Epoch 119] tr_loss = 179.66898975
+24-10-09 18:40-INFO-[Epoch 119] Test_Recall = 0.14659335, Test_NDCG = 0.21075233
+24-10-09 18:40-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:40-INFO---------------------------------------------------------------------------------
+24-10-09 18:40-INFO-Round 120 starts !
+24-10-09 18:40-INFO-[Training Epoch 120] tr_loss = 191.30591975
+24-10-09 18:40-INFO-[Epoch 120] Test_Recall = 0.15145738, Test_NDCG = 0.22415249
+24-10-09 18:40-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:40-INFO---------------------------------------------------------------------------------
+24-10-09 18:40-INFO-Round 121 starts !
+24-10-09 18:40-INFO-[Training Epoch 121] tr_loss = 178.23972496
+24-10-09 18:40-INFO-[Epoch 121] Test_Recall = 0.14232324, Test_NDCG = 0.20968038
+24-10-09 18:40-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:40-INFO---------------------------------------------------------------------------------
+24-10-09 18:40-INFO-Round 122 starts !
+24-10-09 18:40-INFO-[Training Epoch 122] tr_loss = 188.36391862
+24-10-09 18:40-INFO-[Epoch 122] Test_Recall = 0.15161860, Test_NDCG = 0.22535963
+24-10-09 18:40-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:40-INFO---------------------------------------------------------------------------------
+24-10-09 18:40-INFO-Round 123 starts !
+24-10-09 18:40-INFO-[Training Epoch 123] tr_loss = 182.97714835
+24-10-09 18:40-INFO-[Epoch 123] Test_Recall = 0.15463137, Test_NDCG = 0.22137709
+24-10-09 18:40-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:40-INFO---------------------------------------------------------------------------------
+24-10-09 18:40-INFO-Round 124 starts !
+24-10-09 18:40-INFO-[Training Epoch 124] tr_loss = 190.61342974
+24-10-09 18:40-INFO-[Epoch 124] Test_Recall = 0.14746805, Test_NDCG = 0.22278526
+24-10-09 18:40-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:40-INFO---------------------------------------------------------------------------------
+24-10-09 18:40-INFO-Round 125 starts !
+24-10-09 18:40-INFO-[Training Epoch 125] tr_loss = 175.05349882
+24-10-09 18:40-INFO-[Epoch 125] Test_Recall = 0.15397241, Test_NDCG = 0.20677830
+24-10-09 18:40-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:40-INFO---------------------------------------------------------------------------------
+24-10-09 18:40-INFO-Round 126 starts !
+24-10-09 18:40-INFO-[Training Epoch 126] tr_loss = 176.74448159
+24-10-09 18:40-INFO-[Epoch 126] Test_Recall = 0.15158439, Test_NDCG = 0.21175077
+24-10-09 18:40-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:40-INFO---------------------------------------------------------------------------------
+24-10-09 18:40-INFO-Round 127 starts !
+24-10-09 18:40-INFO-[Training Epoch 127] tr_loss = 176.29530376
+24-10-09 18:40-INFO-[Epoch 127] Test_Recall = 0.15091904, Test_NDCG = 0.20484055
+24-10-09 18:40-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:40-INFO---------------------------------------------------------------------------------
+24-10-09 18:40-INFO-Round 128 starts !
+24-10-09 18:41-INFO-[Training Epoch 128] tr_loss = 187.56947687
+24-10-09 18:41-INFO-[Epoch 128] Test_Recall = 0.14397664, Test_NDCG = 0.21503326
+24-10-09 18:41-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:41-INFO---------------------------------------------------------------------------------
+24-10-09 18:41-INFO-Round 129 starts !
+24-10-09 18:41-INFO-[Training Epoch 129] tr_loss = 187.52642602
+24-10-09 18:41-INFO-[Epoch 129] Test_Recall = 0.14545933, Test_NDCG = 0.21918707
+24-10-09 18:41-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:41-INFO---------------------------------------------------------------------------------
+24-10-09 18:41-INFO-Round 130 starts !
+24-10-09 18:41-INFO-[Training Epoch 130] tr_loss = 174.77784085
+24-10-09 18:41-INFO-[Epoch 130] Test_Recall = 0.16111026, Test_NDCG = 0.22018734
+24-10-09 18:41-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:41-INFO---------------------------------------------------------------------------------
+24-10-09 18:41-INFO-Round 131 starts !
+24-10-09 18:41-INFO-[Training Epoch 131] tr_loss = 184.06106070
+24-10-09 18:41-INFO-[Epoch 131] Test_Recall = 0.15037352, Test_NDCG = 0.22280703
+24-10-09 18:41-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:41-INFO---------------------------------------------------------------------------------
+24-10-09 18:41-INFO-Round 132 starts !
+24-10-09 18:41-INFO-[Training Epoch 132] tr_loss = 178.41205521
+24-10-09 18:41-INFO-[Epoch 132] Test_Recall = 0.12973986, Test_NDCG = 0.19610488
+24-10-09 18:41-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:41-INFO---------------------------------------------------------------------------------
+24-10-09 18:41-INFO-Round 133 starts !
+24-10-09 18:41-INFO-[Training Epoch 133] tr_loss = 186.68301305
+24-10-09 18:41-INFO-[Epoch 133] Test_Recall = 0.14313751, Test_NDCG = 0.21663294
+24-10-09 18:41-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:41-INFO---------------------------------------------------------------------------------
+24-10-09 18:41-INFO-Round 134 starts !
+24-10-09 18:41-INFO-[Training Epoch 134] tr_loss = 180.31065932
+24-10-09 18:41-INFO-[Epoch 134] Test_Recall = 0.15075661, Test_NDCG = 0.22481700
+24-10-09 18:41-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:41-INFO---------------------------------------------------------------------------------
+24-10-09 18:41-INFO-Round 135 starts !
+24-10-09 18:41-INFO-[Training Epoch 135] tr_loss = 189.74698432
+24-10-09 18:41-INFO-[Epoch 135] Test_Recall = 0.14909514, Test_NDCG = 0.22589133
+24-10-09 18:41-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:41-INFO---------------------------------------------------------------------------------
+24-10-09 18:41-INFO-Round 136 starts !
+24-10-09 18:41-INFO-[Training Epoch 136] tr_loss = 184.34702863
+24-10-09 18:41-INFO-[Epoch 136] Test_Recall = 0.15766644, Test_NDCG = 0.22756216
+24-10-09 18:41-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:41-INFO---------------------------------------------------------------------------------
+24-10-09 18:41-INFO-Round 137 starts !
+24-10-09 18:41-INFO-[Training Epoch 137] tr_loss = 167.82422566
+24-10-09 18:41-INFO-[Epoch 137] Test_Recall = 0.14341103, Test_NDCG = 0.21412243
+24-10-09 18:41-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:41-INFO---------------------------------------------------------------------------------
+24-10-09 18:41-INFO-Round 138 starts !
+24-10-09 18:41-INFO-[Training Epoch 138] tr_loss = 181.10631754
+24-10-09 18:41-INFO-[Epoch 138] Test_Recall = 0.15170837, Test_NDCG = 0.22637906
+24-10-09 18:41-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:41-INFO---------------------------------------------------------------------------------
+24-10-09 18:41-INFO-Round 139 starts !
+24-10-09 18:41-INFO-[Training Epoch 139] tr_loss = 181.56200568
+24-10-09 18:41-INFO-[Epoch 139] Test_Recall = 0.14995282, Test_NDCG = 0.22796639
+24-10-09 18:41-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:41-INFO---------------------------------------------------------------------------------
+24-10-09 18:41-INFO-Round 140 starts !
+24-10-09 18:42-INFO-[Training Epoch 140] tr_loss = 174.71680030
+24-10-09 18:42-INFO-[Epoch 140] Test_Recall = 0.14134606, Test_NDCG = 0.21607205
+24-10-09 18:42-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:42-INFO---------------------------------------------------------------------------------
+24-10-09 18:42-INFO-Round 141 starts !
+24-10-09 18:42-INFO-[Training Epoch 141] tr_loss = 175.69005218
+24-10-09 18:42-INFO-[Epoch 141] Test_Recall = 0.13180928, Test_NDCG = 0.20242911
+24-10-09 18:42-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:42-INFO---------------------------------------------------------------------------------
+24-10-09 18:42-INFO-Round 142 starts !
+24-10-09 18:42-INFO-[Training Epoch 142] tr_loss = 186.28130382
+24-10-09 18:42-INFO-[Epoch 142] Test_Recall = 0.15181994, Test_NDCG = 0.22995473
+24-10-09 18:42-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:42-INFO---------------------------------------------------------------------------------
+24-10-09 18:42-INFO-Round 143 starts !
+24-10-09 18:42-INFO-[Training Epoch 143] tr_loss = 161.76906823
+24-10-09 18:42-INFO-[Epoch 143] Test_Recall = 0.14470597, Test_NDCG = 0.20677317
+24-10-09 18:42-INFO-The Best Test Metrics is at [Epoch 105] Recall = 0.17127179, NDCG = 0.24521430
+24-10-09 18:42-INFO---------------------------------------------------------------------------------
+24-10-09 18:42-INFO-Round 144 starts !
+24-10-09 18:42-INFO-[Training Epoch 144] tr_loss = 177.21565269
+24-10-09 18:42-INFO-[Epoch 144] Test_Recall = 0.17381882, Test_NDCG = 0.25051688
+24-10-09 18:42-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:42-INFO---------------------------------------------------------------------------------
+24-10-09 18:42-INFO-Round 145 starts !
+24-10-09 18:42-INFO-[Training Epoch 145] tr_loss = 180.98558286
+24-10-09 18:42-INFO-[Epoch 145] Test_Recall = 0.15608005, Test_NDCG = 0.23661367
+24-10-09 18:42-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:42-INFO---------------------------------------------------------------------------------
+24-10-09 18:42-INFO-Round 146 starts !
+24-10-09 18:42-INFO-[Training Epoch 146] tr_loss = 169.12769832
+24-10-09 18:42-INFO-[Epoch 146] Test_Recall = 0.16013684, Test_NDCG = 0.22592282
+24-10-09 18:42-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:42-INFO---------------------------------------------------------------------------------
+24-10-09 18:42-INFO-Round 147 starts !
+24-10-09 18:42-INFO-[Training Epoch 147] tr_loss = 176.74864873
+24-10-09 18:42-INFO-[Epoch 147] Test_Recall = 0.14483766, Test_NDCG = 0.22203789
+24-10-09 18:42-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:42-INFO---------------------------------------------------------------------------------
+24-10-09 18:42-INFO-Round 148 starts !
+24-10-09 18:42-INFO-[Training Epoch 148] tr_loss = 180.47296047
+24-10-09 18:42-INFO-[Epoch 148] Test_Recall = 0.15865070, Test_NDCG = 0.24055617
+24-10-09 18:42-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:42-INFO---------------------------------------------------------------------------------
+24-10-09 18:42-INFO-Round 149 starts !
+24-10-09 18:42-INFO-[Training Epoch 149] tr_loss = 182.51655494
+24-10-09 18:42-INFO-[Epoch 149] Test_Recall = 0.14349314, Test_NDCG = 0.22405706
+24-10-09 18:42-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:42-INFO---------------------------------------------------------------------------------
+24-10-09 18:42-INFO-Round 150 starts !
+24-10-09 18:42-INFO-[Training Epoch 150] tr_loss = 156.38605106
+24-10-09 18:42-INFO-[Epoch 150] Test_Recall = 0.14950657, Test_NDCG = 0.20552668
+24-10-09 18:42-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:42-INFO---------------------------------------------------------------------------------
+24-10-09 18:42-INFO-Round 151 starts !
+24-10-09 18:42-INFO-[Training Epoch 151] tr_loss = 165.65484501
+24-10-09 18:42-INFO-[Epoch 151] Test_Recall = 0.15791782, Test_NDCG = 0.21004669
+24-10-09 18:42-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:42-INFO---------------------------------------------------------------------------------
+24-10-09 18:42-INFO-Round 152 starts !
+24-10-09 18:42-INFO-[Training Epoch 152] tr_loss = 145.55502272
+24-10-09 18:42-INFO-[Epoch 152] Test_Recall = 0.15345594, Test_NDCG = 0.19640854
+24-10-09 18:42-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:42-INFO---------------------------------------------------------------------------------
+24-10-09 18:42-INFO-Round 153 starts !
+24-10-09 18:43-INFO-[Training Epoch 153] tr_loss = 162.78670116
+24-10-09 18:43-INFO-[Epoch 153] Test_Recall = 0.16724374, Test_NDCG = 0.23761635
+24-10-09 18:43-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:43-INFO---------------------------------------------------------------------------------
+24-10-09 18:43-INFO-Round 154 starts !
+24-10-09 18:43-INFO-[Training Epoch 154] tr_loss = 156.71946417
+24-10-09 18:43-INFO-[Epoch 154] Test_Recall = 0.15612228, Test_NDCG = 0.21576650
+24-10-09 18:43-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:43-INFO---------------------------------------------------------------------------------
+24-10-09 18:43-INFO-Round 155 starts !
+24-10-09 18:43-INFO-[Training Epoch 155] tr_loss = 164.78394769
+24-10-09 18:43-INFO-[Epoch 155] Test_Recall = 0.16045784, Test_NDCG = 0.23702717
+24-10-09 18:43-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:43-INFO---------------------------------------------------------------------------------
+24-10-09 18:43-INFO-Round 156 starts !
+24-10-09 18:43-INFO-[Training Epoch 156] tr_loss = 160.16777065
+24-10-09 18:43-INFO-[Epoch 156] Test_Recall = 0.14998973, Test_NDCG = 0.21088529
+24-10-09 18:43-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:43-INFO---------------------------------------------------------------------------------
+24-10-09 18:43-INFO-Round 157 starts !
+24-10-09 18:43-INFO-[Training Epoch 157] tr_loss = 159.59693000
+24-10-09 18:43-INFO-[Epoch 157] Test_Recall = 0.15281675, Test_NDCG = 0.21561155
+24-10-09 18:43-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:43-INFO---------------------------------------------------------------------------------
+24-10-09 18:43-INFO-Round 158 starts !
+24-10-09 18:43-INFO-[Training Epoch 158] tr_loss = 171.40698989
+24-10-09 18:43-INFO-[Epoch 158] Test_Recall = 0.14975960, Test_NDCG = 0.22258141
+24-10-09 18:43-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:43-INFO---------------------------------------------------------------------------------
+24-10-09 18:43-INFO-Round 159 starts !
+24-10-09 18:43-INFO-[Training Epoch 159] tr_loss = 163.64526479
+24-10-09 18:43-INFO-[Epoch 159] Test_Recall = 0.15405241, Test_NDCG = 0.22086712
+24-10-09 18:43-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:43-INFO---------------------------------------------------------------------------------
+24-10-09 18:43-INFO-Round 160 starts !
+24-10-09 18:43-INFO-[Training Epoch 160] tr_loss = 151.55626643
+24-10-09 18:43-INFO-[Epoch 160] Test_Recall = 0.13977037, Test_NDCG = 0.19305897
+24-10-09 18:43-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:43-INFO---------------------------------------------------------------------------------
+24-10-09 18:43-INFO-Round 161 starts !
+24-10-09 18:43-INFO-[Training Epoch 161] tr_loss = 164.14809030
+24-10-09 18:43-INFO-[Epoch 161] Test_Recall = 0.14984864, Test_NDCG = 0.22071482
+24-10-09 18:43-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:43-INFO---------------------------------------------------------------------------------
+24-10-09 18:43-INFO-Round 162 starts !
+24-10-09 18:43-INFO-[Training Epoch 162] tr_loss = 167.73427311
+24-10-09 18:43-INFO-[Epoch 162] Test_Recall = 0.15934697, Test_NDCG = 0.22257782
+24-10-09 18:43-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:43-INFO---------------------------------------------------------------------------------
+24-10-09 18:43-INFO-Round 163 starts !
+24-10-09 18:43-INFO-[Training Epoch 163] tr_loss = 164.27206333
+24-10-09 18:43-INFO-[Epoch 163] Test_Recall = 0.15479037, Test_NDCG = 0.22484565
+24-10-09 18:43-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:43-INFO---------------------------------------------------------------------------------
+24-10-09 18:43-INFO-Round 164 starts !
+24-10-09 18:43-INFO-[Training Epoch 164] tr_loss = 164.06172910
+24-10-09 18:43-INFO-[Epoch 164] Test_Recall = 0.16137285, Test_NDCG = 0.23033856
+24-10-09 18:43-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:43-INFO---------------------------------------------------------------------------------
+24-10-09 18:43-INFO-Round 165 starts !
+24-10-09 18:43-INFO-[Training Epoch 165] tr_loss = 160.75665879
+24-10-09 18:43-INFO-[Epoch 165] Test_Recall = 0.16277208, Test_NDCG = 0.23828140
+24-10-09 18:43-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:43-INFO---------------------------------------------------------------------------------
+24-10-09 18:43-INFO-Round 166 starts !
+24-10-09 18:44-INFO-[Training Epoch 166] tr_loss = 160.88997129
+24-10-09 18:44-INFO-[Epoch 166] Test_Recall = 0.13898603, Test_NDCG = 0.19917882
+24-10-09 18:44-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:44-INFO---------------------------------------------------------------------------------
+24-10-09 18:44-INFO-Round 167 starts !
+24-10-09 18:44-INFO-[Training Epoch 167] tr_loss = 164.48351637
+24-10-09 18:44-INFO-[Epoch 167] Test_Recall = 0.15219277, Test_NDCG = 0.23568228
+24-10-09 18:44-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:44-INFO---------------------------------------------------------------------------------
+24-10-09 18:44-INFO-Round 168 starts !
+24-10-09 18:44-INFO-[Training Epoch 168] tr_loss = 152.46016340
+24-10-09 18:44-INFO-[Epoch 168] Test_Recall = 0.14433999, Test_NDCG = 0.20823712
+24-10-09 18:44-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:44-INFO---------------------------------------------------------------------------------
+24-10-09 18:44-INFO-Round 169 starts !
+24-10-09 18:44-INFO-[Training Epoch 169] tr_loss = 164.40445112
+24-10-09 18:44-INFO-[Epoch 169] Test_Recall = 0.13839802, Test_NDCG = 0.21573385
+24-10-09 18:44-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:44-INFO---------------------------------------------------------------------------------
+24-10-09 18:44-INFO-Round 170 starts !
+24-10-09 18:44-INFO-[Training Epoch 170] tr_loss = 158.97914311
+24-10-09 18:44-INFO-[Epoch 170] Test_Recall = 0.15283111, Test_NDCG = 0.20925167
+24-10-09 18:44-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:44-INFO---------------------------------------------------------------------------------
+24-10-09 18:44-INFO-Round 171 starts !
+24-10-09 18:44-INFO-[Training Epoch 171] tr_loss = 169.46337283
+24-10-09 18:44-INFO-[Epoch 171] Test_Recall = 0.14267041, Test_NDCG = 0.22321376
+24-10-09 18:44-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:44-INFO---------------------------------------------------------------------------------
+24-10-09 18:44-INFO-Round 172 starts !
+24-10-09 18:44-INFO-[Training Epoch 172] tr_loss = 143.92763048
+24-10-09 18:44-INFO-[Epoch 172] Test_Recall = 0.14618831, Test_NDCG = 0.19562144
+24-10-09 18:44-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:44-INFO---------------------------------------------------------------------------------
+24-10-09 18:44-INFO-Round 173 starts !
+24-10-09 18:44-INFO-[Training Epoch 173] tr_loss = 166.84384178
+24-10-09 18:44-INFO-[Epoch 173] Test_Recall = 0.14364124, Test_NDCG = 0.21796571
+24-10-09 18:44-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:44-INFO---------------------------------------------------------------------------------
+24-10-09 18:44-INFO-Round 174 starts !
+24-10-09 18:44-INFO-[Training Epoch 174] tr_loss = 161.63360746
+24-10-09 18:44-INFO-[Epoch 174] Test_Recall = 0.16681561, Test_NDCG = 0.24416623
+24-10-09 18:44-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:44-INFO---------------------------------------------------------------------------------
+24-10-09 18:44-INFO-Round 175 starts !
+24-10-09 18:44-INFO-[Training Epoch 175] tr_loss = 153.50309005
+24-10-09 18:44-INFO-[Epoch 175] Test_Recall = 0.16024464, Test_NDCG = 0.21090868
+24-10-09 18:44-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:44-INFO---------------------------------------------------------------------------------
+24-10-09 18:44-INFO-Round 176 starts !
+24-10-09 18:44-INFO-[Training Epoch 176] tr_loss = 161.45729553
+24-10-09 18:44-INFO-[Epoch 176] Test_Recall = 0.15816894, Test_NDCG = 0.22990912
+24-10-09 18:44-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:44-INFO---------------------------------------------------------------------------------
+24-10-09 18:44-INFO-Round 177 starts !
+24-10-09 18:44-INFO-[Training Epoch 177] tr_loss = 150.79501009
+24-10-09 18:44-INFO-[Epoch 177] Test_Recall = 0.14554243, Test_NDCG = 0.21313356
+24-10-09 18:44-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:44-INFO---------------------------------------------------------------------------------
+24-10-09 18:44-INFO-Round 178 starts !
+24-10-09 18:45-INFO-[Training Epoch 178] tr_loss = 155.41538751
+24-10-09 18:45-INFO-[Epoch 178] Test_Recall = 0.14650178, Test_NDCG = 0.21195100
+24-10-09 18:45-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:45-INFO---------------------------------------------------------------------------------
+24-10-09 18:45-INFO-Round 179 starts !
+24-10-09 18:45-INFO-[Training Epoch 179] tr_loss = 157.34098420
+24-10-09 18:45-INFO-[Epoch 179] Test_Recall = 0.15746285, Test_NDCG = 0.22592917
+24-10-09 18:45-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:45-INFO---------------------------------------------------------------------------------
+24-10-09 18:45-INFO-Round 180 starts !
+24-10-09 18:45-INFO-[Training Epoch 180] tr_loss = 148.93453746
+24-10-09 18:45-INFO-[Epoch 180] Test_Recall = 0.14882591, Test_NDCG = 0.20132211
+24-10-09 18:45-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:45-INFO---------------------------------------------------------------------------------
+24-10-09 18:45-INFO-Round 181 starts !
+24-10-09 18:45-INFO-[Training Epoch 181] tr_loss = 136.05717462
+24-10-09 18:45-INFO-[Epoch 181] Test_Recall = 0.16563643, Test_NDCG = 0.21120642
+24-10-09 18:45-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:45-INFO---------------------------------------------------------------------------------
+24-10-09 18:45-INFO-Round 182 starts !
+24-10-09 18:45-INFO-[Training Epoch 182] tr_loss = 168.25090665
+24-10-09 18:45-INFO-[Epoch 182] Test_Recall = 0.15539402, Test_NDCG = 0.23609126
+24-10-09 18:45-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:45-INFO---------------------------------------------------------------------------------
+24-10-09 18:45-INFO-Round 183 starts !
+24-10-09 18:45-INFO-[Training Epoch 183] tr_loss = 153.90241252
+24-10-09 18:45-INFO-[Epoch 183] Test_Recall = 0.15373319, Test_NDCG = 0.21525539
+24-10-09 18:45-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:45-INFO---------------------------------------------------------------------------------
+24-10-09 18:45-INFO-Round 184 starts !
+24-10-09 18:45-INFO-[Training Epoch 184] tr_loss = 176.97055200
+24-10-09 18:45-INFO-[Epoch 184] Test_Recall = 0.15482617, Test_NDCG = 0.24714408
+24-10-09 18:45-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:45-INFO---------------------------------------------------------------------------------
+24-10-09 18:45-INFO-Round 185 starts !
+24-10-09 18:45-INFO-[Training Epoch 185] tr_loss = 159.43020104
+24-10-09 18:45-INFO-[Epoch 185] Test_Recall = 0.14683534, Test_NDCG = 0.21590879
+24-10-09 18:45-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:45-INFO---------------------------------------------------------------------------------
+24-10-09 18:45-INFO-Round 186 starts !
+24-10-09 18:45-INFO-[Training Epoch 186] tr_loss = 162.18744977
+24-10-09 18:45-INFO-[Epoch 186] Test_Recall = 0.14703312, Test_NDCG = 0.22467969
+24-10-09 18:45-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:45-INFO---------------------------------------------------------------------------------
+24-10-09 18:45-INFO-Round 187 starts !
+24-10-09 18:45-INFO-[Training Epoch 187] tr_loss = 152.43889777
+24-10-09 18:45-INFO-[Epoch 187] Test_Recall = 0.13965908, Test_NDCG = 0.20377111
+24-10-09 18:45-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:45-INFO---------------------------------------------------------------------------------
+24-10-09 18:45-INFO-Round 188 starts !
+24-10-09 18:45-INFO-[Training Epoch 188] tr_loss = 151.49400483
+24-10-09 18:45-INFO-[Epoch 188] Test_Recall = 0.14168445, Test_NDCG = 0.21186022
+24-10-09 18:45-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:45-INFO---------------------------------------------------------------------------------
+24-10-09 18:45-INFO-Round 189 starts !
+24-10-09 18:45-INFO-[Training Epoch 189] tr_loss = 164.82919835
+24-10-09 18:45-INFO-[Epoch 189] Test_Recall = 0.13809270, Test_NDCG = 0.20315681
+24-10-09 18:45-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:45-INFO---------------------------------------------------------------------------------
+24-10-09 18:45-INFO-Round 190 starts !
+24-10-09 18:45-INFO-[Training Epoch 190] tr_loss = 164.34651017
+24-10-09 18:45-INFO-[Epoch 190] Test_Recall = 0.15491315, Test_NDCG = 0.22767703
+24-10-09 18:45-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:45-INFO---------------------------------------------------------------------------------
+24-10-09 18:45-INFO-Round 191 starts !
+24-10-09 18:46-INFO-[Training Epoch 191] tr_loss = 145.46989115
+24-10-09 18:46-INFO-[Epoch 191] Test_Recall = 0.14868519, Test_NDCG = 0.20842448
+24-10-09 18:46-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:46-INFO---------------------------------------------------------------------------------
+24-10-09 18:46-INFO-Round 192 starts !
+24-10-09 18:46-INFO-[Training Epoch 192] tr_loss = 163.37275304
+24-10-09 18:46-INFO-[Epoch 192] Test_Recall = 0.15843828, Test_NDCG = 0.23863860
+24-10-09 18:46-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:46-INFO---------------------------------------------------------------------------------
+24-10-09 18:46-INFO-Round 193 starts !
+24-10-09 18:46-INFO-[Training Epoch 193] tr_loss = 152.06295764
+24-10-09 18:46-INFO-[Epoch 193] Test_Recall = 0.15103504, Test_NDCG = 0.22282373
+24-10-09 18:46-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:46-INFO---------------------------------------------------------------------------------
+24-10-09 18:46-INFO-Round 194 starts !
+24-10-09 18:46-INFO-[Training Epoch 194] tr_loss = 166.19250052
+24-10-09 18:46-INFO-[Epoch 194] Test_Recall = 0.14563438, Test_NDCG = 0.23493555
+24-10-09 18:46-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:46-INFO---------------------------------------------------------------------------------
+24-10-09 18:46-INFO-Round 195 starts !
+24-10-09 18:46-INFO-[Training Epoch 195] tr_loss = 154.15495107
+24-10-09 18:46-INFO-[Epoch 195] Test_Recall = 0.14855178, Test_NDCG = 0.22664810
+24-10-09 18:46-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:46-INFO---------------------------------------------------------------------------------
+24-10-09 18:46-INFO-Round 196 starts !
+24-10-09 18:46-INFO-[Training Epoch 196] tr_loss = 150.66038989
+24-10-09 18:46-INFO-[Epoch 196] Test_Recall = 0.15043811, Test_NDCG = 0.20833041
+24-10-09 18:46-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:46-INFO---------------------------------------------------------------------------------
+24-10-09 18:46-INFO-Round 197 starts !
+24-10-09 18:46-INFO-[Training Epoch 197] tr_loss = 156.39961134
+24-10-09 18:46-INFO-[Epoch 197] Test_Recall = 0.14422025, Test_NDCG = 0.21935005
+24-10-09 18:46-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:46-INFO---------------------------------------------------------------------------------
+24-10-09 18:46-INFO-Round 198 starts !
+24-10-09 18:46-INFO-[Training Epoch 198] tr_loss = 154.31263606
+24-10-09 18:46-INFO-[Epoch 198] Test_Recall = 0.15574786, Test_NDCG = 0.22862412
+24-10-09 18:46-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:46-INFO---------------------------------------------------------------------------------
+24-10-09 18:46-INFO-Round 199 starts !
+24-10-09 18:46-INFO-[Training Epoch 199] tr_loss = 168.48890017
+24-10-09 18:46-INFO-[Epoch 199] Test_Recall = 0.15721828, Test_NDCG = 0.24259409
+24-10-09 18:46-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:46-INFO---------------------------------------------------------------------------------
+24-10-09 18:46-INFO-Round 200 starts !
+24-10-09 18:46-INFO-[Training Epoch 200] tr_loss = 156.63692724
+24-10-09 18:46-INFO-[Epoch 200] Test_Recall = 0.15070800, Test_NDCG = 0.21896175
+24-10-09 18:46-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:46-INFO---------------------------------------------------------------------------------
+24-10-09 18:46-INFO-Round 201 starts !
+24-10-09 18:46-INFO-[Training Epoch 201] tr_loss = 160.43406745
+24-10-09 18:46-INFO-[Epoch 201] Test_Recall = 0.16497818, Test_NDCG = 0.24569415
+24-10-09 18:46-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:46-INFO---------------------------------------------------------------------------------
+24-10-09 18:46-INFO-Round 202 starts !
+24-10-09 18:46-INFO-[Training Epoch 202] tr_loss = 174.92374872
+24-10-09 18:46-INFO-[Epoch 202] Test_Recall = 0.16133970, Test_NDCG = 0.25117838
+24-10-09 18:46-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:46-INFO---------------------------------------------------------------------------------
+24-10-09 18:46-INFO-Round 203 starts !
+24-10-09 18:47-INFO-[Training Epoch 203] tr_loss = 164.46958879
+24-10-09 18:47-INFO-[Epoch 203] Test_Recall = 0.16348320, Test_NDCG = 0.24751176
+24-10-09 18:47-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:47-INFO---------------------------------------------------------------------------------
+24-10-09 18:47-INFO-Round 204 starts !
+24-10-09 18:47-INFO-[Training Epoch 204] tr_loss = 152.07650656
+24-10-09 18:47-INFO-[Epoch 204] Test_Recall = 0.15000740, Test_NDCG = 0.22747013
+24-10-09 18:47-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:47-INFO---------------------------------------------------------------------------------
+24-10-09 18:47-INFO-Round 205 starts !
+24-10-09 18:47-INFO-[Training Epoch 205] tr_loss = 143.71718369
+24-10-09 18:47-INFO-[Epoch 205] Test_Recall = 0.14183026, Test_NDCG = 0.19776207
+24-10-09 18:47-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:47-INFO---------------------------------------------------------------------------------
+24-10-09 18:47-INFO-Round 206 starts !
+24-10-09 18:47-INFO-[Training Epoch 206] tr_loss = 145.85108590
+24-10-09 18:47-INFO-[Epoch 206] Test_Recall = 0.15330377, Test_NDCG = 0.20187556
+24-10-09 18:47-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:47-INFO---------------------------------------------------------------------------------
+24-10-09 18:47-INFO-Round 207 starts !
+24-10-09 18:47-INFO-[Training Epoch 207] tr_loss = 165.48861567
+24-10-09 18:47-INFO-[Epoch 207] Test_Recall = 0.14414581, Test_NDCG = 0.22230169
+24-10-09 18:47-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:47-INFO---------------------------------------------------------------------------------
+24-10-09 18:47-INFO-Round 208 starts !
+24-10-09 18:47-INFO-[Training Epoch 208] tr_loss = 164.53224809
+24-10-09 18:47-INFO-[Epoch 208] Test_Recall = 0.14475869, Test_NDCG = 0.21136974
+24-10-09 18:47-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:47-INFO---------------------------------------------------------------------------------
+24-10-09 18:47-INFO-Round 209 starts !
+24-10-09 18:47-INFO-[Training Epoch 209] tr_loss = 157.38315538
+24-10-09 18:47-INFO-[Epoch 209] Test_Recall = 0.15436374, Test_NDCG = 0.22937126
+24-10-09 18:47-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:47-INFO---------------------------------------------------------------------------------
+24-10-09 18:47-INFO-Round 210 starts !
+24-10-09 18:47-INFO-[Training Epoch 210] tr_loss = 150.82825078
+24-10-09 18:47-INFO-[Epoch 210] Test_Recall = 0.14762722, Test_NDCG = 0.20179366
+24-10-09 18:47-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:47-INFO---------------------------------------------------------------------------------
+24-10-09 18:47-INFO-Round 211 starts !
+24-10-09 18:47-INFO-[Training Epoch 211] tr_loss = 160.57950884
+24-10-09 18:47-INFO-[Epoch 211] Test_Recall = 0.15252875, Test_NDCG = 0.23462558
+24-10-09 18:47-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:47-INFO---------------------------------------------------------------------------------
+24-10-09 18:47-INFO-Round 212 starts !
+24-10-09 18:47-INFO-[Training Epoch 212] tr_loss = 148.79204141
+24-10-09 18:47-INFO-[Epoch 212] Test_Recall = 0.14148873, Test_NDCG = 0.20066543
+24-10-09 18:47-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:47-INFO---------------------------------------------------------------------------------
+24-10-09 18:47-INFO-Round 213 starts !
+24-10-09 18:47-INFO-[Training Epoch 213] tr_loss = 152.28029303
+24-10-09 18:47-INFO-[Epoch 213] Test_Recall = 0.13755234, Test_NDCG = 0.21353214
+24-10-09 18:47-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:47-INFO---------------------------------------------------------------------------------
+24-10-09 18:47-INFO-Round 214 starts !
+24-10-09 18:47-INFO-[Training Epoch 214] tr_loss = 158.51233120
+24-10-09 18:47-INFO-[Epoch 214] Test_Recall = 0.14819766, Test_NDCG = 0.22205791
+24-10-09 18:47-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:47-INFO---------------------------------------------------------------------------------
+24-10-09 18:47-INFO-Round 215 starts !
+24-10-09 18:48-INFO-[Training Epoch 215] tr_loss = 160.59728505
+24-10-09 18:48-INFO-[Epoch 215] Test_Recall = 0.16856458, Test_NDCG = 0.23449735
+24-10-09 18:48-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:48-INFO---------------------------------------------------------------------------------
+24-10-09 18:48-INFO-Round 216 starts !
+24-10-09 18:48-INFO-[Training Epoch 216] tr_loss = 149.60954067
+24-10-09 18:48-INFO-[Epoch 216] Test_Recall = 0.14671682, Test_NDCG = 0.20953057
+24-10-09 18:48-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:48-INFO---------------------------------------------------------------------------------
+24-10-09 18:48-INFO-Round 217 starts !
+24-10-09 18:48-INFO-[Training Epoch 217] tr_loss = 153.14516044
+24-10-09 18:48-INFO-[Epoch 217] Test_Recall = 0.15787465, Test_NDCG = 0.23838831
+24-10-09 18:48-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:48-INFO---------------------------------------------------------------------------------
+24-10-09 18:48-INFO-Round 218 starts !
+24-10-09 18:48-INFO-[Training Epoch 218] tr_loss = 163.76351312
+24-10-09 18:48-INFO-[Epoch 218] Test_Recall = 0.16274205, Test_NDCG = 0.24959986
+24-10-09 18:48-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:48-INFO---------------------------------------------------------------------------------
+24-10-09 18:48-INFO-Round 219 starts !
+24-10-09 18:48-INFO-[Training Epoch 219] tr_loss = 148.88521747
+24-10-09 18:48-INFO-[Epoch 219] Test_Recall = 0.15966702, Test_NDCG = 0.23168289
+24-10-09 18:48-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:48-INFO---------------------------------------------------------------------------------
+24-10-09 18:48-INFO-Round 220 starts !
+24-10-09 18:48-INFO-[Training Epoch 220] tr_loss = 147.54560442
+24-10-09 18:48-INFO-[Epoch 220] Test_Recall = 0.16249983, Test_NDCG = 0.23397073
+24-10-09 18:48-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:48-INFO---------------------------------------------------------------------------------
+24-10-09 18:48-INFO-Round 221 starts !
+24-10-09 18:48-INFO-[Training Epoch 221] tr_loss = 162.37508012
+24-10-09 18:48-INFO-[Epoch 221] Test_Recall = 0.15015051, Test_NDCG = 0.24254555
+24-10-09 18:48-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:48-INFO---------------------------------------------------------------------------------
+24-10-09 18:48-INFO-Round 222 starts !
+24-10-09 18:48-INFO-[Training Epoch 222] tr_loss = 154.32677332
+24-10-09 18:48-INFO-[Epoch 222] Test_Recall = 0.14237294, Test_NDCG = 0.21303817
+24-10-09 18:48-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:48-INFO---------------------------------------------------------------------------------
+24-10-09 18:48-INFO-Round 223 starts !
+24-10-09 18:48-INFO-[Training Epoch 223] tr_loss = 158.14716144
+24-10-09 18:48-INFO-[Epoch 223] Test_Recall = 0.15272057, Test_NDCG = 0.23514636
+24-10-09 18:48-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:48-INFO---------------------------------------------------------------------------------
+24-10-09 18:48-INFO-Round 224 starts !
+24-10-09 18:48-INFO-[Training Epoch 224] tr_loss = 162.87654888
+24-10-09 18:48-INFO-[Epoch 224] Test_Recall = 0.15466122, Test_NDCG = 0.23307457
+24-10-09 18:48-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:48-INFO---------------------------------------------------------------------------------
+24-10-09 18:48-INFO-Round 225 starts !
+24-10-09 18:48-INFO-[Training Epoch 225] tr_loss = 165.39762665
+24-10-09 18:48-INFO-[Epoch 225] Test_Recall = 0.16365456, Test_NDCG = 0.24001165
+24-10-09 18:48-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:48-INFO---------------------------------------------------------------------------------
+24-10-09 18:48-INFO-Round 226 starts !
+24-10-09 18:48-INFO-[Training Epoch 226] tr_loss = 160.80689243
+24-10-09 18:48-INFO-[Epoch 226] Test_Recall = 0.15439241, Test_NDCG = 0.23466147
+24-10-09 18:48-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:48-INFO---------------------------------------------------------------------------------
+24-10-09 18:48-INFO-Round 227 starts !
+24-10-09 18:49-INFO-[Training Epoch 227] tr_loss = 150.10240589
+24-10-09 18:49-INFO-[Epoch 227] Test_Recall = 0.15131081, Test_NDCG = 0.20742620
+24-10-09 18:49-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:49-INFO---------------------------------------------------------------------------------
+24-10-09 18:49-INFO-Round 228 starts !
+24-10-09 18:49-INFO-[Training Epoch 228] tr_loss = 166.88998395
+24-10-09 18:49-INFO-[Epoch 228] Test_Recall = 0.15221783, Test_NDCG = 0.22839771
+24-10-09 18:49-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:49-INFO---------------------------------------------------------------------------------
+24-10-09 18:49-INFO-Round 229 starts !
+24-10-09 18:49-INFO-[Training Epoch 229] tr_loss = 156.89816362
+24-10-09 18:49-INFO-[Epoch 229] Test_Recall = 0.15939387, Test_NDCG = 0.23226828
+24-10-09 18:49-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:49-INFO---------------------------------------------------------------------------------
+24-10-09 18:49-INFO-Round 230 starts !
+24-10-09 18:49-INFO-[Training Epoch 230] tr_loss = 145.15596749
+24-10-09 18:49-INFO-[Epoch 230] Test_Recall = 0.15149188, Test_NDCG = 0.21903619
+24-10-09 18:49-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:49-INFO---------------------------------------------------------------------------------
+24-10-09 18:49-INFO-Round 231 starts !
+24-10-09 18:49-INFO-[Training Epoch 231] tr_loss = 158.89842090
+24-10-09 18:49-INFO-[Epoch 231] Test_Recall = 0.15925996, Test_NDCG = 0.24097463
+24-10-09 18:49-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:49-INFO---------------------------------------------------------------------------------
+24-10-09 18:49-INFO-Round 232 starts !
+24-10-09 18:49-INFO-[Training Epoch 232] tr_loss = 151.83454761
+24-10-09 18:49-INFO-[Epoch 232] Test_Recall = 0.15708956, Test_NDCG = 0.22233514
+24-10-09 18:49-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:49-INFO---------------------------------------------------------------------------------
+24-10-09 18:49-INFO-Round 233 starts !
+24-10-09 18:49-INFO-[Training Epoch 233] tr_loss = 164.40743829
+24-10-09 18:49-INFO-[Epoch 233] Test_Recall = 0.14099427, Test_NDCG = 0.20718434
+24-10-09 18:49-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:49-INFO---------------------------------------------------------------------------------
+24-10-09 18:49-INFO-Round 234 starts !
+24-10-09 18:49-INFO-[Training Epoch 234] tr_loss = 149.05386021
+24-10-09 18:49-INFO-[Epoch 234] Test_Recall = 0.16349512, Test_NDCG = 0.23343662
+24-10-09 18:49-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:49-INFO---------------------------------------------------------------------------------
+24-10-09 18:49-INFO-Round 235 starts !
+24-10-09 18:49-INFO-[Training Epoch 235] tr_loss = 148.11445064
+24-10-09 18:49-INFO-[Epoch 235] Test_Recall = 0.16107270, Test_NDCG = 0.23735162
+24-10-09 18:49-INFO-The Best Test Metrics is at [Epoch 144] Recall = 0.17381882, NDCG = 0.25051688
+24-10-09 18:49-INFO---------------------------------------------------------------------------------
+24-10-09 18:49-INFO-Round 236 starts !

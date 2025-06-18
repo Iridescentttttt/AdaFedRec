@@ -1,0 +1,1945 @@
+24-10-05 15:02-INFO-Range of userId is [0, 942]
+24-10-05 15:02-INFO-Range of itemId is [0, 1681]
+24-10-05 15:02-INFO-FedMLP
+24-10-05 15:02-INFO-dataset: ml-100k, num_users: 943, num_items: 1682, clients_sample_ratio: 1, clients_sample_num: 256, num_round: 1000, local_epoch: 1, test_per_epoch: 1, log_path: log/AE/, lr: 0.1, lr_eta: 80, batch_size: 256, latent_dim: 32, num_negative: 4, l2_regularization: 0.0, autoencoder_train_epoch: 30, autoencoder_lr: 0.001, random_client: True, model_type_ratios: [1, 1, 1], fixed_user_device_migration: False, fixed_user_migration_epoch: 100, continued_user_device_migration: False, continued_user_migration_per_epoch: 1, continued_user_migration_user_number: 50, temperature: 3.0, alpha: 0.5, KD_epoch: 1, original_type: large, target_type: medium, use_cuda: True, device_id: 1
+24-10-05 15:02-INFO-Small Clients :[1, 7, 14, 15, 17, 18, 21, 22, 24, 25, 27, 28, 32, 41, 42, 43, 47, 49, 53, 56, 57, 59, 62, 63, 64, 71, 72, 73, 76, 78, 87, 95, 101, 104, 105, 108, 111, 114, 116, 119, 120, 122, 134, 136, 137, 141, 144, 147, 162, 163, 164, 167, 168, 173, 175, 177, 178, 179, 181, 183, 186, 189, 190, 191, 192, 198, 199, 200, 202, 206, 207, 210, 212, 217, 220, 231, 232, 236, 245, 249, 266, 276, 279, 280, 283, 288, 290, 291, 292, 294, 296, 298, 299, 301, 308, 312, 313, 314, 315, 327, 328, 330, 335, 341, 351, 354, 355, 357, 361, 362, 363, 364, 367, 368, 371, 375, 379, 386, 387, 389, 391, 393, 395, 397, 399, 400, 401, 406, 416, 420, 421, 424, 425, 427, 429, 430, 431, 436, 437, 439, 442, 446, 452, 456, 457, 462, 463, 465, 471, 472, 474, 475, 476, 477, 479, 480, 482, 484, 486, 488, 490, 494, 496, 499, 502, 507, 508, 510, 513, 517, 521, 528, 529, 535, 536, 540, 544, 546, 547, 549, 553, 561, 562, 566, 573, 575, 576, 583, 589, 591, 592, 593, 595, 596, 602, 604, 607, 613, 615, 617, 620, 622, 629, 631, 633, 641, 646, 647, 648, 653, 655, 666, 674, 676, 677, 685, 687, 688, 689, 691, 694, 696, 697, 699, 701, 706, 707, 710, 713, 714, 719, 722, 728, 729, 731, 733, 740, 742, 744, 745, 746, 754, 755, 756, 765, 769, 773, 774, 779, 787, 791, 792, 795, 799, 811, 812, 814, 815, 821, 823, 830, 834, 837, 842, 844, 846, 849, 860, 862, 865, 868, 870, 877, 878, 879, 887, 888, 889, 891, 900, 908, 909, 912, 920, 921, 922, 926, 930, 932, 933, 935]
+24-10-05 15:02-INFO-Medium Clients :[0, 3, 4, 6, 8, 10, 12, 13, 20, 26, 35, 36, 38, 39, 44, 51, 54, 60, 65, 69, 75, 77, 82, 86, 88, 90, 91, 96, 98, 102, 107, 112, 113, 115, 118, 125, 127, 132, 142, 146, 148, 150, 151, 156, 157, 159, 166, 169, 170, 174, 185, 187, 194, 195, 197, 205, 209, 211, 213, 214, 215, 216, 218, 219, 221, 222, 224, 225, 228, 238, 239, 241, 242, 244, 246, 247, 250, 251, 253, 258, 260, 261, 268, 269, 270, 274, 278, 281, 284, 293, 300, 303, 304, 305, 307, 310, 311, 317, 318, 319, 321, 322, 323, 324, 326, 332, 339, 343, 344, 345, 347, 350, 353, 358, 369, 378, 382, 384, 385, 388, 390, 394, 402, 404, 405, 408, 409, 411, 413, 414, 415, 422, 423, 432, 434, 435, 440, 443, 444, 447, 451, 459, 464, 466, 469, 470, 473, 478, 481, 483, 487, 489, 492, 498, 500, 501, 503, 504, 506, 511, 515, 519, 522, 524, 526, 527, 530, 531, 533, 537, 539, 541, 542, 545, 548, 551, 552, 555, 556, 558, 559, 563, 564, 565, 568, 569, 578, 580, 587, 588, 594, 597, 598, 599, 600, 605, 606, 608, 610, 614, 623, 625, 626, 639, 640, 642, 650, 652, 659, 661, 662, 664, 667, 668, 670, 672, 673, 679, 681, 683, 690, 692, 693, 698, 700, 703, 709, 717, 721, 724, 725, 726, 735, 737, 741, 743, 747, 749, 750, 751, 753, 757, 758, 759, 760, 762, 763, 767, 785, 788, 790, 794, 800, 802, 803, 806, 808, 809, 810, 816, 818, 820, 822, 825, 827, 828, 831, 832, 835, 841, 843, 845, 850, 851, 856, 861, 866, 867, 869, 871, 872, 873, 874, 881, 882, 884, 886, 892, 893, 899, 901, 903, 904, 905, 906, 907, 910, 911, 913, 914, 918, 919, 924, 925, 927, 928, 929, 931, 934, 937, 940, 941, 942]
+24-10-05 15:02-INFO-Large Clients :[2, 5, 9, 11, 16, 19, 23, 29, 30, 31, 33, 34, 37, 40, 45, 46, 48, 50, 52, 55, 58, 61, 66, 67, 68, 70, 74, 79, 80, 81, 83, 84, 85, 89, 92, 93, 94, 97, 99, 100, 103, 106, 109, 110, 117, 121, 123, 124, 126, 128, 129, 130, 131, 133, 135, 138, 139, 140, 143, 145, 149, 152, 153, 154, 155, 158, 160, 161, 165, 171, 172, 176, 180, 182, 184, 188, 193, 196, 201, 203, 204, 208, 223, 226, 227, 229, 230, 233, 234, 235, 237, 240, 243, 248, 252, 254, 255, 256, 257, 259, 262, 263, 264, 265, 267, 271, 272, 273, 275, 277, 282, 285, 286, 287, 289, 295, 297, 302, 306, 309, 316, 320, 325, 329, 331, 333, 334, 336, 337, 338, 340, 342, 346, 348, 349, 352, 356, 359, 360, 365, 366, 370, 372, 373, 374, 376, 377, 380, 381, 383, 392, 396, 398, 403, 407, 410, 412, 417, 418, 419, 426, 428, 433, 438, 441, 445, 448, 449, 450, 453, 454, 455, 458, 460, 461, 467, 468, 485, 491, 493, 495, 497, 505, 509, 512, 514, 516, 518, 520, 523, 525, 532, 534, 538, 543, 550, 554, 557, 560, 567, 570, 571, 572, 574, 577, 579, 581, 582, 584, 585, 586, 590, 601, 603, 609, 611, 612, 616, 618, 619, 621, 624, 627, 628, 630, 632, 634, 635, 636, 637, 638, 643, 644, 645, 649, 651, 654, 656, 657, 658, 660, 663, 665, 669, 671, 675, 678, 680, 682, 684, 686, 695, 702, 704, 705, 708, 711, 712, 715, 716, 718, 720, 723, 727, 730, 732, 734, 736, 738, 739, 748, 752, 761, 764, 766, 768, 770, 771, 772, 775, 776, 777, 778, 780, 781, 782, 783, 784, 786, 789, 793, 796, 797, 798, 801, 804, 805, 807, 813, 817, 819, 824, 826, 829, 833, 836, 838, 839, 840, 847, 848, 852, 853, 854, 855, 857, 858, 859, 863, 864, 875, 876, 880, 883, 885, 890, 894, 895, 896, 897, 898, 902, 915, 916, 917, 923, 936, 938, 939]
+24-10-05 15:02-INFO---------------------------------------------------------------------------------
+24-10-05 15:02-INFO-Round 0 starts !
+24-10-05 15:02-INFO-train_autoencoders execute time: 5.231452465057373 秒
+24-10-05 15:02-INFO-local_train avg execte time: 0.010599777276290943 秒
+24-10-05 15:02-INFO-federate execute time: 2.2857983112335205 秒
+24-10-05 15:02-INFO-[Training Epoch 0] tr_loss = 1606.5636
+24-10-05 15:02-INFO-[Epoch 0] Test_Recall = 0.0137, Test_NDCG = 0.0230,
+test_recall_large = 0.0127, test_recall_medium = 0.0188, test_recall_small = 0.0094, test_ndcg_large = 0.0242, test_ndcg_medium = 0.0289, test_ndcg_small = 0.0152
+24-10-05 15:02-INFO-The Best Test Metrics is at [Epoch 0] Recall = 0.0137, NDCG = 0.0230
+24-10-05 15:02-INFO---------------------------------------------------------------------------------
+24-10-05 15:02-INFO-Round 1 starts !
+24-10-05 15:02-INFO-train_autoencoders execute time: 1.087677001953125 秒
+24-10-05 15:03-INFO-local_train avg execte time: 0.009417661047942566 秒
+24-10-05 15:03-INFO-federate execute time: 0.5847907066345215 秒
+24-10-05 15:03-INFO-[Training Epoch 1] tr_loss = 1587.8125
+24-10-05 15:03-INFO-[Epoch 1] Test_Recall = 0.0167, Test_NDCG = 0.0206,
+test_recall_large = 0.0185, test_recall_medium = 0.0162, test_recall_small = 0.0151, test_ndcg_large = 0.0255, test_ndcg_medium = 0.0201, test_ndcg_small = 0.0154
+24-10-05 15:03-INFO-The Best Test Metrics is at [Epoch 1] Recall = 0.0167, NDCG = 0.0206
+24-10-05 15:03-INFO---------------------------------------------------------------------------------
+24-10-05 15:03-INFO-Round 2 starts !
+24-10-05 15:03-INFO-train_autoencoders execute time: 0.10490250587463379 秒
+24-10-05 15:03-INFO-local_train avg execte time: 0.011432877274611343 秒
+24-10-05 15:03-INFO-federate execute time: 1.5982019901275635 秒
+24-10-05 15:03-INFO-[Training Epoch 2] tr_loss = 1574.2544
+24-10-05 15:03-INFO-[Epoch 2] Test_Recall = 0.0190, Test_NDCG = 0.0248,
+test_recall_large = 0.0181, test_recall_medium = 0.0246, test_recall_small = 0.0139, test_ndcg_large = 0.0311, test_ndcg_medium = 0.0264, test_ndcg_small = 0.0157
+24-10-05 15:03-INFO-The Best Test Metrics is at [Epoch 2] Recall = 0.0190, NDCG = 0.0248
+24-10-05 15:03-INFO---------------------------------------------------------------------------------
+24-10-05 15:03-INFO-Round 3 starts !
+24-10-05 15:03-INFO-train_autoencoders execute time: 0.145554780960083 秒
+24-10-05 15:03-INFO-local_train avg execte time: 0.010247926064791633 秒
+24-10-05 15:03-INFO-federate execute time: 3.367417335510254 秒
+24-10-05 15:03-INFO-[Training Epoch 3] tr_loss = 1562.6887
+24-10-05 15:03-INFO-[Epoch 3] Test_Recall = 0.0166, Test_NDCG = 0.0241,
+test_recall_large = 0.0213, test_recall_medium = 0.0208, test_recall_small = 0.0065, test_ndcg_large = 0.0314, test_ndcg_medium = 0.0303, test_ndcg_small = 0.0090
+24-10-05 15:03-INFO-The Best Test Metrics is at [Epoch 2] Recall = 0.0190, NDCG = 0.0248
+24-10-05 15:03-INFO---------------------------------------------------------------------------------
+24-10-05 15:03-INFO-Round 4 starts !
+24-10-05 15:03-INFO-train_autoencoders execute time: 3.5287528038024902 秒
+24-10-05 15:04-INFO-local_train avg execte time: 0.010242657090042455 秒
+24-10-05 15:04-INFO-federate execute time: 0.7746610641479492 秒
+24-10-05 15:04-INFO-[Training Epoch 4] tr_loss = 1552.2007
+24-10-05 15:04-INFO-[Epoch 4] Test_Recall = 0.0221, Test_NDCG = 0.0277,
+test_recall_large = 0.0336, test_recall_medium = 0.0258, test_recall_small = 0.0049, test_ndcg_large = 0.0319, test_ndcg_medium = 0.0440, test_ndcg_small = 0.0052
+24-10-05 15:04-INFO-The Best Test Metrics is at [Epoch 4] Recall = 0.0221, NDCG = 0.0277
+24-10-05 15:04-INFO---------------------------------------------------------------------------------
+24-10-05 15:04-INFO-Round 5 starts !
+24-10-05 15:04-INFO-train_autoencoders execute time: 0.5689074993133545 秒
+24-10-05 15:04-INFO-local_train avg execte time: 0.009493684718110781 秒
+24-10-05 15:04-INFO-federate execute time: 1.8868510723114014 秒
+24-10-05 15:04-INFO-[Training Epoch 5] tr_loss = 1543.6159
+24-10-05 15:04-INFO-[Epoch 5] Test_Recall = 0.0292, Test_NDCG = 0.0496,
+test_recall_large = 0.0505, test_recall_medium = 0.0308, test_recall_small = 0.0028, test_ndcg_large = 0.0816, test_ndcg_medium = 0.0583, test_ndcg_small = 0.0029
+24-10-05 15:04-INFO-The Best Test Metrics is at [Epoch 5] Recall = 0.0292, NDCG = 0.0496
+24-10-05 15:04-INFO---------------------------------------------------------------------------------
+24-10-05 15:04-INFO-Round 6 starts !
+24-10-05 15:04-INFO-train_autoencoders execute time: 1.4446613788604736 秒
+24-10-05 15:04-INFO-local_train avg execte time: 0.009436112067100226 秒
+24-10-05 15:04-INFO-federate execute time: 0.5912039279937744 秒
+24-10-05 15:04-INFO-[Training Epoch 6] tr_loss = 1535.4824
+24-10-05 15:04-INFO-[Epoch 6] Test_Recall = 0.0638, Test_NDCG = 0.0862,
+test_recall_large = 0.0991, test_recall_medium = 0.0817, test_recall_small = 0.0036, test_ndcg_large = 0.1400, test_ndcg_medium = 0.1027, test_ndcg_small = 0.0056
+24-10-05 15:04-INFO-The Best Test Metrics is at [Epoch 6] Recall = 0.0638, NDCG = 0.0862
+24-10-05 15:04-INFO---------------------------------------------------------------------------------
+24-10-05 15:04-INFO-Round 7 starts !
+24-10-05 15:04-INFO-train_autoencoders execute time: 0.10688972473144531 秒
+24-10-05 15:04-INFO-local_train avg execte time: 0.009818618396180558 秒
+24-10-05 15:04-INFO-federate execute time: 0.43329477310180664 秒
+24-10-05 15:04-INFO-[Training Epoch 7] tr_loss = 1527.1284
+24-10-05 15:04-INFO-[Epoch 7] Test_Recall = 0.0862, Test_NDCG = 0.1182,
+test_recall_large = 0.1305, test_recall_medium = 0.1146, test_recall_small = 0.0039, test_ndcg_large = 0.1827, test_ndcg_medium = 0.1456, test_ndcg_small = 0.0135
+24-10-05 15:04-INFO-The Best Test Metrics is at [Epoch 7] Recall = 0.0862, NDCG = 0.1182
+24-10-05 15:04-INFO---------------------------------------------------------------------------------
+24-10-05 15:04-INFO-Round 8 starts !
+24-10-05 15:04-INFO-train_autoencoders execute time: 0.07767891883850098 秒
+24-10-05 15:05-INFO-local_train avg execte time: 0.009819536168653664 秒
+24-10-05 15:05-INFO-federate execute time: 1.8688924312591553 秒
+24-10-05 15:05-INFO-[Training Epoch 8] tr_loss = 1520.6253
+24-10-05 15:05-INFO-[Epoch 8] Test_Recall = 0.0975, Test_NDCG = 0.1335,
+test_recall_large = 0.1417, test_recall_medium = 0.1315, test_recall_small = 0.0094, test_ndcg_large = 0.1966, test_ndcg_medium = 0.1677, test_ndcg_small = 0.0234
+24-10-05 15:05-INFO-The Best Test Metrics is at [Epoch 8] Recall = 0.0975, NDCG = 0.1335
+24-10-05 15:05-INFO---------------------------------------------------------------------------------
+24-10-05 15:05-INFO-Round 9 starts !
+24-10-05 15:05-INFO-train_autoencoders execute time: 1.5179154872894287 秒
+24-10-05 15:05-INFO-local_train avg execte time: 0.010501430750146019 秒
+24-10-05 15:05-INFO-federate execute time: 1.0690486431121826 秒
+24-10-05 15:05-INFO-[Training Epoch 9] tr_loss = 1513.4386
+24-10-05 15:05-INFO-[Epoch 9] Test_Recall = 0.1037, Test_NDCG = 0.1396,
+test_recall_large = 0.1451, test_recall_medium = 0.1442, test_recall_small = 0.0118, test_ndcg_large = 0.1987, test_ndcg_medium = 0.1860, test_ndcg_small = 0.0208
+24-10-05 15:05-INFO-The Best Test Metrics is at [Epoch 9] Recall = 0.1037, NDCG = 0.1396
+24-10-05 15:05-INFO---------------------------------------------------------------------------------
+24-10-05 15:05-INFO-Round 10 starts !
+24-10-05 15:05-INFO-train_autoencoders execute time: 0.12263631820678711 秒
+24-10-05 15:05-INFO-local_train avg execte time: 0.009562902966334483 秒
+24-10-05 15:05-INFO-federate execute time: 1.3752110004425049 秒
+24-10-05 15:05-INFO-[Training Epoch 10] tr_loss = 1506.4620
+24-10-05 15:05-INFO-[Epoch 10] Test_Recall = 0.1026, Test_NDCG = 0.1365,
+test_recall_large = 0.1462, test_recall_medium = 0.1423, test_recall_small = 0.0090, test_ndcg_large = 0.2015, test_ndcg_medium = 0.1825, test_ndcg_small = 0.0115
+24-10-05 15:05-INFO-The Best Test Metrics is at [Epoch 9] Recall = 0.1037, NDCG = 0.1396
+24-10-05 15:05-INFO---------------------------------------------------------------------------------
+24-10-05 15:05-INFO-Round 11 starts !
+24-10-05 15:05-INFO-train_autoencoders execute time: 0.5002422332763672 秒
+24-10-05 15:06-INFO-local_train avg execte time: 0.010293001081885361 秒
+24-10-05 15:06-INFO-federate execute time: 0.5868203639984131 秒
+24-10-05 15:06-INFO-[Training Epoch 11] tr_loss = 1499.8590
+24-10-05 15:06-INFO-[Epoch 11] Test_Recall = 0.1054, Test_NDCG = 0.1344,
+test_recall_large = 0.1507, test_recall_medium = 0.1496, test_recall_small = 0.0051, test_ndcg_large = 0.2040, test_ndcg_medium = 0.1799, test_ndcg_small = 0.0043
+24-10-05 15:06-INFO-The Best Test Metrics is at [Epoch 11] Recall = 0.1054, NDCG = 0.1344
+24-10-05 15:06-INFO---------------------------------------------------------------------------------
+24-10-05 15:06-INFO-Round 12 starts !
+24-10-05 15:06-INFO-train_autoencoders execute time: 0.09169244766235352 秒
+24-10-05 15:06-INFO-local_train avg execte time: 0.010139451173557835 秒
+24-10-05 15:06-INFO-federate execute time: 2.7629058361053467 秒
+24-10-05 15:06-INFO-[Training Epoch 12] tr_loss = 1493.7158
+24-10-05 15:06-INFO-[Epoch 12] Test_Recall = 0.1044, Test_NDCG = 0.1311,
+test_recall_large = 0.1509, test_recall_medium = 0.1485, test_recall_small = 0.0029, test_ndcg_large = 0.2044, test_ndcg_medium = 0.1710, test_ndcg_small = 0.0027
+24-10-05 15:06-INFO-The Best Test Metrics is at [Epoch 11] Recall = 0.1054, NDCG = 0.1344
+24-10-05 15:06-INFO---------------------------------------------------------------------------------
+24-10-05 15:06-INFO-Round 13 starts !
+24-10-05 15:06-INFO-train_autoencoders execute time: 2.8612184524536133 秒
+24-10-05 15:06-INFO-local_train avg execte time: 0.00962671343620357 秒
+24-10-05 15:06-INFO-federate execute time: 0.6833682060241699 秒
+24-10-05 15:06-INFO-[Training Epoch 13] tr_loss = 1487.4406
+24-10-05 15:06-INFO-[Epoch 13] Test_Recall = 0.1062, Test_NDCG = 0.1321,
+test_recall_large = 0.1528, test_recall_medium = 0.1518, test_recall_small = 0.0028, test_ndcg_large = 0.2063, test_ndcg_medium = 0.1727, test_ndcg_small = 0.0020
+24-10-05 15:06-INFO-The Best Test Metrics is at [Epoch 13] Recall = 0.1062, NDCG = 0.1321
+24-10-05 15:06-INFO---------------------------------------------------------------------------------
+24-10-05 15:06-INFO-Round 14 starts !
+24-10-05 15:06-INFO-train_autoencoders execute time: 0.10751748085021973 秒
+24-10-05 15:07-INFO-local_train avg execte time: 0.010947247957247818 秒
+24-10-05 15:07-INFO-federate execute time: 1.2977848052978516 秒
+24-10-05 15:07-INFO-[Training Epoch 14] tr_loss = 1481.3848
+24-10-05 15:07-INFO-[Epoch 14] Test_Recall = 0.1079, Test_NDCG = 0.1323,
+test_recall_large = 0.1526, test_recall_medium = 0.1589, test_recall_small = 0.0010, test_ndcg_large = 0.2071, test_ndcg_medium = 0.1730, test_ndcg_small = 0.0012
+24-10-05 15:07-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:07-INFO---------------------------------------------------------------------------------
+24-10-05 15:07-INFO-Round 15 starts !
+24-10-05 15:07-INFO-train_autoencoders execute time: 1.715562343597412 秒
+24-10-05 15:07-INFO-local_train avg execte time: 0.009390581197728533 秒
+24-10-05 15:07-INFO-federate execute time: 0.5837059020996094 秒
+24-10-05 15:07-INFO-[Training Epoch 15] tr_loss = 1475.2502
+24-10-05 15:07-INFO-[Epoch 15] Test_Recall = 0.1072, Test_NDCG = 0.1315,
+test_recall_large = 0.1495, test_recall_medium = 0.1599, test_recall_small = 0.0012, test_ndcg_large = 0.2065, test_ndcg_medium = 0.1713, test_ndcg_small = 0.0014
+24-10-05 15:07-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:07-INFO---------------------------------------------------------------------------------
+24-10-05 15:07-INFO-Round 16 starts !
+24-10-05 15:07-INFO-train_autoencoders execute time: 0.0968024730682373 秒
+24-10-05 15:07-INFO-local_train avg execte time: 0.009756394686653404 秒
+24-10-05 15:07-INFO-federate execute time: 0.4198470115661621 秒
+24-10-05 15:07-INFO-[Training Epoch 16] tr_loss = 1469.5220
+24-10-05 15:07-INFO-[Epoch 16] Test_Recall = 0.1044, Test_NDCG = 0.1264,
+test_recall_large = 0.1490, test_recall_medium = 0.1514, test_recall_small = 0.0021, test_ndcg_large = 0.2064, test_ndcg_medium = 0.1553, test_ndcg_small = 0.0021
+24-10-05 15:07-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:07-INFO---------------------------------------------------------------------------------
+24-10-05 15:07-INFO-Round 17 starts !
+24-10-05 15:07-INFO-train_autoencoders execute time: 0.07658600807189941 秒
+24-10-05 15:08-INFO-local_train avg execte time: 0.010665780539730068 秒
+24-10-05 15:08-INFO-federate execute time: 3.1675503253936768 秒
+24-10-05 15:08-INFO-[Training Epoch 17] tr_loss = 1463.8555
+24-10-05 15:08-INFO-[Epoch 17] Test_Recall = 0.0993, Test_NDCG = 0.1209,
+test_recall_large = 0.1501, test_recall_medium = 0.1339, test_recall_small = 0.0027, test_ndcg_large = 0.2062, test_ndcg_medium = 0.1385, test_ndcg_small = 0.0026
+24-10-05 15:08-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:08-INFO---------------------------------------------------------------------------------
+24-10-05 15:08-INFO-Round 18 starts !
+24-10-05 15:08-INFO-train_autoencoders execute time: 3.7398533821105957 秒
+24-10-05 15:08-INFO-local_train avg execte time: 0.011565448623446871 秒
+24-10-05 15:08-INFO-federate execute time: 0.57417893409729 秒
+24-10-05 15:08-INFO-[Training Epoch 18] tr_loss = 1457.9801
+24-10-05 15:08-INFO-[Epoch 18] Test_Recall = 0.0943, Test_NDCG = 0.1152,
+test_recall_large = 0.1554, test_recall_medium = 0.1077, test_recall_small = 0.0086, test_ndcg_large = 0.2093, test_ndcg_medium = 0.1127, test_ndcg_small = 0.0084
+24-10-05 15:08-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:08-INFO---------------------------------------------------------------------------------
+24-10-05 15:08-INFO-Round 19 starts !
+24-10-05 15:08-INFO-train_autoencoders execute time: 0.10352659225463867 秒
+24-10-05 15:08-INFO-local_train avg execte time: 0.009160539125460708 秒
+24-10-05 15:08-INFO-federate execute time: 0.5671405792236328 秒
+24-10-05 15:08-INFO-[Training Epoch 19] tr_loss = 1452.2236
+24-10-05 15:08-INFO-[Epoch 19] Test_Recall = 0.0879, Test_NDCG = 0.1086,
+test_recall_large = 0.1541, test_recall_medium = 0.0842, test_recall_small = 0.0149, test_ndcg_large = 0.2101, test_ndcg_medium = 0.0856, test_ndcg_small = 0.0152
+24-10-05 15:08-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:08-INFO---------------------------------------------------------------------------------
+24-10-05 15:08-INFO-Round 20 starts !
+24-10-05 15:08-INFO-train_autoencoders execute time: 0.09956240653991699 秒
+24-10-05 15:09-INFO-local_train avg execte time: 0.011526737334493109 秒
+24-10-05 15:09-INFO-federate execute time: 3.237156867980957 秒
+24-10-05 15:09-INFO-[Training Epoch 20] tr_loss = 1446.6468
+24-10-05 15:09-INFO-[Epoch 20] Test_Recall = 0.0667, Test_NDCG = 0.0857,
+test_recall_large = 0.1534, test_recall_medium = 0.0136, test_recall_small = 0.0229, test_ndcg_large = 0.2089, test_ndcg_medium = 0.0108, test_ndcg_small = 0.0227
+24-10-05 15:09-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:09-INFO---------------------------------------------------------------------------------
+24-10-05 15:09-INFO-Round 21 starts !
+24-10-05 15:09-INFO-train_autoencoders execute time: 2.775989294052124 秒
+24-10-05 15:09-INFO-local_train avg execte time: 0.010794104093711425 秒
+24-10-05 15:09-INFO-federate execute time: 3.5039150714874268 秒
+24-10-05 15:09-INFO-[Training Epoch 21] tr_loss = 1441.4527
+24-10-05 15:09-INFO-[Epoch 21] Test_Recall = 0.0646, Test_NDCG = 0.0853,
+test_recall_large = 0.1539, test_recall_medium = 0.0039, test_recall_small = 0.0258, test_ndcg_large = 0.2090, test_ndcg_medium = 0.0041, test_ndcg_small = 0.0286
+24-10-05 15:09-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:09-INFO---------------------------------------------------------------------------------
+24-10-05 15:09-INFO-Round 22 starts !
+24-10-05 15:09-INFO-train_autoencoders execute time: 4.816303491592407 秒
+24-10-05 15:09-INFO-local_train avg execte time: 0.009134880937675404 秒
+24-10-05 15:09-INFO-federate execute time: 0.6277246475219727 秒
+24-10-05 15:09-INFO-[Training Epoch 22] tr_loss = 1436.0687
+24-10-05 15:09-INFO-[Epoch 22] Test_Recall = 0.0662, Test_NDCG = 0.0908,
+test_recall_large = 0.1551, test_recall_medium = 0.0035, test_recall_small = 0.0302, test_ndcg_large = 0.2101, test_ndcg_medium = 0.0096, test_ndcg_small = 0.0392
+24-10-05 15:09-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:09-INFO---------------------------------------------------------------------------------
+24-10-05 15:09-INFO-Round 23 starts !
+24-10-05 15:09-INFO-train_autoencoders execute time: 0.09208869934082031 秒
+24-10-05 15:10-INFO-local_train avg execte time: 0.010389311821817213 秒
+24-10-05 15:10-INFO-federate execute time: 5.302553176879883 秒
+24-10-05 15:10-INFO-[Training Epoch 23] tr_loss = 1430.8198
+24-10-05 15:10-INFO-[Epoch 23] Test_Recall = 0.0667, Test_NDCG = 0.0917,
+test_recall_large = 0.1555, test_recall_medium = 0.0099, test_recall_small = 0.0245, test_ndcg_large = 0.2108, test_ndcg_medium = 0.0256, test_ndcg_small = 0.0241
+24-10-05 15:10-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:10-INFO---------------------------------------------------------------------------------
+24-10-05 15:10-INFO-Round 24 starts !
+24-10-05 15:10-INFO-train_autoencoders execute time: 3.3294925689697266 秒
+24-10-05 15:10-INFO-local_train avg execte time: 0.010817351548568062 秒
+24-10-05 15:10-INFO-federate execute time: 2.212470054626465 秒
+24-10-05 15:10-INFO-[Training Epoch 24] tr_loss = 1425.5121
+24-10-05 15:10-INFO-[Epoch 24] Test_Recall = 0.0728, Test_NDCG = 0.1060,
+test_recall_large = 0.1553, test_recall_medium = 0.0156, test_recall_small = 0.0383, test_ndcg_large = 0.2106, test_ndcg_medium = 0.0459, test_ndcg_small = 0.0488
+24-10-05 15:10-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:10-INFO---------------------------------------------------------------------------------
+24-10-05 15:10-INFO-Round 25 starts !
+24-10-05 15:10-INFO-train_autoencoders execute time: 2.4149937629699707 秒
+24-10-05 15:11-INFO-local_train avg execte time: 0.008783199122197301 秒
+24-10-05 15:11-INFO-federate execute time: 1.0225019454956055 秒
+24-10-05 15:11-INFO-[Training Epoch 25] tr_loss = 1420.2833
+24-10-05 15:11-INFO-[Epoch 25] Test_Recall = 0.0754, Test_NDCG = 0.1079,
+test_recall_large = 0.1559, test_recall_medium = 0.0227, test_recall_small = 0.0384, test_ndcg_large = 0.2109, test_ndcg_medium = 0.0594, test_ndcg_small = 0.0401
+24-10-05 15:11-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:11-INFO---------------------------------------------------------------------------------
+24-10-05 15:11-INFO-Round 26 starts !
+24-10-05 15:11-INFO-train_autoencoders execute time: 0.08615326881408691 秒
+24-10-05 15:11-INFO-local_train avg execte time: 0.010621477665097185 秒
+24-10-05 15:11-INFO-federate execute time: 0.7607913017272949 秒
+24-10-05 15:11-INFO-[Training Epoch 26] tr_loss = 1415.2159
+24-10-05 15:11-INFO-[Epoch 26] Test_Recall = 0.0763, Test_NDCG = 0.1097,
+test_recall_large = 0.1562, test_recall_medium = 0.0272, test_recall_small = 0.0362, test_ndcg_large = 0.2109, test_ndcg_medium = 0.0695, test_ndcg_small = 0.0351
+24-10-05 15:11-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:11-INFO---------------------------------------------------------------------------------
+24-10-05 15:11-INFO-Round 27 starts !
+24-10-05 15:11-INFO-train_autoencoders execute time: 0.5892224311828613 秒
+24-10-05 15:11-INFO-local_train avg execte time: 0.010828143086438468 秒
+24-10-05 15:11-INFO-federate execute time: 0.42693257331848145 秒
+24-10-05 15:11-INFO-[Training Epoch 27] tr_loss = 1410.1215
+24-10-05 15:11-INFO-[Epoch 27] Test_Recall = 0.0795, Test_NDCG = 0.1182,
+test_recall_large = 0.1561, test_recall_medium = 0.0347, test_recall_small = 0.0386, test_ndcg_large = 0.2104, test_ndcg_medium = 0.0841, test_ndcg_small = 0.0474
+24-10-05 15:11-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:11-INFO---------------------------------------------------------------------------------
+24-10-05 15:11-INFO-Round 28 starts !
+24-10-05 15:11-INFO-train_autoencoders execute time: 0.07629919052124023 秒
+24-10-05 15:11-INFO-local_train avg execte time: 0.009772249648578599 秒
+24-10-05 15:11-INFO-federate execute time: 0.6063873767852783 秒
+24-10-05 15:11-INFO-[Training Epoch 28] tr_loss = 1405.2027
+24-10-05 15:11-INFO-[Epoch 28] Test_Recall = 0.0836, Test_NDCG = 0.1266,
+test_recall_large = 0.1557, test_recall_medium = 0.0452, test_recall_small = 0.0409, test_ndcg_large = 0.2101, test_ndcg_medium = 0.1021, test_ndcg_small = 0.0558
+24-10-05 15:11-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:11-INFO---------------------------------------------------------------------------------
+24-10-05 15:11-INFO-Round 29 starts !
+24-10-05 15:11-INFO-train_autoencoders execute time: 0.09260058403015137 秒
+24-10-05 15:12-INFO-local_train avg execte time: 0.010493399103271872 秒
+24-10-05 15:12-INFO-federate execute time: 2.250417947769165 秒
+24-10-05 15:12-INFO-[Training Epoch 29] tr_loss = 1400.2909
+24-10-05 15:12-INFO-[Epoch 29] Test_Recall = 0.0870, Test_NDCG = 0.1326,
+test_recall_large = 0.1551, test_recall_medium = 0.0504, test_recall_small = 0.0471, test_ndcg_large = 0.2048, test_ndcg_medium = 0.1091, test_ndcg_small = 0.0738
+24-10-05 15:12-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:12-INFO---------------------------------------------------------------------------------
+24-10-05 15:12-INFO-Round 30 starts !
+24-10-05 15:12-INFO-train_autoencoders execute time: 3.7485687732696533 秒
+24-10-05 15:12-INFO-local_train avg execte time: 0.010992604879660419 秒
+24-10-05 15:12-INFO-federate execute time: 0.5926175117492676 秒
+24-10-05 15:12-INFO-[Training Epoch 30] tr_loss = 1395.6696
+24-10-05 15:12-INFO-[Epoch 30] Test_Recall = 0.0914, Test_NDCG = 0.1395,
+test_recall_large = 0.1545, test_recall_medium = 0.0630, test_recall_small = 0.0484, test_ndcg_large = 0.2064, test_ndcg_medium = 0.1256, test_ndcg_small = 0.0764
+24-10-05 15:12-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:12-INFO---------------------------------------------------------------------------------
+24-10-05 15:12-INFO-Round 31 starts !
+24-10-05 15:12-INFO-train_autoencoders execute time: 0.09293270111083984 秒
+24-10-05 15:12-INFO-local_train avg execte time: 0.009386809481542918 秒
+24-10-05 15:12-INFO-federate execute time: 0.6110706329345703 秒
+24-10-05 15:12-INFO-[Training Epoch 31] tr_loss = 1391.0128
+24-10-05 15:12-INFO-[Epoch 31] Test_Recall = 0.0966, Test_NDCG = 0.1459,
+test_recall_large = 0.1562, test_recall_medium = 0.0730, test_recall_small = 0.0527, test_ndcg_large = 0.2115, test_ndcg_medium = 0.1343, test_ndcg_small = 0.0820
+24-10-05 15:12-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:12-INFO---------------------------------------------------------------------------------
+24-10-05 15:12-INFO-Round 32 starts !
+24-10-05 15:12-INFO-train_autoencoders execute time: 0.09301996231079102 秒
+24-10-05 15:13-INFO-local_train avg execte time: 0.011185076684233745 秒
+24-10-05 15:13-INFO-federate execute time: 1.217242956161499 秒
+24-10-05 15:13-INFO-[Training Epoch 32] tr_loss = 1386.5586
+24-10-05 15:13-INFO-[Epoch 32] Test_Recall = 0.1042, Test_NDCG = 0.1592,
+test_recall_large = 0.1593, test_recall_medium = 0.0881, test_recall_small = 0.0573, test_ndcg_large = 0.2209, test_ndcg_medium = 0.1535, test_ndcg_small = 0.0934
+24-10-05 15:13-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:13-INFO---------------------------------------------------------------------------------
+24-10-05 15:13-INFO-Round 33 starts !
+24-10-05 15:13-INFO-train_autoencoders execute time: 0.5766983032226562 秒
+24-10-05 15:13-INFO-local_train avg execte time: 0.011130419667427007 秒
+24-10-05 15:13-INFO-federate execute time: 3.856614589691162 秒
+24-10-05 15:13-INFO-[Training Epoch 33] tr_loss = 1382.3115
+24-10-05 15:13-INFO-[Epoch 33] Test_Recall = 0.1060, Test_NDCG = 0.1567,
+test_recall_large = 0.1584, test_recall_medium = 0.0975, test_recall_small = 0.0542, test_ndcg_large = 0.2165, test_ndcg_medium = 0.1574, test_ndcg_small = 0.0862
+24-10-05 15:13-INFO-The Best Test Metrics is at [Epoch 14] Recall = 0.1079, NDCG = 0.1323
+24-10-05 15:13-INFO---------------------------------------------------------------------------------
+24-10-05 15:13-INFO-Round 34 starts !
+24-10-05 15:13-INFO-train_autoencoders execute time: 4.47038459777832 秒
+24-10-05 15:14-INFO-local_train avg execte time: 0.009599406291925263 秒
+24-10-05 15:14-INFO-federate execute time: 0.5895462036132812 秒
+24-10-05 15:14-INFO-[Training Epoch 34] tr_loss = 1378.2487
+24-10-05 15:14-INFO-[Epoch 34] Test_Recall = 0.1094, Test_NDCG = 0.1581,
+test_recall_large = 0.1589, test_recall_medium = 0.1115, test_recall_small = 0.0495, test_ndcg_large = 0.2168, test_ndcg_medium = 0.1678, test_ndcg_small = 0.0795
+24-10-05 15:14-INFO-The Best Test Metrics is at [Epoch 34] Recall = 0.1094, NDCG = 0.1581
+24-10-05 15:14-INFO---------------------------------------------------------------------------------
+24-10-05 15:14-INFO-Round 35 starts !
+24-10-05 15:14-INFO-train_autoencoders execute time: 0.0979313850402832 秒
+24-10-05 15:14-INFO-local_train avg execte time: 0.01136948144574939 秒
+24-10-05 15:14-INFO-federate execute time: 1.459106683731079 秒
+24-10-05 15:14-INFO-[Training Epoch 35] tr_loss = 1374.3132
+24-10-05 15:14-INFO-[Epoch 35] Test_Recall = 0.1076, Test_NDCG = 0.1479,
+test_recall_large = 0.1559, test_recall_medium = 0.1217, test_recall_small = 0.0361, test_ndcg_large = 0.2033, test_ndcg_medium = 0.1728, test_ndcg_small = 0.0566
+24-10-05 15:14-INFO-The Best Test Metrics is at [Epoch 34] Recall = 0.1094, NDCG = 0.1581
+24-10-05 15:14-INFO---------------------------------------------------------------------------------
+24-10-05 15:14-INFO-Round 36 starts !
+24-10-05 15:14-INFO-train_autoencoders execute time: 0.3512403964996338 秒
+24-10-05 15:14-INFO-local_train avg execte time: 0.009286173327982995 秒
+24-10-05 15:14-INFO-federate execute time: 1.2042129039764404 秒
+24-10-05 15:14-INFO-[Training Epoch 36] tr_loss = 1370.8081
+24-10-05 15:14-INFO-[Epoch 36] Test_Recall = 0.1107, Test_NDCG = 0.1514,
+test_recall_large = 0.1518, test_recall_medium = 0.1262, test_recall_small = 0.0462, test_ndcg_large = 0.1878, test_ndcg_medium = 0.1749, test_ndcg_small = 0.0838
+24-10-05 15:14-INFO-The Best Test Metrics is at [Epoch 36] Recall = 0.1107, NDCG = 0.1514
+24-10-05 15:14-INFO---------------------------------------------------------------------------------
+24-10-05 15:14-INFO-Round 37 starts !
+24-10-05 15:14-INFO-train_autoencoders execute time: 0.3912327289581299 秒
+24-10-05 15:14-INFO-local_train avg execte time: 0.009808816181639977 秒
+24-10-05 15:14-INFO-federate execute time: 0.6681256294250488 秒
+24-10-05 15:14-INFO-[Training Epoch 37] tr_loss = 1367.1566
+24-10-05 15:14-INFO-[Epoch 37] Test_Recall = 0.1112, Test_NDCG = 0.1565,
+test_recall_large = 0.1499, test_recall_medium = 0.1291, test_recall_small = 0.0469, test_ndcg_large = 0.1855, test_ndcg_medium = 0.1798, test_ndcg_small = 0.0977
+24-10-05 15:14-INFO-The Best Test Metrics is at [Epoch 37] Recall = 0.1112, NDCG = 0.1565
+24-10-05 15:14-INFO---------------------------------------------------------------------------------
+24-10-05 15:14-INFO-Round 38 starts !
+24-10-05 15:14-INFO-train_autoencoders execute time: 0.0922555923461914 秒
+24-10-05 15:15-INFO-local_train avg execte time: 0.01039643049998602 秒
+24-10-05 15:15-INFO-federate execute time: 0.5904755592346191 秒
+24-10-05 15:15-INFO-[Training Epoch 38] tr_loss = 1363.6406
+24-10-05 15:15-INFO-[Epoch 38] Test_Recall = 0.1135, Test_NDCG = 0.1628,
+test_recall_large = 0.1515, test_recall_medium = 0.1288, test_recall_small = 0.0529, test_ndcg_large = 0.1852, test_ndcg_medium = 0.1869, test_ndcg_small = 0.1107
+24-10-05 15:15-INFO-The Best Test Metrics is at [Epoch 38] Recall = 0.1135, NDCG = 0.1628
+24-10-05 15:15-INFO---------------------------------------------------------------------------------
+24-10-05 15:15-INFO-Round 39 starts !
+24-10-05 15:15-INFO-train_autoencoders execute time: 0.09782290458679199 秒
+24-10-05 15:15-INFO-local_train avg execte time: 0.009812783082494806 秒
+24-10-05 15:15-INFO-federate execute time: 2.0111873149871826 秒
+24-10-05 15:15-INFO-[Training Epoch 39] tr_loss = 1360.2466
+24-10-05 15:15-INFO-[Epoch 39] Test_Recall = 0.1103, Test_NDCG = 0.1601,
+test_recall_large = 0.1485, test_recall_medium = 0.1275, test_recall_small = 0.0474, test_ndcg_large = 0.1822, test_ndcg_medium = 0.1872, test_ndcg_small = 0.1054
+24-10-05 15:15-INFO-The Best Test Metrics is at [Epoch 38] Recall = 0.1135, NDCG = 0.1628
+24-10-05 15:15-INFO---------------------------------------------------------------------------------
+24-10-05 15:15-INFO-Round 40 starts !
+24-10-05 15:15-INFO-train_autoencoders execute time: 2.37766170501709 秒
+24-10-05 15:15-INFO-local_train avg execte time: 0.011166355642761683 秒
+24-10-05 15:15-INFO-federate execute time: 2.875962257385254 秒
+24-10-05 15:15-INFO-[Training Epoch 40] tr_loss = 1357.0955
+24-10-05 15:15-INFO-[Epoch 40] Test_Recall = 0.1098, Test_NDCG = 0.1595,
+test_recall_large = 0.1456, test_recall_medium = 0.1281, test_recall_small = 0.0485, test_ndcg_large = 0.1740, test_ndcg_medium = 0.1882, test_ndcg_small = 0.1118
+24-10-05 15:15-INFO-The Best Test Metrics is at [Epoch 38] Recall = 0.1135, NDCG = 0.1628
+24-10-05 15:15-INFO---------------------------------------------------------------------------------
+24-10-05 15:15-INFO-Round 41 starts !
+24-10-05 15:16-INFO-train_autoencoders execute time: 4.996941804885864 秒
+24-10-05 15:16-INFO-local_train avg execte time: 0.009548830960739961 秒
+24-10-05 15:16-INFO-federate execute time: 0.6064260005950928 秒
+24-10-05 15:16-INFO-[Training Epoch 41] tr_loss = 1353.9761
+24-10-05 15:16-INFO-[Epoch 41] Test_Recall = 0.1109, Test_NDCG = 0.1623,
+test_recall_large = 0.1495, test_recall_medium = 0.1248, test_recall_small = 0.0509, test_ndcg_large = 0.1805, test_ndcg_medium = 0.1831, test_ndcg_small = 0.1185
+24-10-05 15:16-INFO-The Best Test Metrics is at [Epoch 38] Recall = 0.1135, NDCG = 0.1628
+24-10-05 15:16-INFO---------------------------------------------------------------------------------
+24-10-05 15:16-INFO-Round 42 starts !
+24-10-05 15:16-INFO-train_autoencoders execute time: 0.09106040000915527 秒
+24-10-05 15:16-INFO-local_train avg execte time: 0.010280975228529088 秒
+24-10-05 15:16-INFO-federate execute time: 1.9222607612609863 秒
+24-10-05 15:16-INFO-[Training Epoch 42] tr_loss = 1350.8824
+24-10-05 15:16-INFO-[Epoch 42] Test_Recall = 0.1135, Test_NDCG = 0.1657,
+test_recall_large = 0.1515, test_recall_medium = 0.1272, test_recall_small = 0.0545, test_ndcg_large = 0.1877, test_ndcg_medium = 0.1837, test_ndcg_small = 0.1207
+24-10-05 15:16-INFO-The Best Test Metrics is at [Epoch 38] Recall = 0.1135, NDCG = 0.1628
+24-10-05 15:16-INFO---------------------------------------------------------------------------------
+24-10-05 15:16-INFO-Round 43 starts !
+24-10-05 15:16-INFO-train_autoencoders execute time: 0.11398077011108398 秒
+24-10-05 15:16-INFO-local_train avg execte time: 0.010687382830541941 秒
+24-10-05 15:17-INFO-federate execute time: 3.0796709060668945 秒
+24-10-05 15:17-INFO-[Training Epoch 43] tr_loss = 1347.6234
+24-10-05 15:17-INFO-[Epoch 43] Test_Recall = 0.1132, Test_NDCG = 0.1648,
+test_recall_large = 0.1502, test_recall_medium = 0.1287, test_recall_small = 0.0533, test_ndcg_large = 0.1900, test_ndcg_medium = 0.1803, test_ndcg_small = 0.1188
+24-10-05 15:17-INFO-The Best Test Metrics is at [Epoch 38] Recall = 0.1135, NDCG = 0.1628
+24-10-05 15:17-INFO---------------------------------------------------------------------------------
+24-10-05 15:17-INFO-Round 44 starts !
+24-10-05 15:17-INFO-train_autoencoders execute time: 3.214365005493164 秒
+24-10-05 15:17-INFO-local_train avg execte time: 0.009541740599517984 秒
+24-10-05 15:17-INFO-federate execute time: 0.578460693359375 秒
+24-10-05 15:17-INFO-[Training Epoch 44] tr_loss = 1344.5733
+24-10-05 15:17-INFO-[Epoch 44] Test_Recall = 0.1161, Test_NDCG = 0.1664,
+test_recall_large = 0.1504, test_recall_medium = 0.1330, test_recall_small = 0.0581, test_ndcg_large = 0.1897, test_ndcg_medium = 0.1815, test_ndcg_small = 0.1230
+24-10-05 15:17-INFO-The Best Test Metrics is at [Epoch 44] Recall = 0.1161, NDCG = 0.1664
+24-10-05 15:17-INFO---------------------------------------------------------------------------------
+24-10-05 15:17-INFO-Round 45 starts !
+24-10-05 15:17-INFO-train_autoencoders execute time: 0.12268781661987305 秒
+24-10-05 15:17-INFO-local_train avg execte time: 0.00899375104449081 秒
+24-10-05 15:17-INFO-federate execute time: 1.8500707149505615 秒
+24-10-05 15:17-INFO-[Training Epoch 45] tr_loss = 1341.7706
+24-10-05 15:17-INFO-[Epoch 45] Test_Recall = 0.1178, Test_NDCG = 0.1671,
+test_recall_large = 0.1499, test_recall_medium = 0.1340, test_recall_small = 0.0630, test_ndcg_large = 0.1883, test_ndcg_medium = 0.1802, test_ndcg_small = 0.1283
+24-10-05 15:17-INFO-The Best Test Metrics is at [Epoch 45] Recall = 0.1178, NDCG = 0.1671
+24-10-05 15:17-INFO---------------------------------------------------------------------------------
+24-10-05 15:17-INFO-Round 46 starts !
+24-10-05 15:17-INFO-train_autoencoders execute time: 1.7359042167663574 秒
+24-10-05 15:18-INFO-local_train avg execte time: 0.011566703418153215 秒
+24-10-05 15:18-INFO-federate execute time: 3.564528226852417 秒
+24-10-05 15:18-INFO-[Training Epoch 46] tr_loss = 1339.0494
+24-10-05 15:18-INFO-[Epoch 46] Test_Recall = 0.1213, Test_NDCG = 0.1671,
+test_recall_large = 0.1495, test_recall_medium = 0.1395, test_recall_small = 0.0690, test_ndcg_large = 0.1822, test_ndcg_medium = 0.1819, test_ndcg_small = 0.1334
+24-10-05 15:18-INFO-The Best Test Metrics is at [Epoch 46] Recall = 0.1213, NDCG = 0.1671
+24-10-05 15:18-INFO---------------------------------------------------------------------------------
+24-10-05 15:18-INFO-Round 47 starts !
+24-10-05 15:18-INFO-train_autoencoders execute time: 4.184134244918823 秒
+24-10-05 15:18-INFO-local_train avg execte time: 0.010311588123519752 秒
+24-10-05 15:18-INFO-federate execute time: 0.47091197967529297 秒
+24-10-05 15:18-INFO-[Training Epoch 47] tr_loss = 1336.1826
+24-10-05 15:18-INFO-[Epoch 47] Test_Recall = 0.1257, Test_NDCG = 0.1738,
+test_recall_large = 0.1501, test_recall_medium = 0.1395, test_recall_small = 0.0823, test_ndcg_large = 0.1840, test_ndcg_medium = 0.1846, test_ndcg_small = 0.1504
+24-10-05 15:18-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.1257, NDCG = 0.1738
+24-10-05 15:18-INFO---------------------------------------------------------------------------------
+24-10-05 15:18-INFO-Round 48 starts !
+24-10-05 15:18-INFO-train_autoencoders execute time: 0.07920241355895996 秒
+24-10-05 15:18-INFO-local_train avg execte time: 0.009632040814655582 秒
+24-10-05 15:18-INFO-federate execute time: 0.9335527420043945 秒
+24-10-05 15:18-INFO-[Training Epoch 48] tr_loss = 1333.4486
+24-10-05 15:18-INFO-[Epoch 48] Test_Recall = 0.1252, Test_NDCG = 0.1719,
+test_recall_large = 0.1503, test_recall_medium = 0.1371, test_recall_small = 0.0831, test_ndcg_large = 0.1844, test_ndcg_medium = 0.1820, test_ndcg_small = 0.1466
+24-10-05 15:18-INFO-The Best Test Metrics is at [Epoch 47] Recall = 0.1257, NDCG = 0.1738
+24-10-05 15:18-INFO---------------------------------------------------------------------------------
+24-10-05 15:18-INFO-Round 49 starts !
+24-10-05 15:18-INFO-train_autoencoders execute time: 0.09987711906433105 秒
+24-10-05 15:19-INFO-local_train avg execte time: 0.010752390955563946 秒
+24-10-05 15:19-INFO-federate execute time: 3.752659320831299 秒
+24-10-05 15:19-INFO-[Training Epoch 49] tr_loss = 1330.7901
+24-10-05 15:19-INFO-[Epoch 49] Test_Recall = 0.1272, Test_NDCG = 0.1764,
+test_recall_large = 0.1518, test_recall_medium = 0.1405, test_recall_small = 0.0841, test_ndcg_large = 0.1912, test_ndcg_medium = 0.1861, test_ndcg_small = 0.1487
+24-10-05 15:19-INFO-The Best Test Metrics is at [Epoch 49] Recall = 0.1272, NDCG = 0.1764
+24-10-05 15:19-INFO---------------------------------------------------------------------------------
+24-10-05 15:19-INFO-Round 50 starts !
+24-10-05 15:19-INFO-train_autoencoders execute time: 3.7116751670837402 秒
+24-10-05 15:19-INFO-local_train avg execte time: 0.010767670729506686 秒
+24-10-05 15:19-INFO-federate execute time: 2.5931031703948975 秒
+24-10-05 15:19-INFO-[Training Epoch 50] tr_loss = 1327.5441
+24-10-05 15:19-INFO-[Epoch 50] Test_Recall = 0.1269, Test_NDCG = 0.1751,
+test_recall_large = 0.1524, test_recall_medium = 0.1399, test_recall_small = 0.0831, test_ndcg_large = 0.1909, test_ndcg_medium = 0.1824, test_ndcg_small = 0.1490
+24-10-05 15:19-INFO-The Best Test Metrics is at [Epoch 49] Recall = 0.1272, NDCG = 0.1764
+24-10-05 15:19-INFO---------------------------------------------------------------------------------
+24-10-05 15:19-INFO-Round 51 starts !
+24-10-05 15:19-INFO-train_autoencoders execute time: 2.676699638366699 秒
+24-10-05 15:19-INFO-local_train avg execte time: 0.00980541435557231 秒
+24-10-05 15:19-INFO-federate execute time: 0.6149957180023193 秒
+24-10-05 15:19-INFO-[Training Epoch 51] tr_loss = 1325.0843
+24-10-05 15:19-INFO-[Epoch 51] Test_Recall = 0.1279, Test_NDCG = 0.1765,
+test_recall_large = 0.1515, test_recall_medium = 0.1411, test_recall_small = 0.0861, test_ndcg_large = 0.1886, test_ndcg_medium = 0.1864, test_ndcg_small = 0.1518
+24-10-05 15:19-INFO-The Best Test Metrics is at [Epoch 51] Recall = 0.1279, NDCG = 0.1765
+24-10-05 15:19-INFO---------------------------------------------------------------------------------
+24-10-05 15:19-INFO-Round 52 starts !
+24-10-05 15:19-INFO-train_autoencoders execute time: 0.09372115135192871 秒
+24-10-05 15:20-INFO-local_train avg execte time: 0.011293693160201686 秒
+24-10-05 15:20-INFO-federate execute time: 2.3512651920318604 秒
+24-10-05 15:20-INFO-[Training Epoch 52] tr_loss = 1322.5319
+24-10-05 15:20-INFO-[Epoch 52] Test_Recall = 0.1259, Test_NDCG = 0.1724,
+test_recall_large = 0.1501, test_recall_medium = 0.1394, test_recall_small = 0.0833, test_ndcg_large = 0.1848, test_ndcg_medium = 0.1821, test_ndcg_small = 0.1475
+24-10-05 15:20-INFO-The Best Test Metrics is at [Epoch 51] Recall = 0.1279, NDCG = 0.1765
+24-10-05 15:20-INFO---------------------------------------------------------------------------------
+24-10-05 15:20-INFO-Round 53 starts !
+24-10-05 15:20-INFO-train_autoencoders execute time: 2.7937731742858887 秒
+24-10-05 15:20-INFO-local_train avg execte time: 0.011053910816714467 秒
+24-10-05 15:20-INFO-federate execute time: 3.2766988277435303 秒
+24-10-05 15:20-INFO-[Training Epoch 53] tr_loss = 1319.8243
+24-10-05 15:20-INFO-[Epoch 53] Test_Recall = 0.1297, Test_NDCG = 0.1742,
+test_recall_large = 0.1526, test_recall_medium = 0.1460, test_recall_small = 0.0856, test_ndcg_large = 0.1843, test_ndcg_medium = 0.1854, test_ndcg_small = 0.1503
+24-10-05 15:20-INFO-The Best Test Metrics is at [Epoch 53] Recall = 0.1297, NDCG = 0.1742
+24-10-05 15:20-INFO---------------------------------------------------------------------------------
+24-10-05 15:20-INFO-Round 54 starts !
+24-10-05 15:20-INFO-train_autoencoders execute time: 3.6392152309417725 秒
+24-10-05 15:21-INFO-local_train avg execte time: 0.01010667152647502 秒
+24-10-05 15:21-INFO-federate execute time: 1.4254634380340576 秒
+24-10-05 15:21-INFO-[Training Epoch 54] tr_loss = 1317.5063
+24-10-05 15:21-INFO-[Epoch 54] Test_Recall = 0.1304, Test_NDCG = 0.1721,
+test_recall_large = 0.1502, test_recall_medium = 0.1481, test_recall_small = 0.0884, test_ndcg_large = 0.1819, test_ndcg_medium = 0.1812, test_ndcg_small = 0.1511
+24-10-05 15:21-INFO-The Best Test Metrics is at [Epoch 54] Recall = 0.1304, NDCG = 0.1721
+24-10-05 15:21-INFO---------------------------------------------------------------------------------
+24-10-05 15:21-INFO-Round 55 starts !
+24-10-05 15:21-INFO-train_autoencoders execute time: 0.34313249588012695 秒
+24-10-05 15:21-INFO-local_train avg execte time: 0.010551019286300319 秒
+24-10-05 15:21-INFO-federate execute time: 2.945004940032959 秒
+24-10-05 15:21-INFO-[Training Epoch 55] tr_loss = 1315.2307
+24-10-05 15:21-INFO-[Epoch 55] Test_Recall = 0.1330, Test_NDCG = 0.1737,
+test_recall_large = 0.1522, test_recall_medium = 0.1510, test_recall_small = 0.0913, test_ndcg_large = 0.1834, test_ndcg_medium = 0.1827, test_ndcg_small = 0.1529
+24-10-05 15:21-INFO-The Best Test Metrics is at [Epoch 55] Recall = 0.1330, NDCG = 0.1737
+24-10-05 15:21-INFO---------------------------------------------------------------------------------
+24-10-05 15:21-INFO-Round 56 starts !
+24-10-05 15:21-INFO-train_autoencoders execute time: 2.104734182357788 秒
+24-10-05 15:21-INFO-local_train avg execte time: 0.011060546842637775 秒
+24-10-05 15:21-INFO-federate execute time: 2.8452017307281494 秒
+24-10-05 15:21-INFO-[Training Epoch 56] tr_loss = 1312.4625
+24-10-05 15:21-INFO-[Epoch 56] Test_Recall = 0.1377, Test_NDCG = 0.1793,
+test_recall_large = 0.1546, test_recall_medium = 0.1524, test_recall_small = 0.1022, test_ndcg_large = 0.1847, test_ndcg_medium = 0.1900, test_ndcg_small = 0.1615
+24-10-05 15:21-INFO-The Best Test Metrics is at [Epoch 56] Recall = 0.1377, NDCG = 0.1793
+24-10-05 15:21-INFO---------------------------------------------------------------------------------
+24-10-05 15:21-INFO-Round 57 starts !
+24-10-05 15:21-INFO-train_autoencoders execute time: 2.3449532985687256 秒
+24-10-05 15:22-INFO-local_train avg execte time: 0.010586307005816527 秒
+24-10-05 15:22-INFO-federate execute time: 0.6061127185821533 秒
+24-10-05 15:22-INFO-[Training Epoch 57] tr_loss = 1310.2277
+24-10-05 15:22-INFO-[Epoch 57] Test_Recall = 0.1437, Test_NDCG = 0.1869,
+test_recall_large = 0.1558, test_recall_medium = 0.1555, test_recall_small = 0.1170, test_ndcg_large = 0.1885, test_ndcg_medium = 0.1969, test_ndcg_small = 0.1743
+24-10-05 15:22-INFO-The Best Test Metrics is at [Epoch 57] Recall = 0.1437, NDCG = 0.1869
+24-10-05 15:22-INFO---------------------------------------------------------------------------------
+24-10-05 15:22-INFO-Round 58 starts !
+24-10-05 15:22-INFO-train_autoencoders execute time: 0.09776592254638672 秒
+24-10-05 15:22-INFO-local_train avg execte time: 0.009168332606585635 秒
+24-10-05 15:22-INFO-federate execute time: 0.7716481685638428 秒
+24-10-05 15:22-INFO-[Training Epoch 58] tr_loss = 1308.1719
+24-10-05 15:22-INFO-[Epoch 58] Test_Recall = 0.1440, Test_NDCG = 0.1816,
+test_recall_large = 0.1581, test_recall_medium = 0.1475, test_recall_small = 0.1240, test_ndcg_large = 0.1824, test_ndcg_medium = 0.1840, test_ndcg_small = 0.1780
+24-10-05 15:22-INFO-The Best Test Metrics is at [Epoch 58] Recall = 0.1440, NDCG = 0.1816
+24-10-05 15:22-INFO---------------------------------------------------------------------------------
+24-10-05 15:22-INFO-Round 59 starts !
+24-10-05 15:22-INFO-train_autoencoders execute time: 0.26110267639160156 秒
+24-10-05 15:22-INFO-local_train avg execte time: 0.009851325986746892 秒
+24-10-05 15:22-INFO-federate execute time: 0.652817964553833 秒
+24-10-05 15:22-INFO-[Training Epoch 59] tr_loss = 1306.2506
+24-10-05 15:22-INFO-[Epoch 59] Test_Recall = 0.1425, Test_NDCG = 0.1806,
+test_recall_large = 0.1605, test_recall_medium = 0.1429, test_recall_small = 0.1212, test_ndcg_large = 0.1856, test_ndcg_medium = 0.1794, test_ndcg_small = 0.1762
+24-10-05 15:22-INFO-The Best Test Metrics is at [Epoch 58] Recall = 0.1440, NDCG = 0.1816
+24-10-05 15:22-INFO---------------------------------------------------------------------------------
+24-10-05 15:22-INFO-Round 60 starts !
+24-10-05 15:22-INFO-train_autoencoders execute time: 0.13302159309387207 秒
+24-10-05 15:23-INFO-local_train avg execte time: 0.010335346547568717 秒
+24-10-05 15:23-INFO-federate execute time: 0.576066255569458 秒
+24-10-05 15:23-INFO-[Training Epoch 60] tr_loss = 1303.6345
+24-10-05 15:23-INFO-[Epoch 60] Test_Recall = 0.1485, Test_NDCG = 0.1884,
+test_recall_large = 0.1667, test_recall_medium = 0.1464, test_recall_small = 0.1295, test_ndcg_large = 0.1897, test_ndcg_medium = 0.1926, test_ndcg_small = 0.1826
+24-10-05 15:23-INFO-The Best Test Metrics is at [Epoch 60] Recall = 0.1485, NDCG = 0.1884
+24-10-05 15:23-INFO---------------------------------------------------------------------------------
+24-10-05 15:23-INFO-Round 61 starts !
+24-10-05 15:23-INFO-train_autoencoders execute time: 0.09766936302185059 秒
+24-10-05 15:23-INFO-local_train avg execte time: 0.010736455088076384 秒
+24-10-05 15:23-INFO-federate execute time: 0.7012939453125 秒
+24-10-05 15:23-INFO-[Training Epoch 61] tr_loss = 1302.0930
+24-10-05 15:23-INFO-[Epoch 61] Test_Recall = 0.1481, Test_NDCG = 0.1802,
+test_recall_large = 0.1659, test_recall_medium = 0.1411, test_recall_small = 0.1350, test_ndcg_large = 0.1819, test_ndcg_medium = 0.1745, test_ndcg_small = 0.1843
+24-10-05 15:23-INFO-The Best Test Metrics is at [Epoch 60] Recall = 0.1485, NDCG = 0.1884
+24-10-05 15:23-INFO---------------------------------------------------------------------------------
+24-10-05 15:23-INFO-Round 62 starts !
+24-10-05 15:23-INFO-train_autoencoders execute time: 0.14937877655029297 秒
+24-10-05 15:23-INFO-local_train avg execte time: 0.00967457413294156 秒
+24-10-05 15:23-INFO-federate execute time: 0.8538904190063477 秒
+24-10-05 15:23-INFO-[Training Epoch 62] tr_loss = 1300.2975
+24-10-05 15:23-INFO-[Epoch 62] Test_Recall = 0.1494, Test_NDCG = 0.1753,
+test_recall_large = 0.1655, test_recall_medium = 0.1395, test_recall_small = 0.1412, test_ndcg_large = 0.1770, test_ndcg_medium = 0.1715, test_ndcg_small = 0.1774
+24-10-05 15:23-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:23-INFO---------------------------------------------------------------------------------
+24-10-05 15:23-INFO-Round 63 starts !
+24-10-05 15:23-INFO-train_autoencoders execute time: 1.4888129234313965 秒
+24-10-05 15:24-INFO-local_train avg execte time: 0.010343574390431603 秒
+24-10-05 15:24-INFO-federate execute time: 0.7938523292541504 秒
+24-10-05 15:24-INFO-[Training Epoch 63] tr_loss = 1298.3283
+24-10-05 15:24-INFO-[Epoch 63] Test_Recall = 0.1487, Test_NDCG = 0.1699,
+test_recall_large = 0.1620, test_recall_medium = 0.1398, test_recall_small = 0.1429, test_ndcg_large = 0.1666, test_ndcg_medium = 0.1688, test_ndcg_small = 0.1750
+24-10-05 15:24-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:24-INFO---------------------------------------------------------------------------------
+24-10-05 15:24-INFO-Round 64 starts !
+24-10-05 15:24-INFO-train_autoencoders execute time: 0.16028976440429688 秒
+24-10-05 15:24-INFO-local_train avg execte time: 0.009562421578238398 秒
+24-10-05 15:24-INFO-federate execute time: 1.3536839485168457 秒
+24-10-05 15:24-INFO-[Training Epoch 64] tr_loss = 1296.4346
+24-10-05 15:24-INFO-[Epoch 64] Test_Recall = 0.1445, Test_NDCG = 0.1627,
+test_recall_large = 0.1605, test_recall_medium = 0.1308, test_recall_small = 0.1406, test_ndcg_large = 0.1634, test_ndcg_medium = 0.1577, test_ndcg_small = 0.1673
+24-10-05 15:24-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:24-INFO---------------------------------------------------------------------------------
+24-10-05 15:24-INFO-Round 65 starts !
+24-10-05 15:24-INFO-train_autoencoders execute time: 0.9999411106109619 秒
+24-10-05 15:24-INFO-local_train avg execte time: 0.010587857358655393 秒
+24-10-05 15:24-INFO-federate execute time: 0.5657756328582764 秒
+24-10-05 15:24-INFO-[Training Epoch 65] tr_loss = 1294.4208
+24-10-05 15:24-INFO-[Epoch 65] Test_Recall = 0.1436, Test_NDCG = 0.1613,
+test_recall_large = 0.1593, test_recall_medium = 0.1312, test_recall_small = 0.1387, test_ndcg_large = 0.1601, test_ndcg_medium = 0.1561, test_ndcg_small = 0.1682
+24-10-05 15:24-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:24-INFO---------------------------------------------------------------------------------
+24-10-05 15:24-INFO-Round 66 starts !
+24-10-05 15:24-INFO-train_autoencoders execute time: 0.07789134979248047 秒
+24-10-05 15:24-INFO-local_train avg execte time: 0.010239157418810298 秒
+24-10-05 15:24-INFO-federate execute time: 0.9841046333312988 秒
+24-10-05 15:24-INFO-[Training Epoch 66] tr_loss = 1292.9342
+24-10-05 15:24-INFO-[Epoch 66] Test_Recall = 0.1435, Test_NDCG = 0.1601,
+test_recall_large = 0.1549, test_recall_medium = 0.1310, test_recall_small = 0.1435, test_ndcg_large = 0.1513, test_ndcg_medium = 0.1478, test_ndcg_small = 0.1836
+24-10-05 15:24-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:24-INFO---------------------------------------------------------------------------------
+24-10-05 15:24-INFO-Round 67 starts !
+24-10-05 15:24-INFO-train_autoencoders execute time: 0.5842046737670898 秒
+24-10-05 15:25-INFO-local_train avg execte time: 0.009401552497645325 秒
+24-10-05 15:25-INFO-federate execute time: 0.648212194442749 秒
+24-10-05 15:25-INFO-[Training Epoch 67] tr_loss = 1291.6651
+24-10-05 15:25-INFO-[Epoch 67] Test_Recall = 0.1378, Test_NDCG = 0.1512,
+test_recall_large = 0.1482, test_recall_medium = 0.1252, test_recall_small = 0.1394, test_ndcg_large = 0.1401, test_ndcg_medium = 0.1430, test_ndcg_small = 0.1730
+24-10-05 15:25-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:25-INFO---------------------------------------------------------------------------------
+24-10-05 15:25-INFO-Round 68 starts !
+24-10-05 15:25-INFO-train_autoencoders execute time: 0.09453487396240234 秒
+24-10-05 15:25-INFO-local_train avg execte time: 0.011067616218979512 秒
+24-10-05 15:25-INFO-federate execute time: 3.336982488632202 秒
+24-10-05 15:25-INFO-[Training Epoch 68] tr_loss = 1289.5070
+24-10-05 15:25-INFO-[Epoch 68] Test_Recall = 0.1359, Test_NDCG = 0.1541,
+test_recall_large = 0.1366, test_recall_medium = 0.1258, test_recall_small = 0.1458, test_ndcg_large = 0.1282, test_ndcg_medium = 0.1506, test_ndcg_small = 0.1880
+24-10-05 15:25-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:25-INFO---------------------------------------------------------------------------------
+24-10-05 15:25-INFO-Round 69 starts !
+24-10-05 15:25-INFO-train_autoencoders execute time: 2.8512039184570312 秒
+24-10-05 15:25-INFO-local_train avg execte time: 0.0104006221666063 秒
+24-10-05 15:26-INFO-federate execute time: 2.177478790283203 秒
+24-10-05 15:26-INFO-[Training Epoch 69] tr_loss = 1287.9541
+24-10-05 15:26-INFO-[Epoch 69] Test_Recall = 0.1324, Test_NDCG = 0.1497,
+test_recall_large = 0.1273, test_recall_medium = 0.1294, test_recall_small = 0.1416, test_ndcg_large = 0.1194, test_ndcg_medium = 0.1563, test_ndcg_small = 0.1779
+24-10-05 15:26-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:26-INFO---------------------------------------------------------------------------------
+24-10-05 15:26-INFO-Round 70 starts !
+24-10-05 15:26-INFO-train_autoencoders execute time: 2.2046256065368652 秒
+24-10-05 15:26-INFO-local_train avg execte time: 0.00945065231363695 秒
+24-10-05 15:26-INFO-federate execute time: 0.5660631656646729 秒
+24-10-05 15:26-INFO-[Training Epoch 70] tr_loss = 1287.1365
+24-10-05 15:26-INFO-[Epoch 70] Test_Recall = 0.1337, Test_NDCG = 0.1552,
+test_recall_large = 0.1232, test_recall_medium = 0.1373, test_recall_small = 0.1420, test_ndcg_large = 0.1155, test_ndcg_medium = 0.1777, test_ndcg_small = 0.1772
+24-10-05 15:26-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:26-INFO---------------------------------------------------------------------------------
+24-10-05 15:26-INFO-Round 71 starts !
+24-10-05 15:26-INFO-train_autoencoders execute time: 0.07805538177490234 秒
+24-10-05 15:26-INFO-local_train avg execte time: 0.01135330640119308 秒
+24-10-05 15:26-INFO-federate execute time: 1.4541280269622803 秒
+24-10-05 15:26-INFO-[Training Epoch 71] tr_loss = 1285.3377
+24-10-05 15:26-INFO-[Epoch 71] Test_Recall = 0.1336, Test_NDCG = 0.1523,
+test_recall_large = 0.1212, test_recall_medium = 0.1397, test_recall_small = 0.1416, test_ndcg_large = 0.1112, test_ndcg_medium = 0.1765, test_ndcg_small = 0.1740
+24-10-05 15:26-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:26-INFO---------------------------------------------------------------------------------
+24-10-05 15:26-INFO-Round 72 starts !
+24-10-05 15:26-INFO-train_autoencoders execute time: 2.073167085647583 秒
+24-10-05 15:26-INFO-local_train avg execte time: 0.009901315005434912 秒
+24-10-05 15:26-INFO-federate execute time: 1.0380527973175049 秒
+24-10-05 15:26-INFO-[Training Epoch 72] tr_loss = 1284.4538
+24-10-05 15:26-INFO-[Epoch 72] Test_Recall = 0.1303, Test_NDCG = 0.1438,
+test_recall_large = 0.1181, test_recall_medium = 0.1332, test_recall_small = 0.1413, test_ndcg_large = 0.1005, test_ndcg_medium = 0.1637, test_ndcg_small = 0.1728
+24-10-05 15:26-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:26-INFO---------------------------------------------------------------------------------
+24-10-05 15:26-INFO-Round 73 starts !
+24-10-05 15:26-INFO-train_autoencoders execute time: 0.4017491340637207 秒
+24-10-05 15:27-INFO-local_train avg execte time: 0.009533038953455484 秒
+24-10-05 15:27-INFO-federate execute time: 0.5435924530029297 秒
+24-10-05 15:27-INFO-[Training Epoch 73] tr_loss = 1282.2434
+24-10-05 15:27-INFO-[Epoch 73] Test_Recall = 0.1314, Test_NDCG = 0.1455,
+test_recall_large = 0.1171, test_recall_medium = 0.1380, test_recall_small = 0.1411, test_ndcg_large = 0.0959, test_ndcg_medium = 0.1768, test_ndcg_small = 0.1696
+24-10-05 15:27-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:27-INFO---------------------------------------------------------------------------------
+24-10-05 15:27-INFO-Round 74 starts !
+24-10-05 15:27-INFO-train_autoencoders execute time: 0.31957077980041504 秒
+24-10-05 15:27-INFO-local_train avg execte time: 0.010873101801786291 秒
+24-10-05 15:27-INFO-federate execute time: 1.3314409255981445 秒
+24-10-05 15:27-INFO-[Training Epoch 74] tr_loss = 1280.8739
+24-10-05 15:27-INFO-[Epoch 74] Test_Recall = 0.1315, Test_NDCG = 0.1428,
+test_recall_large = 0.1184, test_recall_medium = 0.1395, test_recall_small = 0.1380, test_ndcg_large = 0.0969, test_ndcg_medium = 0.1747, test_ndcg_small = 0.1617
+24-10-05 15:27-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:27-INFO---------------------------------------------------------------------------------
+24-10-05 15:27-INFO-Round 75 starts !
+24-10-05 15:27-INFO-train_autoencoders execute time: 2.0060102939605713 秒
+24-10-05 15:27-INFO-local_train avg execte time: 0.00955393332059664 秒
+24-10-05 15:27-INFO-federate execute time: 0.5815572738647461 秒
+24-10-05 15:27-INFO-[Training Epoch 75] tr_loss = 1279.9445
+24-10-05 15:27-INFO-[Epoch 75] Test_Recall = 0.1315, Test_NDCG = 0.1437,
+test_recall_large = 0.1137, test_recall_medium = 0.1461, test_recall_small = 0.1366, test_ndcg_large = 0.0972, test_ndcg_medium = 0.1814, test_ndcg_small = 0.1574
+24-10-05 15:27-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:27-INFO---------------------------------------------------------------------------------
+24-10-05 15:27-INFO-Round 76 starts !
+24-10-05 15:27-INFO-train_autoencoders execute time: 0.12819194793701172 秒
+24-10-05 15:28-INFO-local_train avg execte time: 0.011834997387478485 秒
+24-10-05 15:28-INFO-federate execute time: 3.785632371902466 秒
+24-10-05 15:28-INFO-[Training Epoch 76] tr_loss = 1277.9558
+24-10-05 15:28-INFO-[Epoch 76] Test_Recall = 0.1285, Test_NDCG = 0.1467,
+test_recall_large = 0.1115, test_recall_medium = 0.1397, test_recall_small = 0.1361, test_ndcg_large = 0.1038, test_ndcg_medium = 0.1831, test_ndcg_small = 0.1577
+24-10-05 15:28-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:28-INFO---------------------------------------------------------------------------------
+24-10-05 15:28-INFO-Round 77 starts !
+24-10-05 15:28-INFO-train_autoencoders execute time: 4.280325889587402 秒
+24-10-05 15:28-INFO-local_train avg execte time: 0.011076931483166595 秒
+24-10-05 15:28-INFO-federate execute time: 2.6750004291534424 秒
+24-10-05 15:28-INFO-[Training Epoch 77] tr_loss = 1277.4737
+24-10-05 15:28-INFO-[Epoch 77] Test_Recall = 0.1224, Test_NDCG = 0.1433,
+test_recall_large = 0.1043, test_recall_medium = 0.1366, test_recall_small = 0.1281, test_ndcg_large = 0.1094, test_ndcg_medium = 0.1844, test_ndcg_small = 0.1386
+24-10-05 15:28-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:28-INFO---------------------------------------------------------------------------------
+24-10-05 15:28-INFO-Round 78 starts !
+24-10-05 15:28-INFO-train_autoencoders execute time: 2.820200204849243 秒
+24-10-05 15:29-INFO-local_train avg execte time: 0.009622729342916737 秒
+24-10-05 15:29-INFO-federate execute time: 1.6525447368621826 秒
+24-10-05 15:29-INFO-[Training Epoch 78] tr_loss = 1276.4577
+24-10-05 15:29-INFO-[Epoch 78] Test_Recall = 0.1252, Test_NDCG = 0.1470,
+test_recall_large = 0.1095, test_recall_medium = 0.1356, test_recall_small = 0.1323, test_ndcg_large = 0.1195, test_ndcg_medium = 0.1851, test_ndcg_small = 0.1381
+24-10-05 15:29-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:29-INFO---------------------------------------------------------------------------------
+24-10-05 15:29-INFO-Round 79 starts !
+24-10-05 15:29-INFO-train_autoencoders execute time: 0.08305096626281738 秒
+24-10-05 15:29-INFO-local_train avg execte time: 0.009924279290823264 秒
+24-10-05 15:29-INFO-federate execute time: 0.5852394104003906 秒
+24-10-05 15:29-INFO-[Training Epoch 79] tr_loss = 1275.0207
+24-10-05 15:29-INFO-[Epoch 79] Test_Recall = 0.1289, Test_NDCG = 0.1507,
+test_recall_large = 0.1164, test_recall_medium = 0.1413, test_recall_small = 0.1301, test_ndcg_large = 0.1271, test_ndcg_medium = 0.1875, test_ndcg_small = 0.1384
+24-10-05 15:29-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:29-INFO---------------------------------------------------------------------------------
+24-10-05 15:29-INFO-Round 80 starts !
+24-10-05 15:29-INFO-train_autoencoders execute time: 0.09176015853881836 秒
+24-10-05 15:29-INFO-local_train avg execte time: 0.010160913649444742 秒
+24-10-05 15:29-INFO-federate execute time: 0.7303194999694824 秒
+24-10-05 15:29-INFO-[Training Epoch 80] tr_loss = 1273.7804
+24-10-05 15:29-INFO-[Epoch 80] Test_Recall = 0.1322, Test_NDCG = 0.1501,
+test_recall_large = 0.1216, test_recall_medium = 0.1466, test_recall_small = 0.1291, test_ndcg_large = 0.1319, test_ndcg_medium = 0.1852, test_ndcg_small = 0.1334
+24-10-05 15:29-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:29-INFO---------------------------------------------------------------------------------
+24-10-05 15:29-INFO-Round 81 starts !
+24-10-05 15:29-INFO-train_autoencoders execute time: 0.11185526847839355 秒
+24-10-05 15:29-INFO-local_train avg execte time: 0.010840178800160154 秒
+24-10-05 15:29-INFO-federate execute time: 0.9900131225585938 秒
+24-10-05 15:29-INFO-[Training Epoch 81] tr_loss = 1272.2704
+24-10-05 15:29-INFO-[Epoch 81] Test_Recall = 0.1364, Test_NDCG = 0.1569,
+test_recall_large = 0.1303, test_recall_medium = 0.1457, test_recall_small = 0.1336, test_ndcg_large = 0.1428, test_ndcg_medium = 0.1854, test_ndcg_small = 0.1427
+24-10-05 15:29-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:29-INFO---------------------------------------------------------------------------------
+24-10-05 15:29-INFO-Round 82 starts !
+24-10-05 15:29-INFO-train_autoencoders execute time: 0.12523746490478516 秒
+24-10-05 15:30-INFO-local_train avg execte time: 0.009615221053899156 秒
+24-10-05 15:30-INFO-federate execute time: 0.6766200065612793 秒
+24-10-05 15:30-INFO-[Training Epoch 82] tr_loss = 1271.1675
+24-10-05 15:30-INFO-[Epoch 82] Test_Recall = 0.1347, Test_NDCG = 0.1530,
+test_recall_large = 0.1282, test_recall_medium = 0.1457, test_recall_small = 0.1305, test_ndcg_large = 0.1475, test_ndcg_medium = 0.1742, test_ndcg_small = 0.1364
+24-10-05 15:30-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:30-INFO---------------------------------------------------------------------------------
+24-10-05 15:30-INFO-Round 83 starts !
+24-10-05 15:30-INFO-train_autoencoders execute time: 1.2068727016448975 秒
+24-10-05 15:30-INFO-local_train avg execte time: 0.01152147063521287 秒
+24-10-05 15:30-INFO-federate execute time: 0.70424485206604 秒
+24-10-05 15:30-INFO-[Training Epoch 83] tr_loss = 1270.7512
+24-10-05 15:30-INFO-[Epoch 83] Test_Recall = 0.1347, Test_NDCG = 0.1531,
+test_recall_large = 0.1285, test_recall_medium = 0.1464, test_recall_small = 0.1294, test_ndcg_large = 0.1470, test_ndcg_medium = 0.1751, test_ndcg_small = 0.1365
+24-10-05 15:30-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:30-INFO---------------------------------------------------------------------------------
+24-10-05 15:30-INFO-Round 84 starts !
+24-10-05 15:30-INFO-train_autoencoders execute time: 0.19498777389526367 秒
+24-10-05 15:30-INFO-local_train avg execte time: 0.012324498288831174 秒
+24-10-05 15:30-INFO-federate execute time: 2.42812180519104 秒
+24-10-05 15:30-INFO-[Training Epoch 84] tr_loss = 1269.5362
+24-10-05 15:30-INFO-[Epoch 84] Test_Recall = 0.1378, Test_NDCG = 0.1569,
+test_recall_large = 0.1364, test_recall_medium = 0.1480, test_recall_small = 0.1284, test_ndcg_large = 0.1550, test_ndcg_medium = 0.1739, test_ndcg_small = 0.1407
+24-10-05 15:30-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:30-INFO---------------------------------------------------------------------------------
+24-10-05 15:30-INFO-Round 85 starts !
+24-10-05 15:30-INFO-train_autoencoders execute time: 3.6464617252349854 秒
+24-10-05 15:31-INFO-local_train avg execte time: 0.011495123233168147 秒
+24-10-05 15:31-INFO-federate execute time: 0.9686379432678223 秒
+24-10-05 15:31-INFO-[Training Epoch 85] tr_loss = 1268.2462
+24-10-05 15:31-INFO-[Epoch 85] Test_Recall = 0.1374, Test_NDCG = 0.1594,
+test_recall_large = 0.1335, test_recall_medium = 0.1478, test_recall_small = 0.1307, test_ndcg_large = 0.1563, test_ndcg_medium = 0.1750, test_ndcg_small = 0.1463
+24-10-05 15:31-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:31-INFO---------------------------------------------------------------------------------
+24-10-05 15:31-INFO-Round 86 starts !
+24-10-05 15:31-INFO-train_autoencoders execute time: 1.2802155017852783 秒
+24-10-05 15:31-INFO-local_train avg execte time: 0.009761859857391326 秒
+24-10-05 15:31-INFO-federate execute time: 1.562455415725708 秒
+24-10-05 15:31-INFO-[Training Epoch 86] tr_loss = 1267.2892
+24-10-05 15:31-INFO-[Epoch 86] Test_Recall = 0.1373, Test_NDCG = 0.1602,
+test_recall_large = 0.1366, test_recall_medium = 0.1499, test_recall_small = 0.1245, test_ndcg_large = 0.1588, test_ndcg_medium = 0.1747, test_ndcg_small = 0.1461
+24-10-05 15:31-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:31-INFO---------------------------------------------------------------------------------
+24-10-05 15:31-INFO-Round 87 starts !
+24-10-05 15:31-INFO-train_autoencoders execute time: 0.7160682678222656 秒
+24-10-05 15:32-INFO-local_train avg execte time: 0.01192561869656673 秒
+24-10-05 15:32-INFO-federate execute time: 2.1429004669189453 秒
+24-10-05 15:32-INFO-[Training Epoch 87] tr_loss = 1266.0394
+24-10-05 15:32-INFO-[Epoch 87] Test_Recall = 0.1387, Test_NDCG = 0.1616,
+test_recall_large = 0.1427, test_recall_medium = 0.1473, test_recall_small = 0.1247, test_ndcg_large = 0.1649, test_ndcg_medium = 0.1718, test_ndcg_small = 0.1467
+24-10-05 15:32-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:32-INFO---------------------------------------------------------------------------------
+24-10-05 15:32-INFO-Round 88 starts !
+24-10-05 15:32-INFO-train_autoencoders execute time: 1.1096076965332031 秒
+24-10-05 15:32-INFO-local_train avg execte time: 0.010440962185662473 秒
+24-10-05 15:32-INFO-federate execute time: 0.6071605682373047 秒
+24-10-05 15:32-INFO-[Training Epoch 88] tr_loss = 1264.8282
+24-10-05 15:32-INFO-[Epoch 88] Test_Recall = 0.1409, Test_NDCG = 0.1637,
+test_recall_large = 0.1395, test_recall_medium = 0.1475, test_recall_small = 0.1356, test_ndcg_large = 0.1618, test_ndcg_medium = 0.1716, test_ndcg_small = 0.1575
+24-10-05 15:32-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:32-INFO---------------------------------------------------------------------------------
+24-10-05 15:32-INFO-Round 89 starts !
+24-10-05 15:32-INFO-train_autoencoders execute time: 0.09478449821472168 秒
+24-10-05 15:32-INFO-local_train avg execte time: 0.009789627657715362 秒
+24-10-05 15:32-INFO-federate execute time: 0.5123934745788574 秒
+24-10-05 15:32-INFO-[Training Epoch 89] tr_loss = 1264.2628
+24-10-05 15:32-INFO-[Epoch 89] Test_Recall = 0.1466, Test_NDCG = 0.1692,
+test_recall_large = 0.1505, test_recall_medium = 0.1501, test_recall_small = 0.1382, test_ndcg_large = 0.1704, test_ndcg_medium = 0.1769, test_ndcg_small = 0.1596
+24-10-05 15:32-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:32-INFO---------------------------------------------------------------------------------
+24-10-05 15:32-INFO-Round 90 starts !
+24-10-05 15:32-INFO-train_autoencoders execute time: 0.07484793663024902 秒
+24-10-05 15:32-INFO-local_train avg execte time: 0.00975333898469474 秒
+24-10-05 15:32-INFO-federate execute time: 1.2111914157867432 秒
+24-10-05 15:32-INFO-[Training Epoch 90] tr_loss = 1262.7764
+24-10-05 15:32-INFO-[Epoch 90] Test_Recall = 0.1457, Test_NDCG = 0.1678,
+test_recall_large = 0.1470, test_recall_medium = 0.1507, test_recall_small = 0.1389, test_ndcg_large = 0.1633, test_ndcg_medium = 0.1773, test_ndcg_small = 0.1628
+24-10-05 15:32-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:32-INFO---------------------------------------------------------------------------------
+24-10-05 15:32-INFO-Round 91 starts !
+24-10-05 15:32-INFO-train_autoencoders execute time: 0.20743370056152344 秒
+24-10-05 15:33-INFO-local_train avg execte time: 0.011483005349734681 秒
+24-10-05 15:33-INFO-federate execute time: 1.2586491107940674 秒
+24-10-05 15:33-INFO-[Training Epoch 91] tr_loss = 1261.6412
+24-10-05 15:33-INFO-[Epoch 91] Test_Recall = 0.1418, Test_NDCG = 0.1663,
+test_recall_large = 0.1410, test_recall_medium = 0.1513, test_recall_small = 0.1324, test_ndcg_large = 0.1653, test_ndcg_medium = 0.1776, test_ndcg_small = 0.1552
+24-10-05 15:33-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:33-INFO---------------------------------------------------------------------------------
+24-10-05 15:33-INFO-Round 92 starts !
+24-10-05 15:33-INFO-train_autoencoders execute time: 0.6276752948760986 秒
+24-10-05 15:33-INFO-local_train avg execte time: 0.009877637739778197 秒
+24-10-05 15:33-INFO-federate execute time: 0.9016590118408203 秒
+24-10-05 15:33-INFO-[Training Epoch 92] tr_loss = 1260.6955
+24-10-05 15:33-INFO-[Epoch 92] Test_Recall = 0.1416, Test_NDCG = 0.1656,
+test_recall_large = 0.1339, test_recall_medium = 0.1502, test_recall_small = 0.1411, test_ndcg_large = 0.1610, test_ndcg_medium = 0.1740, test_ndcg_small = 0.1620
+24-10-05 15:33-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:33-INFO---------------------------------------------------------------------------------
+24-10-05 15:33-INFO-Round 93 starts !
+24-10-05 15:33-INFO-train_autoencoders execute time: 0.07761335372924805 秒
+24-10-05 15:33-INFO-local_train avg execte time: 0.010502833703163445 秒
+24-10-05 15:33-INFO-federate execute time: 0.5433425903320312 秒
+24-10-05 15:33-INFO-[Training Epoch 93] tr_loss = 1260.1274
+24-10-05 15:33-INFO-[Epoch 93] Test_Recall = 0.1438, Test_NDCG = 0.1713,
+test_recall_large = 0.1397, test_recall_medium = 0.1520, test_recall_small = 0.1397, test_ndcg_large = 0.1680, test_ndcg_medium = 0.1799, test_ndcg_small = 0.1661
+24-10-05 15:33-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:33-INFO---------------------------------------------------------------------------------
+24-10-05 15:33-INFO-Round 94 starts !
+24-10-05 15:33-INFO-train_autoencoders execute time: 1.4786229133605957 秒
+24-10-05 15:34-INFO-local_train avg execte time: 0.011010097420733908 秒
+24-10-05 15:34-INFO-federate execute time: 3.256126880645752 秒
+24-10-05 15:34-INFO-[Training Epoch 94] tr_loss = 1258.3808
+24-10-05 15:34-INFO-[Epoch 94] Test_Recall = 0.1460, Test_NDCG = 0.1732,
+test_recall_large = 0.1371, test_recall_medium = 0.1574, test_recall_small = 0.1441, test_ndcg_large = 0.1632, test_ndcg_medium = 0.1839, test_ndcg_small = 0.1732
+24-10-05 15:34-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:34-INFO---------------------------------------------------------------------------------
+24-10-05 15:34-INFO-Round 95 starts !
+24-10-05 15:34-INFO-train_autoencoders execute time: 1.457855463027954 秒
+24-10-05 15:34-INFO-local_train avg execte time: 0.011552771227483659 秒
+24-10-05 15:34-INFO-federate execute time: 2.4487497806549072 秒
+24-10-05 15:34-INFO-[Training Epoch 95] tr_loss = 1257.5993
+24-10-05 15:34-INFO-[Epoch 95] Test_Recall = 0.1488, Test_NDCG = 0.1780,
+test_recall_large = 0.1382, test_recall_medium = 0.1610, test_recall_small = 0.1481, test_ndcg_large = 0.1677, test_ndcg_medium = 0.1867, test_ndcg_small = 0.1807
+24-10-05 15:34-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:34-INFO---------------------------------------------------------------------------------
+24-10-05 15:34-INFO-Round 96 starts !
+24-10-05 15:34-INFO-train_autoencoders execute time: 2.4707493782043457 秒
+24-10-05 15:34-INFO-local_train avg execte time: 0.009892664178178773 秒
+24-10-05 15:34-INFO-federate execute time: 0.6413290500640869 秒
+24-10-05 15:34-INFO-[Training Epoch 96] tr_loss = 1255.6796
+24-10-05 15:34-INFO-[Epoch 96] Test_Recall = 0.1429, Test_NDCG = 0.1655,
+test_recall_large = 0.1219, test_recall_medium = 0.1583, test_recall_small = 0.1509, test_ndcg_large = 0.1290, test_ndcg_medium = 0.1870, test_ndcg_small = 0.1847
+24-10-05 15:34-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:34-INFO---------------------------------------------------------------------------------
+24-10-05 15:34-INFO-Round 97 starts !
+24-10-05 15:34-INFO-train_autoencoders execute time: 0.11010026931762695 秒
+24-10-05 15:35-INFO-local_train avg execte time: 0.009568345888042753 秒
+24-10-05 15:35-INFO-federate execute time: 0.6354920864105225 秒
+24-10-05 15:35-INFO-[Training Epoch 97] tr_loss = 1254.1611
+24-10-05 15:35-INFO-[Epoch 97] Test_Recall = 0.1428, Test_NDCG = 0.1660,
+test_recall_large = 0.1211, test_recall_medium = 0.1589, test_recall_small = 0.1506, test_ndcg_large = 0.1297, test_ndcg_medium = 0.1867, test_ndcg_small = 0.1859
+24-10-05 15:35-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:35-INFO---------------------------------------------------------------------------------
+24-10-05 15:35-INFO-Round 98 starts !
+24-10-05 15:35-INFO-train_autoencoders execute time: 0.09802627563476562 秒
+24-10-05 15:35-INFO-local_train avg execte time: 0.011397611045635138 秒
+24-10-05 15:35-INFO-federate execute time: 4.701052904129028 秒
+24-10-05 15:35-INFO-[Training Epoch 98] tr_loss = 1253.1191
+24-10-05 15:35-INFO-[Epoch 98] Test_Recall = 0.1462, Test_NDCG = 0.1742,
+test_recall_large = 0.1258, test_recall_medium = 0.1606, test_recall_small = 0.1545, test_ndcg_large = 0.1459, test_ndcg_medium = 0.1902, test_ndcg_small = 0.1901
+24-10-05 15:35-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:35-INFO---------------------------------------------------------------------------------
+24-10-05 15:35-INFO-Round 99 starts !
+24-10-05 15:35-INFO-train_autoencoders execute time: 4.527146577835083 秒
+24-10-05 15:36-INFO-local_train avg execte time: 0.01081637815352083 秒
+24-10-05 15:36-INFO-federate execute time: 2.2615461349487305 秒
+24-10-05 15:36-INFO-[Training Epoch 99] tr_loss = 1251.1067
+24-10-05 15:36-INFO-[Epoch 99] Test_Recall = 0.1456, Test_NDCG = 0.1752,
+test_recall_large = 0.1219, test_recall_medium = 0.1619, test_recall_small = 0.1557, test_ndcg_large = 0.1427, test_ndcg_medium = 0.1951, test_ndcg_small = 0.1917
+24-10-05 15:36-INFO-The Best Test Metrics is at [Epoch 62] Recall = 0.1494, NDCG = 0.1753
+24-10-05 15:36-INFO---------------------------------------------------------------------------------
+24-10-05 15:36-INFO-Round 100 starts !
+24-10-05 15:36-INFO-train_autoencoders execute time: 3.3895254135131836 秒
+24-10-05 15:36-INFO-local_train avg execte time: 0.009223517026527057 秒
+24-10-05 15:36-INFO-federate execute time: 0.6375234127044678 秒
+24-10-05 15:36-INFO-[Training Epoch 100] tr_loss = 1249.7062
+24-10-05 15:36-INFO-[Epoch 100] Test_Recall = 0.1498, Test_NDCG = 0.1800,
+test_recall_large = 0.1312, test_recall_medium = 0.1599, test_recall_small = 0.1606, test_ndcg_large = 0.1557, test_ndcg_medium = 0.1969, test_ndcg_small = 0.1902
+24-10-05 15:36-INFO-The Best Test Metrics is at [Epoch 100] Recall = 0.1498, NDCG = 0.1800
+24-10-05 15:36-INFO---------------------------------------------------------------------------------
+24-10-05 15:36-INFO-Round 101 starts !
+24-10-05 15:36-INFO-train_autoencoders execute time: 0.09428954124450684 秒
+24-10-05 15:36-INFO-local_train avg execte time: 0.011912426791792836 秒
+24-10-05 15:36-INFO-federate execute time: 1.4219577312469482 秒
+24-10-05 15:36-INFO-[Training Epoch 101] tr_loss = 1248.7471
+24-10-05 15:36-INFO-[Epoch 101] Test_Recall = 0.1490, Test_NDCG = 0.1771,
+test_recall_large = 0.1291, test_recall_medium = 0.1615, test_recall_small = 0.1588, test_ndcg_large = 0.1466, test_ndcg_medium = 0.1992, test_ndcg_small = 0.1887
+24-10-05 15:36-INFO-The Best Test Metrics is at [Epoch 100] Recall = 0.1498, NDCG = 0.1800
+24-10-05 15:36-INFO---------------------------------------------------------------------------------
+24-10-05 15:36-INFO-Round 102 starts !
+24-10-05 15:36-INFO-train_autoencoders execute time: 2.2565386295318604 秒
+24-10-05 15:37-INFO-local_train avg execte time: 0.010783711521395444 秒
+24-10-05 15:37-INFO-federate execute time: 1.6041679382324219 秒
+24-10-05 15:37-INFO-[Training Epoch 102] tr_loss = 1246.0019
+24-10-05 15:37-INFO-[Epoch 102] Test_Recall = 0.1490, Test_NDCG = 0.1795,
+test_recall_large = 0.1288, test_recall_medium = 0.1605, test_recall_small = 0.1603, test_ndcg_large = 0.1553, test_ndcg_medium = 0.2009, test_ndcg_small = 0.1845
+24-10-05 15:37-INFO-The Best Test Metrics is at [Epoch 100] Recall = 0.1498, NDCG = 0.1800
+24-10-05 15:37-INFO---------------------------------------------------------------------------------
+24-10-05 15:37-INFO-Round 103 starts !
+24-10-05 15:37-INFO-train_autoencoders execute time: 2.5246310234069824 秒
+24-10-05 15:37-INFO-local_train avg execte time: 0.009728131086929985 秒
+24-10-05 15:37-INFO-federate execute time: 0.5815286636352539 秒
+24-10-05 15:37-INFO-[Training Epoch 103] tr_loss = 1245.1352
+24-10-05 15:37-INFO-[Epoch 103] Test_Recall = 0.1491, Test_NDCG = 0.1870,
+test_recall_large = 0.1276, test_recall_medium = 0.1625, test_recall_small = 0.1597, test_ndcg_large = 0.1694, test_ndcg_medium = 0.2056, test_ndcg_small = 0.1873
+24-10-05 15:37-INFO-The Best Test Metrics is at [Epoch 100] Recall = 0.1498, NDCG = 0.1800
+24-10-05 15:37-INFO---------------------------------------------------------------------------------
+24-10-05 15:37-INFO-Round 104 starts !
+24-10-05 15:37-INFO-train_autoencoders execute time: 0.09362435340881348 秒
+24-10-05 15:37-INFO-local_train avg execte time: 0.010588819376357918 秒
+24-10-05 15:37-INFO-federate execute time: 0.5906388759613037 秒
+24-10-05 15:37-INFO-[Training Epoch 104] tr_loss = 1243.3721
+24-10-05 15:37-INFO-[Epoch 104] Test_Recall = 0.1439, Test_NDCG = 0.1807,
+test_recall_large = 0.1158, test_recall_medium = 0.1578, test_recall_small = 0.1616, test_ndcg_large = 0.1576, test_ndcg_medium = 0.2051, test_ndcg_small = 0.1814
+24-10-05 15:37-INFO-The Best Test Metrics is at [Epoch 100] Recall = 0.1498, NDCG = 0.1800
+24-10-05 15:37-INFO---------------------------------------------------------------------------------
+24-10-05 15:37-INFO-Round 105 starts !
+24-10-05 15:37-INFO-train_autoencoders execute time: 0.09684228897094727 秒
+24-10-05 15:38-INFO-local_train avg execte time: 0.009685522425339052 秒
+24-10-05 15:38-INFO-federate execute time: 0.9633171558380127 秒
+24-10-05 15:38-INFO-[Training Epoch 105] tr_loss = 1240.6490
+24-10-05 15:38-INFO-[Epoch 105] Test_Recall = 0.1459, Test_NDCG = 0.1851,
+test_recall_large = 0.1239, test_recall_medium = 0.1589, test_recall_small = 0.1574, test_ndcg_large = 0.1686, test_ndcg_medium = 0.2059, test_ndcg_small = 0.1820
+24-10-05 15:38-INFO-The Best Test Metrics is at [Epoch 100] Recall = 0.1498, NDCG = 0.1800
+24-10-05 15:38-INFO---------------------------------------------------------------------------------
+24-10-05 15:38-INFO-Round 106 starts !
+24-10-05 15:38-INFO-train_autoencoders execute time: 1.0993366241455078 秒
+24-10-05 15:38-INFO-local_train avg execte time: 0.009790299932372659 秒
+24-10-05 15:38-INFO-federate execute time: 0.6087846755981445 秒
+24-10-05 15:38-INFO-[Training Epoch 106] tr_loss = 1238.9383
+24-10-05 15:38-INFO-[Epoch 106] Test_Recall = 0.1519, Test_NDCG = 0.1956,
+test_recall_large = 0.1437, test_recall_medium = 0.1554, test_recall_small = 0.1579, test_ndcg_large = 0.2001, test_ndcg_medium = 0.2047, test_ndcg_small = 0.1808
+24-10-05 15:38-INFO-The Best Test Metrics is at [Epoch 106] Recall = 0.1519, NDCG = 0.1956
+24-10-05 15:38-INFO---------------------------------------------------------------------------------
+24-10-05 15:38-INFO-Round 107 starts !
+24-10-05 15:38-INFO-train_autoencoders execute time: 0.09747123718261719 秒
+24-10-05 15:38-INFO-local_train avg execte time: 0.011100365779306325 秒
+24-10-05 15:38-INFO-federate execute time: 0.846118688583374 秒
+24-10-05 15:38-INFO-[Training Epoch 107] tr_loss = 1237.3226
+24-10-05 15:38-INFO-[Epoch 107] Test_Recall = 0.1526, Test_NDCG = 0.1922,
+test_recall_large = 0.1413, test_recall_medium = 0.1579, test_recall_small = 0.1600, test_ndcg_large = 0.1917, test_ndcg_medium = 0.2015, test_ndcg_small = 0.1826
+24-10-05 15:38-INFO-The Best Test Metrics is at [Epoch 107] Recall = 0.1526, NDCG = 0.1922
+24-10-05 15:38-INFO---------------------------------------------------------------------------------
+24-10-05 15:38-INFO-Round 108 starts !
+24-10-05 15:38-INFO-train_autoencoders execute time: 0.19644975662231445 秒
+24-10-05 15:39-INFO-local_train avg execte time: 0.009938669103579961 秒
+24-10-05 15:39-INFO-federate execute time: 0.6372361183166504 秒
+24-10-05 15:39-INFO-[Training Epoch 108] tr_loss = 1235.1885
+24-10-05 15:39-INFO-[Epoch 108] Test_Recall = 0.1505, Test_NDCG = 0.1840,
+test_recall_large = 0.1370, test_recall_medium = 0.1617, test_recall_small = 0.1543, test_ndcg_large = 0.1838, test_ndcg_medium = 0.2012, test_ndcg_small = 0.1657
+24-10-05 15:39-INFO-The Best Test Metrics is at [Epoch 107] Recall = 0.1526, NDCG = 0.1922
+24-10-05 15:39-INFO---------------------------------------------------------------------------------
+24-10-05 15:39-INFO-Round 109 starts !
+24-10-05 15:39-INFO-train_autoencoders execute time: 0.22693133354187012 秒
+24-10-05 15:39-INFO-local_train avg execte time: 0.009484224329571203 秒
+24-10-05 15:39-INFO-federate execute time: 1.0599417686462402 秒
+24-10-05 15:39-INFO-[Training Epoch 109] tr_loss = 1232.4072
+24-10-05 15:39-INFO-[Epoch 109] Test_Recall = 0.1566, Test_NDCG = 0.1906,
+test_recall_large = 0.1511, test_recall_medium = 0.1638, test_recall_small = 0.1553, test_ndcg_large = 0.1990, test_ndcg_medium = 0.2046, test_ndcg_small = 0.1657
+24-10-05 15:39-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:39-INFO---------------------------------------------------------------------------------
+24-10-05 15:39-INFO-Round 110 starts !
+24-10-05 15:39-INFO-train_autoencoders execute time: 1.5951237678527832 秒
+24-10-05 15:39-INFO-local_train avg execte time: 0.009712269551427847 秒
+24-10-05 15:39-INFO-federate execute time: 0.4498014450073242 秒
+24-10-05 15:39-INFO-[Training Epoch 110] tr_loss = 1230.4234
+24-10-05 15:39-INFO-[Epoch 110] Test_Recall = 0.1522, Test_NDCG = 0.1888,
+test_recall_large = 0.1429, test_recall_medium = 0.1595, test_recall_small = 0.1552, test_ndcg_large = 0.1961, test_ndcg_medium = 0.2031, test_ndcg_small = 0.1651
+24-10-05 15:39-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:39-INFO---------------------------------------------------------------------------------
+24-10-05 15:39-INFO-Round 111 starts !
+24-10-05 15:39-INFO-train_autoencoders execute time: 0.10691404342651367 秒
+24-10-05 15:39-INFO-local_train avg execte time: 0.011154325744127292 秒
+24-10-05 15:39-INFO-federate execute time: 2.0299465656280518 秒
+24-10-05 15:39-INFO-[Training Epoch 111] tr_loss = 1227.1529
+24-10-05 15:39-INFO-[Epoch 111] Test_Recall = 0.1508, Test_NDCG = 0.1902,
+test_recall_large = 0.1458, test_recall_medium = 0.1562, test_recall_small = 0.1508, test_ndcg_large = 0.2027, test_ndcg_medium = 0.2023, test_ndcg_small = 0.1625
+24-10-05 15:39-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:39-INFO---------------------------------------------------------------------------------
+24-10-05 15:39-INFO-Round 112 starts !
+24-10-05 15:39-INFO-train_autoencoders execute time: 1.703678846359253 秒
+24-10-05 15:40-INFO-local_train avg execte time: 0.010146310195437418 秒
+24-10-05 15:40-INFO-federate execute time: 3.31424617767334 秒
+24-10-05 15:40-INFO-[Training Epoch 112] tr_loss = 1225.3731
+24-10-05 15:40-INFO-[Epoch 112] Test_Recall = 0.1512, Test_NDCG = 0.1916,
+test_recall_large = 0.1463, test_recall_medium = 0.1536, test_recall_small = 0.1544, test_ndcg_large = 0.2057, test_ndcg_medium = 0.2004, test_ndcg_small = 0.1656
+24-10-05 15:40-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:40-INFO---------------------------------------------------------------------------------
+24-10-05 15:40-INFO-Round 113 starts !
+24-10-05 15:40-INFO-train_autoencoders execute time: 2.9126081466674805 秒
+24-10-05 15:40-INFO-local_train avg execte time: 0.009292108509472295 秒
+24-10-05 15:40-INFO-federate execute time: 0.584179162979126 秒
+24-10-05 15:40-INFO-[Training Epoch 113] tr_loss = 1222.4221
+24-10-05 15:40-INFO-[Epoch 113] Test_Recall = 0.1521, Test_NDCG = 0.1905,
+test_recall_large = 0.1512, test_recall_medium = 0.1507, test_recall_small = 0.1548, test_ndcg_large = 0.2140, test_ndcg_medium = 0.1913, test_ndcg_small = 0.1621
+24-10-05 15:40-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:40-INFO---------------------------------------------------------------------------------
+24-10-05 15:40-INFO-Round 114 starts !
+24-10-05 15:40-INFO-train_autoencoders execute time: 0.10086584091186523 秒
+24-10-05 15:40-INFO-local_train avg execte time: 0.010535807017936182 秒
+24-10-05 15:41-INFO-federate execute time: 3.154339075088501 秒
+24-10-05 15:41-INFO-[Training Epoch 114] tr_loss = 1219.0713
+24-10-05 15:41-INFO-[Epoch 114] Test_Recall = 0.1491, Test_NDCG = 0.1881,
+test_recall_large = 0.1549, test_recall_medium = 0.1421, test_recall_small = 0.1498, test_ndcg_large = 0.2189, test_ndcg_medium = 0.1846, test_ndcg_small = 0.1560
+24-10-05 15:41-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:41-INFO---------------------------------------------------------------------------------
+24-10-05 15:41-INFO-Round 115 starts !
+24-10-05 15:41-INFO-train_autoencoders execute time: 3.9104762077331543 秒
+24-10-05 15:41-INFO-local_train avg execte time: 0.010720340469861965 秒
+24-10-05 15:41-INFO-federate execute time: 0.829639196395874 秒
+24-10-05 15:41-INFO-[Training Epoch 115] tr_loss = 1215.4030
+24-10-05 15:41-INFO-[Epoch 115] Test_Recall = 0.1452, Test_NDCG = 0.1845,
+test_recall_large = 0.1553, test_recall_medium = 0.1311, test_recall_small = 0.1486, test_ndcg_large = 0.2198, test_ndcg_medium = 0.1750, test_ndcg_small = 0.1536
+24-10-05 15:41-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:41-INFO---------------------------------------------------------------------------------
+24-10-05 15:41-INFO-Round 116 starts !
+24-10-05 15:41-INFO-train_autoencoders execute time: 0.4770352840423584 秒
+24-10-05 15:41-INFO-local_train avg execte time: 0.00956090485177389 秒
+24-10-05 15:41-INFO-federate execute time: 1.2533910274505615 秒
+24-10-05 15:41-INFO-[Training Epoch 116] tr_loss = 1212.5756
+24-10-05 15:41-INFO-[Epoch 116] Test_Recall = 0.1447, Test_NDCG = 0.1820,
+test_recall_large = 0.1556, test_recall_medium = 0.1269, test_recall_small = 0.1511, test_ndcg_large = 0.2201, test_ndcg_medium = 0.1670, test_ndcg_small = 0.1538
+24-10-05 15:41-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:41-INFO---------------------------------------------------------------------------------
+24-10-05 15:41-INFO-Round 117 starts !
+24-10-05 15:41-INFO-train_autoencoders execute time: 0.11307621002197266 秒
+24-10-05 15:41-INFO-local_train avg execte time: 0.009803391463683241 秒
+24-10-05 15:41-INFO-federate execute time: 0.6006205081939697 秒
+24-10-05 15:41-INFO-[Training Epoch 117] tr_loss = 1209.5243
+24-10-05 15:41-INFO-[Epoch 117] Test_Recall = 0.1404, Test_NDCG = 0.1781,
+test_recall_large = 0.1561, test_recall_medium = 0.1202, test_recall_small = 0.1439, test_ndcg_large = 0.2173, test_ndcg_medium = 0.1591, test_ndcg_small = 0.1528
+24-10-05 15:41-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:41-INFO---------------------------------------------------------------------------------
+24-10-05 15:41-INFO-Round 118 starts !
+24-10-05 15:41-INFO-train_autoencoders execute time: 0.09342789649963379 秒
+24-10-05 15:42-INFO-local_train avg execte time: 0.011048334653658174 秒
+24-10-05 15:42-INFO-federate execute time: 1.900994062423706 秒
+24-10-05 15:42-INFO-[Training Epoch 118] tr_loss = 1207.0816
+24-10-05 15:42-INFO-[Epoch 118] Test_Recall = 0.1383, Test_NDCG = 0.1760,
+test_recall_large = 0.1554, test_recall_medium = 0.1182, test_recall_small = 0.1401, test_ndcg_large = 0.2191, test_ndcg_medium = 0.1595, test_ndcg_small = 0.1436
+24-10-05 15:42-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:42-INFO---------------------------------------------------------------------------------
+24-10-05 15:42-INFO-Round 119 starts !
+24-10-05 15:42-INFO-train_autoencoders execute time: 2.9709978103637695 秒
+24-10-05 15:42-INFO-local_train avg execte time: 0.011232637019071448 秒
+24-10-05 15:42-INFO-federate execute time: 2.2003889083862305 秒
+24-10-05 15:42-INFO-[Training Epoch 119] tr_loss = 1202.7676
+24-10-05 15:42-INFO-[Epoch 119] Test_Recall = 0.1394, Test_NDCG = 0.1797,
+test_recall_large = 0.1552, test_recall_medium = 0.1180, test_recall_small = 0.1440, test_ndcg_large = 0.2194, test_ndcg_medium = 0.1624, test_ndcg_small = 0.1522
+24-10-05 15:42-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:42-INFO---------------------------------------------------------------------------------
+24-10-05 15:42-INFO-Round 120 starts !
+24-10-05 15:42-INFO-train_autoencoders execute time: 3.3885512351989746 秒
+24-10-05 15:43-INFO-local_train avg execte time: 0.009509961653109699 秒
+24-10-05 15:43-INFO-federate execute time: 0.8208980560302734 秒
+24-10-05 15:43-INFO-[Training Epoch 120] tr_loss = 1200.1360
+24-10-05 15:43-INFO-[Epoch 120] Test_Recall = 0.1379, Test_NDCG = 0.1799,
+test_recall_large = 0.1569, test_recall_medium = 0.1131, test_recall_small = 0.1425, test_ndcg_large = 0.2231, test_ndcg_medium = 0.1583, test_ndcg_small = 0.1529
+24-10-05 15:43-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:43-INFO---------------------------------------------------------------------------------
+24-10-05 15:43-INFO-Round 121 starts !
+24-10-05 15:43-INFO-train_autoencoders execute time: 0.09639692306518555 秒
+24-10-05 15:43-INFO-local_train avg execte time: 0.009170410868218948 秒
+24-10-05 15:43-INFO-federate execute time: 0.6044306755065918 秒
+24-10-05 15:43-INFO-[Training Epoch 121] tr_loss = 1195.7523
+24-10-05 15:43-INFO-[Epoch 121] Test_Recall = 0.1384, Test_NDCG = 0.1834,
+test_recall_large = 0.1557, test_recall_medium = 0.1175, test_recall_small = 0.1407, test_ndcg_large = 0.2218, test_ndcg_medium = 0.1697, test_ndcg_small = 0.1534
+24-10-05 15:43-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:43-INFO---------------------------------------------------------------------------------
+24-10-05 15:43-INFO-Round 122 starts !
+24-10-05 15:43-INFO-train_autoencoders execute time: 0.10159969329833984 秒
+24-10-05 15:43-INFO-local_train avg execte time: 0.011136788957824384 秒
+24-10-05 15:43-INFO-federate execute time: 2.2043914794921875 秒
+24-10-05 15:43-INFO-[Training Epoch 122] tr_loss = 1192.8756
+24-10-05 15:43-INFO-[Epoch 122] Test_Recall = 0.1401, Test_NDCG = 0.1872,
+test_recall_large = 0.1580, test_recall_medium = 0.1192, test_recall_small = 0.1417, test_ndcg_large = 0.2274, test_ndcg_medium = 0.1756, test_ndcg_small = 0.1527
+24-10-05 15:43-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:43-INFO---------------------------------------------------------------------------------
+24-10-05 15:43-INFO-Round 123 starts !
+24-10-05 15:43-INFO-train_autoencoders execute time: 2.8180034160614014 秒
+24-10-05 15:43-INFO-local_train avg execte time: 0.009943699154090274 秒
+24-10-05 15:43-INFO-federate execute time: 0.6200466156005859 秒
+24-10-05 15:43-INFO-[Training Epoch 123] tr_loss = 1189.4976
+24-10-05 15:43-INFO-[Epoch 123] Test_Recall = 0.1384, Test_NDCG = 0.1878,
+test_recall_large = 0.1580, test_recall_medium = 0.1219, test_recall_small = 0.1332, test_ndcg_large = 0.2266, test_ndcg_medium = 0.1855, test_ndcg_small = 0.1450
+24-10-05 15:43-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:43-INFO---------------------------------------------------------------------------------
+24-10-05 15:43-INFO-Round 124 starts !
+24-10-05 15:43-INFO-train_autoencoders execute time: 0.14755463600158691 秒
+24-10-05 15:44-INFO-local_train avg execte time: 0.009907433235759067 秒
+24-10-05 15:44-INFO-federate execute time: 1.1220035552978516 秒
+24-10-05 15:44-INFO-[Training Epoch 124] tr_loss = 1184.4223
+24-10-05 15:44-INFO-[Epoch 124] Test_Recall = 0.1395, Test_NDCG = 0.1907,
+test_recall_large = 0.1572, test_recall_medium = 0.1244, test_recall_small = 0.1353, test_ndcg_large = 0.2259, test_ndcg_medium = 0.1912, test_ndcg_small = 0.1492
+24-10-05 15:44-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:44-INFO---------------------------------------------------------------------------------
+24-10-05 15:44-INFO-Round 125 starts !
+24-10-05 15:44-INFO-train_autoencoders execute time: 0.21630096435546875 秒
+24-10-05 15:44-INFO-local_train avg execte time: 0.01139834071267574 秒
+24-10-05 15:44-INFO-federate execute time: 1.1889925003051758 秒
+24-10-05 15:44-INFO-[Training Epoch 125] tr_loss = 1180.5669
+24-10-05 15:44-INFO-[Epoch 125] Test_Recall = 0.1387, Test_NDCG = 0.1937,
+test_recall_large = 0.1563, test_recall_medium = 0.1236, test_recall_small = 0.1343, test_ndcg_large = 0.2272, test_ndcg_medium = 0.1918, test_ndcg_small = 0.1567
+24-10-05 15:44-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:44-INFO---------------------------------------------------------------------------------
+24-10-05 15:44-INFO-Round 126 starts !
+24-10-05 15:44-INFO-train_autoencoders execute time: 1.1679186820983887 秒
+24-10-05 15:44-INFO-local_train avg execte time: 0.009227671779984507 秒
+24-10-05 15:44-INFO-federate execute time: 0.7200922966003418 秒
+24-10-05 15:44-INFO-[Training Epoch 126] tr_loss = 1176.9608
+24-10-05 15:44-INFO-[Epoch 126] Test_Recall = 0.1402, Test_NDCG = 0.1948,
+test_recall_large = 0.1558, test_recall_medium = 0.1273, test_recall_small = 0.1359, test_ndcg_large = 0.2254, test_ndcg_medium = 0.1955, test_ndcg_small = 0.1582
+24-10-05 15:44-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:44-INFO---------------------------------------------------------------------------------
+24-10-05 15:44-INFO-Round 127 starts !
+24-10-05 15:44-INFO-train_autoencoders execute time: 0.10486626625061035 秒
+24-10-05 15:45-INFO-local_train avg execte time: 0.01124393320538712 秒
+24-10-05 15:45-INFO-federate execute time: 1.8697457313537598 秒
+24-10-05 15:45-INFO-[Training Epoch 127] tr_loss = 1172.4288
+24-10-05 15:45-INFO-[Epoch 127] Test_Recall = 0.1405, Test_NDCG = 0.1959,
+test_recall_large = 0.1568, test_recall_medium = 0.1276, test_recall_small = 0.1353, test_ndcg_large = 0.2229, test_ndcg_medium = 0.1987, test_ndcg_small = 0.1614
+24-10-05 15:45-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:45-INFO---------------------------------------------------------------------------------
+24-10-05 15:45-INFO-Round 128 starts !
+24-10-05 15:45-INFO-train_autoencoders execute time: 2.308959722518921 秒
+24-10-05 15:45-INFO-local_train avg execte time: 0.010831103471531468 秒
+24-10-05 15:45-INFO-federate execute time: 0.6222383975982666 秒
+24-10-05 15:45-INFO-[Training Epoch 128] tr_loss = 1167.9055
+24-10-05 15:45-INFO-[Epoch 128] Test_Recall = 0.1391, Test_NDCG = 0.1934,
+test_recall_large = 0.1568, test_recall_medium = 0.1285, test_recall_small = 0.1300, test_ndcg_large = 0.2225, test_ndcg_medium = 0.2020, test_ndcg_small = 0.1503
+24-10-05 15:45-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:45-INFO---------------------------------------------------------------------------------
+24-10-05 15:45-INFO-Round 129 starts !
+24-10-05 15:45-INFO-train_autoencoders execute time: 0.09367227554321289 秒
+24-10-05 15:45-INFO-local_train avg execte time: 0.009396934307013438 秒
+24-10-05 15:45-INFO-federate execute time: 0.9027972221374512 秒
+24-10-05 15:45-INFO-[Training Epoch 129] tr_loss = 1165.7091
+24-10-05 15:45-INFO-[Epoch 129] Test_Recall = 0.1392, Test_NDCG = 0.1940,
+test_recall_large = 0.1567, test_recall_medium = 0.1290, test_recall_small = 0.1298, test_ndcg_large = 0.2219, test_ndcg_medium = 0.2063, test_ndcg_small = 0.1482
+24-10-05 15:45-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:45-INFO---------------------------------------------------------------------------------
+24-10-05 15:45-INFO-Round 130 starts !
+24-10-05 15:45-INFO-train_autoencoders execute time: 0.16656947135925293 秒
+24-10-05 15:46-INFO-local_train avg execte time: 0.011222500057766571 秒
+24-10-05 15:46-INFO-federate execute time: 0.6336681842803955 秒
+24-10-05 15:46-INFO-[Training Epoch 130] tr_loss = 1159.6329
+24-10-05 15:46-INFO-[Epoch 130] Test_Recall = 0.1366, Test_NDCG = 0.1903,
+test_recall_large = 0.1556, test_recall_medium = 0.1289, test_recall_small = 0.1227, test_ndcg_large = 0.2207, test_ndcg_medium = 0.2037, test_ndcg_small = 0.1405
+24-10-05 15:46-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:46-INFO---------------------------------------------------------------------------------
+24-10-05 15:46-INFO-Round 131 starts !
+24-10-05 15:46-INFO-train_autoencoders execute time: 0.10150146484375 秒
+24-10-05 15:46-INFO-local_train avg execte time: 0.009686108990666216 秒
+24-10-05 15:46-INFO-federate execute time: 0.7447917461395264 秒
+24-10-05 15:46-INFO-[Training Epoch 131] tr_loss = 1155.5578
+24-10-05 15:46-INFO-[Epoch 131] Test_Recall = 0.1387, Test_NDCG = 0.1935,
+test_recall_large = 0.1561, test_recall_medium = 0.1297, test_recall_small = 0.1280, test_ndcg_large = 0.2209, test_ndcg_medium = 0.2084, test_ndcg_small = 0.1454
+24-10-05 15:46-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:46-INFO---------------------------------------------------------------------------------
+24-10-05 15:46-INFO-Round 132 starts !
+24-10-05 15:46-INFO-train_autoencoders execute time: 1.996964931488037 秒
+24-10-05 15:46-INFO-local_train avg execte time: 0.009577466978880154 秒
+24-10-05 15:46-INFO-federate execute time: 1.2041571140289307 秒
+24-10-05 15:46-INFO-[Training Epoch 132] tr_loss = 1150.5880
+24-10-05 15:46-INFO-[Epoch 132] Test_Recall = 0.1398, Test_NDCG = 0.1960,
+test_recall_large = 0.1561, test_recall_medium = 0.1315, test_recall_small = 0.1296, test_ndcg_large = 0.2207, test_ndcg_medium = 0.2090, test_ndcg_small = 0.1534
+24-10-05 15:46-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:46-INFO---------------------------------------------------------------------------------
+24-10-05 15:46-INFO-Round 133 starts !
+24-10-05 15:46-INFO-train_autoencoders execute time: 0.11519670486450195 秒
+24-10-05 15:47-INFO-local_train avg execte time: 0.010432680490034636 秒
+24-10-05 15:47-INFO-federate execute time: 2.6522939205169678 秒
+24-10-05 15:47-INFO-[Training Epoch 133] tr_loss = 1145.2971
+24-10-05 15:47-INFO-[Epoch 133] Test_Recall = 0.1398, Test_NDCG = 0.1954,
+test_recall_large = 0.1563, test_recall_medium = 0.1323, test_recall_small = 0.1286, test_ndcg_large = 0.2204, test_ndcg_medium = 0.2106, test_ndcg_small = 0.1500
+24-10-05 15:47-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:47-INFO---------------------------------------------------------------------------------
+24-10-05 15:47-INFO-Round 134 starts !
+24-10-05 15:47-INFO-train_autoencoders execute time: 1.0566215515136719 秒
+24-10-05 15:47-INFO-local_train avg execte time: 0.009541492573403351 秒
+24-10-05 15:47-INFO-federate execute time: 1.766538143157959 秒
+24-10-05 15:47-INFO-[Training Epoch 134] tr_loss = 1141.1643
+24-10-05 15:47-INFO-[Epoch 134] Test_Recall = 0.1393, Test_NDCG = 0.1968,
+test_recall_large = 0.1557, test_recall_medium = 0.1296, test_recall_small = 0.1306, test_ndcg_large = 0.2178, test_ndcg_medium = 0.2088, test_ndcg_small = 0.1595
+24-10-05 15:47-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:47-INFO---------------------------------------------------------------------------------
+24-10-05 15:47-INFO-Round 135 starts !
+24-10-05 15:47-INFO-train_autoencoders execute time: 0.10735464096069336 秒
+24-10-05 15:47-INFO-local_train avg execte time: 0.009875332689740371 秒
+24-10-05 15:47-INFO-federate execute time: 0.5658442974090576 秒
+24-10-05 15:47-INFO-[Training Epoch 135] tr_loss = 1136.5577
+24-10-05 15:47-INFO-[Epoch 135] Test_Recall = 0.1404, Test_NDCG = 0.2010,
+test_recall_large = 0.1557, test_recall_medium = 0.1305, test_recall_small = 0.1332, test_ndcg_large = 0.2183, test_ndcg_medium = 0.2104, test_ndcg_small = 0.1706
+24-10-05 15:47-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:47-INFO---------------------------------------------------------------------------------
+24-10-05 15:47-INFO-Round 136 starts !
+24-10-05 15:47-INFO-train_autoencoders execute time: 0.09157705307006836 秒
+24-10-05 15:47-INFO-local_train avg execte time: 0.00991771961952444 秒
+24-10-05 15:47-INFO-federate execute time: 1.2697930335998535 秒
+24-10-05 15:47-INFO-[Training Epoch 136] tr_loss = 1132.6494
+24-10-05 15:47-INFO-[Epoch 136] Test_Recall = 0.1414, Test_NDCG = 0.2034,
+test_recall_large = 0.1565, test_recall_medium = 0.1306, test_recall_small = 0.1353, test_ndcg_large = 0.2176, test_ndcg_medium = 0.2118, test_ndcg_small = 0.1778
+24-10-05 15:47-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:47-INFO---------------------------------------------------------------------------------
+24-10-05 15:47-INFO-Round 137 starts !
+24-10-05 15:47-INFO-train_autoencoders execute time: 0.09535408020019531 秒
+24-10-05 15:48-INFO-local_train avg execte time: 0.009601937877537716 秒
+24-10-05 15:48-INFO-federate execute time: 0.5675456523895264 秒
+24-10-05 15:48-INFO-[Training Epoch 137] tr_loss = 1126.8459
+24-10-05 15:48-INFO-[Epoch 137] Test_Recall = 0.1430, Test_NDCG = 0.2052,
+test_recall_large = 0.1564, test_recall_medium = 0.1333, test_recall_small = 0.1378, test_ndcg_large = 0.2171, test_ndcg_medium = 0.2132, test_ndcg_small = 0.1827
+24-10-05 15:48-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:48-INFO---------------------------------------------------------------------------------
+24-10-05 15:48-INFO-Round 138 starts !
+24-10-05 15:48-INFO-train_autoencoders execute time: 0.0922696590423584 秒
+24-10-05 15:48-INFO-local_train avg execte time: 0.01073321709577251 秒
+24-10-05 15:48-INFO-federate execute time: 3.013380289077759 秒
+24-10-05 15:48-INFO-[Training Epoch 138] tr_loss = 1123.1593
+24-10-05 15:48-INFO-[Epoch 138] Test_Recall = 0.1452, Test_NDCG = 0.2053,
+test_recall_large = 0.1552, test_recall_medium = 0.1402, test_recall_small = 0.1390, test_ndcg_large = 0.2160, test_ndcg_medium = 0.2168, test_ndcg_small = 0.1805
+24-10-05 15:48-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:48-INFO---------------------------------------------------------------------------------
+24-10-05 15:48-INFO-Round 139 starts !
+24-10-05 15:48-INFO-train_autoencoders execute time: 3.0925846099853516 秒
+24-10-05 15:48-INFO-local_train avg execte time: 0.01049343778624388 秒
+24-10-05 15:48-INFO-federate execute time: 1.64617919921875 秒
+24-10-05 15:48-INFO-[Training Epoch 139] tr_loss = 1119.3054
+24-10-05 15:48-INFO-[Epoch 139] Test_Recall = 0.1474, Test_NDCG = 0.2085,
+test_recall_large = 0.1554, test_recall_medium = 0.1437, test_recall_small = 0.1422, test_ndcg_large = 0.2155, test_ndcg_medium = 0.2197, test_ndcg_small = 0.1884
+24-10-05 15:48-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:48-INFO---------------------------------------------------------------------------------
+24-10-05 15:48-INFO-Round 140 starts !
+24-10-05 15:49-INFO-train_autoencoders execute time: 2.6888976097106934 秒
+24-10-05 15:49-INFO-local_train avg execte time: 0.009819034048507222 秒
+24-10-05 15:49-INFO-federate execute time: 0.5665228366851807 秒
+24-10-05 15:49-INFO-[Training Epoch 140] tr_loss = 1113.0977
+24-10-05 15:49-INFO-[Epoch 140] Test_Recall = 0.1475, Test_NDCG = 0.2087,
+test_recall_large = 0.1543, test_recall_medium = 0.1431, test_recall_small = 0.1443, test_ndcg_large = 0.2151, test_ndcg_medium = 0.2198, test_ndcg_small = 0.1894
+24-10-05 15:49-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:49-INFO---------------------------------------------------------------------------------
+24-10-05 15:49-INFO-Round 141 starts !
+24-10-05 15:49-INFO-train_autoencoders execute time: 0.11706829071044922 秒
+24-10-05 15:49-INFO-local_train avg execte time: 0.009581750675577627 秒
+24-10-05 15:49-INFO-federate execute time: 0.5973944664001465 秒
+24-10-05 15:49-INFO-[Training Epoch 141] tr_loss = 1108.1139
+24-10-05 15:49-INFO-[Epoch 141] Test_Recall = 0.1492, Test_NDCG = 0.2112,
+test_recall_large = 0.1548, test_recall_medium = 0.1466, test_recall_small = 0.1456, test_ndcg_large = 0.2159, test_ndcg_medium = 0.2209, test_ndcg_small = 0.1951
+24-10-05 15:49-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:49-INFO---------------------------------------------------------------------------------
+24-10-05 15:49-INFO-Round 142 starts !
+24-10-05 15:49-INFO-train_autoencoders execute time: 0.10410594940185547 秒
+24-10-05 15:49-INFO-local_train avg execte time: 0.010131796243208464 秒
+24-10-05 15:49-INFO-federate execute time: 0.8269083499908447 秒
+24-10-05 15:49-INFO-[Training Epoch 142] tr_loss = 1106.4030
+24-10-05 15:49-INFO-[Epoch 142] Test_Recall = 0.1468, Test_NDCG = 0.2102,
+test_recall_large = 0.1529, test_recall_medium = 0.1434, test_recall_small = 0.1434, test_ndcg_large = 0.2139, test_ndcg_medium = 0.2192, test_ndcg_small = 0.1961
+24-10-05 15:49-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:49-INFO---------------------------------------------------------------------------------
+24-10-05 15:49-INFO-Round 143 starts !
+24-10-05 15:49-INFO-train_autoencoders execute time: 0.6917603015899658 秒
+24-10-05 15:50-INFO-local_train avg execte time: 0.010132481412189762 秒
+24-10-05 15:50-INFO-federate execute time: 0.7883117198944092 秒
+24-10-05 15:50-INFO-[Training Epoch 143] tr_loss = 1101.0371
+24-10-05 15:50-INFO-[Epoch 143] Test_Recall = 0.1488, Test_NDCG = 0.2128,
+test_recall_large = 0.1546, test_recall_medium = 0.1478, test_recall_small = 0.1432, test_ndcg_large = 0.2149, test_ndcg_medium = 0.2222, test_ndcg_small = 0.2003
+24-10-05 15:50-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:50-INFO---------------------------------------------------------------------------------
+24-10-05 15:50-INFO-Round 144 starts !
+24-10-05 15:50-INFO-train_autoencoders execute time: 1.5079894065856934 秒
+24-10-05 15:50-INFO-local_train avg execte time: 0.009449299926596 秒
+24-10-05 15:50-INFO-federate execute time: 1.531116008758545 秒
+24-10-05 15:50-INFO-[Training Epoch 144] tr_loss = 1094.7810
+24-10-05 15:50-INFO-[Epoch 144] Test_Recall = 0.1516, Test_NDCG = 0.2145,
+test_recall_large = 0.1547, test_recall_medium = 0.1544, test_recall_small = 0.1449, test_ndcg_large = 0.2163, test_ndcg_medium = 0.2240, test_ndcg_small = 0.2022
+24-10-05 15:50-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:50-INFO---------------------------------------------------------------------------------
+24-10-05 15:50-INFO-Round 145 starts !
+24-10-05 15:50-INFO-train_autoencoders execute time: 1.3202571868896484 秒
+24-10-05 15:50-INFO-local_train avg execte time: 0.009747384082474612 秒
+24-10-05 15:50-INFO-federate execute time: 0.6917414665222168 秒
+24-10-05 15:50-INFO-[Training Epoch 145] tr_loss = 1091.0488
+24-10-05 15:50-INFO-[Epoch 145] Test_Recall = 0.1525, Test_NDCG = 0.2152,
+test_recall_large = 0.1543, test_recall_medium = 0.1578, test_recall_small = 0.1449, test_ndcg_large = 0.2152, test_ndcg_medium = 0.2272, test_ndcg_small = 0.2024
+24-10-05 15:50-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:50-INFO---------------------------------------------------------------------------------
+24-10-05 15:50-INFO-Round 146 starts !
+24-10-05 15:50-INFO-train_autoencoders execute time: 0.09727144241333008 秒
+24-10-05 15:51-INFO-local_train avg execte time: 0.009852441977847798 秒
+24-10-05 15:51-INFO-federate execute time: 1.5625667572021484 秒
+24-10-05 15:51-INFO-[Training Epoch 146] tr_loss = 1086.7513
+24-10-05 15:51-INFO-[Epoch 146] Test_Recall = 0.1537, Test_NDCG = 0.2163,
+test_recall_large = 0.1557, test_recall_medium = 0.1568, test_recall_small = 0.1479, test_ndcg_large = 0.2164, test_ndcg_medium = 0.2268, test_ndcg_small = 0.2051
+24-10-05 15:51-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:51-INFO---------------------------------------------------------------------------------
+24-10-05 15:51-INFO-Round 147 starts !
+24-10-05 15:51-INFO-train_autoencoders execute time: 0.46895360946655273 秒
+24-10-05 15:51-INFO-local_train avg execte time: 0.010109009697227438 秒
+24-10-05 15:51-INFO-federate execute time: 1.2241120338439941 秒
+24-10-05 15:51-INFO-[Training Epoch 147] tr_loss = 1083.8713
+24-10-05 15:51-INFO-[Epoch 147] Test_Recall = 0.1541, Test_NDCG = 0.2171,
+test_recall_large = 0.1554, test_recall_medium = 0.1573, test_recall_small = 0.1491, test_ndcg_large = 0.2168, test_ndcg_medium = 0.2266, test_ndcg_small = 0.2073
+24-10-05 15:51-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:51-INFO---------------------------------------------------------------------------------
+24-10-05 15:51-INFO-Round 148 starts !
+24-10-05 15:51-INFO-train_autoencoders execute time: 0.21761393547058105 秒
+24-10-05 15:51-INFO-local_train avg execte time: 0.01114899002228916 秒
+24-10-05 15:51-INFO-federate execute time: 0.5849788188934326 秒
+24-10-05 15:51-INFO-[Training Epoch 148] tr_loss = 1080.3970
+24-10-05 15:51-INFO-[Epoch 148] Test_Recall = 0.1539, Test_NDCG = 0.2169,
+test_recall_large = 0.1550, test_recall_medium = 0.1569, test_recall_small = 0.1495, test_ndcg_large = 0.2152, test_ndcg_medium = 0.2267, test_ndcg_small = 0.2083
+24-10-05 15:51-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:51-INFO---------------------------------------------------------------------------------
+24-10-05 15:51-INFO-Round 149 starts !
+24-10-05 15:51-INFO-train_autoencoders execute time: 0.09538388252258301 秒
+24-10-05 15:51-INFO-local_train avg execte time: 0.009214180018970088 秒
+24-10-05 15:52-INFO-federate execute time: 0.595789909362793 秒
+24-10-05 15:52-INFO-[Training Epoch 149] tr_loss = 1076.4172
+24-10-05 15:52-INFO-[Epoch 149] Test_Recall = 0.1544, Test_NDCG = 0.2178,
+test_recall_large = 0.1543, test_recall_medium = 0.1578, test_recall_small = 0.1509, test_ndcg_large = 0.2149, test_ndcg_medium = 0.2269, test_ndcg_small = 0.2114
+24-10-05 15:52-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:52-INFO---------------------------------------------------------------------------------
+24-10-05 15:52-INFO-Round 150 starts !
+24-10-05 15:52-INFO-train_autoencoders execute time: 0.09089183807373047 秒
+24-10-05 15:52-INFO-local_train avg execte time: 0.010474784250350418 秒
+24-10-05 15:52-INFO-federate execute time: 0.5658285617828369 秒
+24-10-05 15:52-INFO-[Training Epoch 150] tr_loss = 1071.9010
+24-10-05 15:52-INFO-[Epoch 150] Test_Recall = 0.1559, Test_NDCG = 0.2189,
+test_recall_large = 0.1561, test_recall_medium = 0.1578, test_recall_small = 0.1535, test_ndcg_large = 0.2165, test_ndcg_medium = 0.2258, test_ndcg_small = 0.2142
+24-10-05 15:52-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:52-INFO---------------------------------------------------------------------------------
+24-10-05 15:52-INFO-Round 151 starts !
+24-10-05 15:52-INFO-train_autoencoders execute time: 0.09119772911071777 秒
+24-10-05 15:52-INFO-local_train avg execte time: 0.009643815860768517 秒
+24-10-05 15:52-INFO-federate execute time: 0.6078047752380371 秒
+24-10-05 15:52-INFO-[Training Epoch 151] tr_loss = 1070.7527
+24-10-05 15:52-INFO-[Epoch 151] Test_Recall = 0.1559, Test_NDCG = 0.2189,
+test_recall_large = 0.1556, test_recall_medium = 0.1575, test_recall_small = 0.1545, test_ndcg_large = 0.2141, test_ndcg_medium = 0.2266, test_ndcg_small = 0.2162
+24-10-05 15:52-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:52-INFO---------------------------------------------------------------------------------
+24-10-05 15:52-INFO-Round 152 starts !
+24-10-05 15:52-INFO-train_autoencoders execute time: 0.09084463119506836 秒
+24-10-05 15:52-INFO-local_train avg execte time: 0.010060194567683393 秒
+24-10-05 15:52-INFO-federate execute time: 1.7912993431091309 秒
+24-10-05 15:52-INFO-[Training Epoch 152] tr_loss = 1065.9719
+24-10-05 15:52-INFO-[Epoch 152] Test_Recall = 0.1563, Test_NDCG = 0.2199,
+test_recall_large = 0.1554, test_recall_medium = 0.1587, test_recall_small = 0.1548, test_ndcg_large = 0.2152, test_ndcg_medium = 0.2271, test_ndcg_small = 0.2175
+24-10-05 15:52-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:52-INFO---------------------------------------------------------------------------------
+24-10-05 15:52-INFO-Round 153 starts !
+24-10-05 15:52-INFO-train_autoencoders execute time: 0.5381913185119629 秒
+24-10-05 15:53-INFO-local_train avg execte time: 0.010858690751319473 秒
+24-10-05 15:53-INFO-federate execute time: 0.6965248584747314 秒
+24-10-05 15:53-INFO-[Training Epoch 153] tr_loss = 1062.7174
+24-10-05 15:53-INFO-[Epoch 153] Test_Recall = 0.1565, Test_NDCG = 0.2203,
+test_recall_large = 0.1541, test_recall_medium = 0.1579, test_recall_small = 0.1577, test_ndcg_large = 0.2139, test_ndcg_medium = 0.2283, test_ndcg_small = 0.2191
+24-10-05 15:53-INFO-The Best Test Metrics is at [Epoch 109] Recall = 0.1566, NDCG = 0.1906
+24-10-05 15:53-INFO---------------------------------------------------------------------------------
+24-10-05 15:53-INFO-Round 154 starts !
+24-10-05 15:53-INFO-train_autoencoders execute time: 0.5963454246520996 秒
+24-10-05 15:53-INFO-local_train avg execte time: 0.009454715795506854 秒
+24-10-05 15:53-INFO-federate execute time: 1.100684642791748 秒
+24-10-05 15:53-INFO-[Training Epoch 154] tr_loss = 1059.9114
+24-10-05 15:53-INFO-[Epoch 154] Test_Recall = 0.1578, Test_NDCG = 0.2218,
+test_recall_large = 0.1567, test_recall_medium = 0.1585, test_recall_small = 0.1585, test_ndcg_large = 0.2174, test_ndcg_medium = 0.2277, test_ndcg_small = 0.2206
+24-10-05 15:53-INFO-The Best Test Metrics is at [Epoch 154] Recall = 0.1578, NDCG = 0.2218
+24-10-05 15:53-INFO---------------------------------------------------------------------------------
+24-10-05 15:53-INFO-Round 155 starts !
+24-10-05 15:53-INFO-train_autoencoders execute time: 0.11024045944213867 秒
+24-10-05 15:53-INFO-local_train avg execte time: 0.01014211574768843 秒
+24-10-05 15:53-INFO-federate execute time: 0.5733866691589355 秒
+24-10-05 15:53-INFO-[Training Epoch 155] tr_loss = 1058.3492
+24-10-05 15:53-INFO-[Epoch 155] Test_Recall = 0.1574, Test_NDCG = 0.2214,
+test_recall_large = 0.1563, test_recall_medium = 0.1585, test_recall_small = 0.1574, test_ndcg_large = 0.2158, test_ndcg_medium = 0.2280, test_ndcg_small = 0.2207
+24-10-05 15:53-INFO-The Best Test Metrics is at [Epoch 154] Recall = 0.1578, NDCG = 0.2218
+24-10-05 15:53-INFO---------------------------------------------------------------------------------
+24-10-05 15:53-INFO-Round 156 starts !
+24-10-05 15:53-INFO-train_autoencoders execute time: 0.09291672706604004 秒
+24-10-05 15:54-INFO-local_train avg execte time: 0.010218898413163606 秒
+24-10-05 15:54-INFO-federate execute time: 0.8613264560699463 秒
+24-10-05 15:54-INFO-[Training Epoch 156] tr_loss = 1055.5397
+24-10-05 15:54-INFO-[Epoch 156] Test_Recall = 0.1570, Test_NDCG = 0.2209,
+test_recall_large = 0.1564, test_recall_medium = 0.1589, test_recall_small = 0.1555, test_ndcg_large = 0.2157, test_ndcg_medium = 0.2275, test_ndcg_small = 0.2198
+24-10-05 15:54-INFO-The Best Test Metrics is at [Epoch 154] Recall = 0.1578, NDCG = 0.2218
+24-10-05 15:54-INFO---------------------------------------------------------------------------------
+24-10-05 15:54-INFO-Round 157 starts !
+24-10-05 15:54-INFO-train_autoencoders execute time: 1.2770330905914307 秒
+24-10-05 15:54-INFO-local_train avg execte time: 0.009347367008569259 秒
+24-10-05 15:54-INFO-federate execute time: 0.6832873821258545 秒
+24-10-05 15:54-INFO-[Training Epoch 157] tr_loss = 1053.5120
+24-10-05 15:54-INFO-[Epoch 157] Test_Recall = 0.1564, Test_NDCG = 0.2205,
+test_recall_large = 0.1565, test_recall_medium = 0.1583, test_recall_small = 0.1544, test_ndcg_large = 0.2157, test_ndcg_medium = 0.2272, test_ndcg_small = 0.2188
+24-10-05 15:54-INFO-The Best Test Metrics is at [Epoch 154] Recall = 0.1578, NDCG = 0.2218
+24-10-05 15:54-INFO---------------------------------------------------------------------------------
+24-10-05 15:54-INFO-Round 158 starts !
+24-10-05 15:54-INFO-train_autoencoders execute time: 0.0932455062866211 秒
+24-10-05 15:54-INFO-local_train avg execte time: 0.010309856491655205 秒
+24-10-05 15:54-INFO-federate execute time: 0.5940930843353271 秒
+24-10-05 15:54-INFO-[Training Epoch 158] tr_loss = 1051.7053
+24-10-05 15:54-INFO-[Epoch 158] Test_Recall = 0.1565, Test_NDCG = 0.2208,
+test_recall_large = 0.1555, test_recall_medium = 0.1588, test_recall_small = 0.1553, test_ndcg_large = 0.2146, test_ndcg_medium = 0.2273, test_ndcg_small = 0.2210
+24-10-05 15:54-INFO-The Best Test Metrics is at [Epoch 154] Recall = 0.1578, NDCG = 0.2218
+24-10-05 15:54-INFO---------------------------------------------------------------------------------
+24-10-05 15:54-INFO-Round 159 starts !
+24-10-05 15:54-INFO-train_autoencoders execute time: 0.1032264232635498 秒
+24-10-05 15:54-INFO-local_train avg execte time: 0.011061252490839548 秒
+24-10-05 15:54-INFO-federate execute time: 0.6742186546325684 秒
+24-10-05 15:54-INFO-[Training Epoch 159] tr_loss = 1048.8164
+24-10-05 15:54-INFO-[Epoch 159] Test_Recall = 0.1573, Test_NDCG = 0.2206,
+test_recall_large = 0.1545, test_recall_medium = 0.1598, test_recall_small = 0.1580, test_ndcg_large = 0.2128, test_ndcg_medium = 0.2280, test_ndcg_small = 0.2217
+24-10-05 15:54-INFO-The Best Test Metrics is at [Epoch 154] Recall = 0.1578, NDCG = 0.2218
+24-10-05 15:54-INFO---------------------------------------------------------------------------------
+24-10-05 15:54-INFO-Round 160 starts !
+24-10-05 15:54-INFO-train_autoencoders execute time: 1.2256228923797607 秒
+24-10-05 15:55-INFO-local_train avg execte time: 0.010465030073487492 秒
+24-10-05 15:55-INFO-federate execute time: 0.5700337886810303 秒
+24-10-05 15:55-INFO-[Training Epoch 160] tr_loss = 1046.0603
+24-10-05 15:55-INFO-[Epoch 160] Test_Recall = 0.1578, Test_NDCG = 0.2216,
+test_recall_large = 0.1542, test_recall_medium = 0.1616, test_recall_small = 0.1581, test_ndcg_large = 0.2147, test_ndcg_medium = 0.2291, test_ndcg_small = 0.2215
+24-10-05 15:55-INFO-The Best Test Metrics is at [Epoch 160] Recall = 0.1578, NDCG = 0.2216
+24-10-05 15:55-INFO---------------------------------------------------------------------------------
+24-10-05 15:55-INFO-Round 161 starts !
+24-10-05 15:55-INFO-train_autoencoders execute time: 0.1706531047821045 秒
+24-10-05 15:55-INFO-local_train avg execte time: 0.009444122981924015 秒
+24-10-05 15:55-INFO-federate execute time: 1.4227585792541504 秒
+24-10-05 15:55-INFO-[Training Epoch 161] tr_loss = 1045.2498
+24-10-05 15:55-INFO-[Epoch 161] Test_Recall = 0.1599, Test_NDCG = 0.2227,
+test_recall_large = 0.1555, test_recall_medium = 0.1642, test_recall_small = 0.1603, test_ndcg_large = 0.2148, test_ndcg_medium = 0.2301, test_ndcg_small = 0.2241
+24-10-05 15:55-INFO-The Best Test Metrics is at [Epoch 161] Recall = 0.1599, NDCG = 0.2227
+24-10-05 15:55-INFO---------------------------------------------------------------------------------
+24-10-05 15:55-INFO-Round 162 starts !
+24-10-05 15:55-INFO-train_autoencoders execute time: 0.45355749130249023 秒
+24-10-05 15:55-INFO-local_train avg execte time: 0.010751696684706881 秒
+24-10-05 15:55-INFO-federate execute time: 0.8785200119018555 秒
+24-10-05 15:55-INFO-[Training Epoch 162] tr_loss = 1043.9404
+24-10-05 15:55-INFO-[Epoch 162] Test_Recall = 0.1612, Test_NDCG = 0.2231,
+test_recall_large = 0.1554, test_recall_medium = 0.1680, test_recall_small = 0.1607, test_ndcg_large = 0.2146, test_ndcg_medium = 0.2316, test_ndcg_small = 0.2240
+24-10-05 15:55-INFO-The Best Test Metrics is at [Epoch 162] Recall = 0.1612, NDCG = 0.2231
+24-10-05 15:55-INFO---------------------------------------------------------------------------------
+24-10-05 15:55-INFO-Round 163 starts !
+24-10-05 15:55-INFO-train_autoencoders execute time: 1.2665667533874512 秒
+24-10-05 15:56-INFO-local_train avg execte time: 0.008838901084907994 秒
+24-10-05 15:56-INFO-federate execute time: 0.6071486473083496 秒
+24-10-05 15:56-INFO-[Training Epoch 163] tr_loss = 1042.9800
+24-10-05 15:56-INFO-[Epoch 163] Test_Recall = 0.1613, Test_NDCG = 0.2233,
+test_recall_large = 0.1555, test_recall_medium = 0.1679, test_recall_small = 0.1610, test_ndcg_large = 0.2147, test_ndcg_medium = 0.2315, test_ndcg_small = 0.2247
+24-10-05 15:56-INFO-The Best Test Metrics is at [Epoch 163] Recall = 0.1613, NDCG = 0.2233
+24-10-05 15:56-INFO---------------------------------------------------------------------------------
+24-10-05 15:56-INFO-Round 164 starts !
+24-10-05 15:56-INFO-train_autoencoders execute time: 0.09931612014770508 秒
+24-10-05 15:56-INFO-local_train avg execte time: 0.009905559007840849 秒
+24-10-05 15:56-INFO-federate execute time: 1.1500093936920166 秒
+24-10-05 15:56-INFO-[Training Epoch 164] tr_loss = 1039.1346
+24-10-05 15:56-INFO-[Epoch 164] Test_Recall = 0.1608, Test_NDCG = 0.2226,
+test_recall_large = 0.1551, test_recall_medium = 0.1671, test_recall_small = 0.1607, test_ndcg_large = 0.2137, test_ndcg_medium = 0.2303, test_ndcg_small = 0.2248
+24-10-05 15:56-INFO-The Best Test Metrics is at [Epoch 163] Recall = 0.1613, NDCG = 0.2233
+24-10-05 15:56-INFO---------------------------------------------------------------------------------
+24-10-05 15:56-INFO-Round 165 starts !
+24-10-05 15:56-INFO-train_autoencoders execute time: 0.45821118354797363 秒
+24-10-05 15:56-INFO-local_train avg execte time: 0.010262705235567224 秒
+24-10-05 15:56-INFO-federate execute time: 0.4551815986633301 秒
+24-10-05 15:56-INFO-[Training Epoch 165] tr_loss = 1038.3783
+24-10-05 15:56-INFO-[Epoch 165] Test_Recall = 0.1606, Test_NDCG = 0.2231,
+test_recall_large = 0.1550, test_recall_medium = 0.1672, test_recall_small = 0.1601, test_ndcg_large = 0.2153, test_ndcg_medium = 0.2305, test_ndcg_small = 0.2243
+24-10-05 15:56-INFO-The Best Test Metrics is at [Epoch 163] Recall = 0.1613, NDCG = 0.2233
+24-10-05 15:56-INFO---------------------------------------------------------------------------------
+24-10-05 15:56-INFO-Round 166 starts !
+24-10-05 15:56-INFO-train_autoencoders execute time: 0.08434104919433594 秒
+24-10-05 15:56-INFO-local_train avg execte time: 0.009499292232072493 秒
+24-10-05 15:56-INFO-federate execute time: 0.44594836235046387 秒
+24-10-05 15:56-INFO-[Training Epoch 166] tr_loss = 1038.1776
+24-10-05 15:56-INFO-[Epoch 166] Test_Recall = 0.1604, Test_NDCG = 0.2227,
+test_recall_large = 0.1550, test_recall_medium = 0.1676, test_recall_small = 0.1590, test_ndcg_large = 0.2142, test_ndcg_medium = 0.2309, test_ndcg_small = 0.2238
+24-10-05 15:56-INFO-The Best Test Metrics is at [Epoch 163] Recall = 0.1613, NDCG = 0.2233
+24-10-05 15:56-INFO---------------------------------------------------------------------------------
+24-10-05 15:56-INFO-Round 167 starts !
+24-10-05 15:56-INFO-train_autoencoders execute time: 0.08064460754394531 秒
+24-10-05 15:57-INFO-local_train avg execte time: 0.010009961820988742 秒
+24-10-05 15:57-INFO-federate execute time: 0.6200833320617676 秒
+24-10-05 15:57-INFO-[Training Epoch 167] tr_loss = 1038.3649
+24-10-05 15:57-INFO-[Epoch 167] Test_Recall = 0.1605, Test_NDCG = 0.2226,
+test_recall_large = 0.1541, test_recall_medium = 0.1677, test_recall_small = 0.1603, test_ndcg_large = 0.2133, test_ndcg_medium = 0.2307, test_ndcg_small = 0.2246
+24-10-05 15:57-INFO-The Best Test Metrics is at [Epoch 163] Recall = 0.1613, NDCG = 0.2233
+24-10-05 15:57-INFO---------------------------------------------------------------------------------
+24-10-05 15:57-INFO-Round 168 starts !
+24-10-05 15:57-INFO-train_autoencoders execute time: 0.13940191268920898 秒
+24-10-05 15:57-INFO-local_train avg execte time: 0.008828896100801729 秒
+24-10-05 15:57-INFO-federate execute time: 0.6779377460479736 秒
+24-10-05 15:57-INFO-[Training Epoch 168] tr_loss = 1035.5747
+24-10-05 15:57-INFO-[Epoch 168] Test_Recall = 0.1614, Test_NDCG = 0.2230,
+test_recall_large = 0.1552, test_recall_medium = 0.1675, test_recall_small = 0.1621, test_ndcg_large = 0.2140, test_ndcg_medium = 0.2301, test_ndcg_small = 0.2257
+24-10-05 15:57-INFO-The Best Test Metrics is at [Epoch 168] Recall = 0.1614, NDCG = 0.2230
+24-10-05 15:57-INFO---------------------------------------------------------------------------------
+24-10-05 15:57-INFO-Round 169 starts !
+24-10-05 15:57-INFO-train_autoencoders execute time: 0.09528303146362305 秒
+24-10-05 15:57-INFO-local_train avg execte time: 0.009500959392317026 秒
+24-10-05 15:57-INFO-federate execute time: 0.7249882221221924 秒
+24-10-05 15:57-INFO-[Training Epoch 169] tr_loss = 1033.3677
+24-10-05 15:57-INFO-[Epoch 169] Test_Recall = 0.1619, Test_NDCG = 0.2232,
+test_recall_large = 0.1555, test_recall_medium = 0.1683, test_recall_small = 0.1626, test_ndcg_large = 0.2137, test_ndcg_medium = 0.2298, test_ndcg_small = 0.2270
+24-10-05 15:57-INFO-The Best Test Metrics is at [Epoch 169] Recall = 0.1619, NDCG = 0.2232
+24-10-05 15:57-INFO---------------------------------------------------------------------------------
+24-10-05 15:57-INFO-Round 170 starts !
+24-10-05 15:57-INFO-train_autoencoders execute time: 0.09295988082885742 秒
+24-10-05 15:57-INFO-local_train avg execte time: 0.010160304835087926 秒
+24-10-05 15:58-INFO-federate execute time: 1.5953783988952637 秒
+24-10-05 15:58-INFO-[Training Epoch 170] tr_loss = 1033.4643
+24-10-05 15:58-INFO-[Epoch 170] Test_Recall = 0.1617, Test_NDCG = 0.2221,
+test_recall_large = 0.1544, test_recall_medium = 0.1661, test_recall_small = 0.1656, test_ndcg_large = 0.2124, test_ndcg_medium = 0.2274, test_ndcg_small = 0.2276
+24-10-05 15:58-INFO-The Best Test Metrics is at [Epoch 169] Recall = 0.1619, NDCG = 0.2232
+24-10-05 15:58-INFO---------------------------------------------------------------------------------
+24-10-05 15:58-INFO-Round 171 starts !
+24-10-05 15:58-INFO-train_autoencoders execute time: 1.018272876739502 秒
+24-10-05 15:58-INFO-local_train avg execte time: 0.009748327390765841 秒
+24-10-05 15:58-INFO-federate execute time: 0.694831371307373 秒
+24-10-05 15:58-INFO-[Training Epoch 171] tr_loss = 1033.1925
+24-10-05 15:58-INFO-[Epoch 171] Test_Recall = 0.1617, Test_NDCG = 0.2220,
+test_recall_large = 0.1561, test_recall_medium = 0.1660, test_recall_small = 0.1636, test_ndcg_large = 0.2131, test_ndcg_medium = 0.2268, test_ndcg_small = 0.2271
+24-10-05 15:58-INFO-The Best Test Metrics is at [Epoch 169] Recall = 0.1619, NDCG = 0.2232
+24-10-05 15:58-INFO---------------------------------------------------------------------------------
+24-10-05 15:58-INFO-Round 172 starts !
+24-10-05 15:58-INFO-train_autoencoders execute time: 0.09336400032043457 秒
+24-10-05 15:58-INFO-local_train avg execte time: 0.011536032119459716 秒
+24-10-05 15:58-INFO-federate execute time: 0.5793914794921875 秒
+24-10-05 15:58-INFO-[Training Epoch 172] tr_loss = 1030.0152
+24-10-05 15:58-INFO-[Epoch 172] Test_Recall = 0.1620, Test_NDCG = 0.2226,
+test_recall_large = 0.1557, test_recall_medium = 0.1661, test_recall_small = 0.1650, test_ndcg_large = 0.2146, test_ndcg_medium = 0.2274, test_ndcg_small = 0.2268
+24-10-05 15:58-INFO-The Best Test Metrics is at [Epoch 172] Recall = 0.1620, NDCG = 0.2226
+24-10-05 15:58-INFO---------------------------------------------------------------------------------
+24-10-05 15:58-INFO-Round 173 starts !
+24-10-05 15:58-INFO-train_autoencoders execute time: 0.10034608840942383 秒
+24-10-05 15:58-INFO-local_train avg execte time: 0.010314384169189195 秒
+24-10-05 15:58-INFO-federate execute time: 0.5816202163696289 秒
+24-10-05 15:58-INFO-[Training Epoch 173] tr_loss = 1030.5753
+24-10-05 15:58-INFO-[Epoch 173] Test_Recall = 0.1623, Test_NDCG = 0.2232,
+test_recall_large = 0.1551, test_recall_medium = 0.1674, test_recall_small = 0.1651, test_ndcg_large = 0.2135, test_ndcg_medium = 0.2302, test_ndcg_small = 0.2270
+24-10-05 15:58-INFO-The Best Test Metrics is at [Epoch 173] Recall = 0.1623, NDCG = 0.2232
+24-10-05 15:58-INFO---------------------------------------------------------------------------------
+24-10-05 15:58-INFO-Round 174 starts !
+24-10-05 15:58-INFO-train_autoencoders execute time: 0.10059285163879395 秒
+24-10-05 15:59-INFO-local_train avg execte time: 0.010016078281503719 秒
+24-10-05 15:59-INFO-federate execute time: 0.5552005767822266 秒
+24-10-05 15:59-INFO-[Training Epoch 174] tr_loss = 1029.8706
+24-10-05 15:59-INFO-[Epoch 174] Test_Recall = 0.1616, Test_NDCG = 0.2226,
+test_recall_large = 0.1550, test_recall_medium = 0.1675, test_recall_small = 0.1630, test_ndcg_large = 0.2122, test_ndcg_medium = 0.2300, test_ndcg_small = 0.2266
+24-10-05 15:59-INFO-The Best Test Metrics is at [Epoch 173] Recall = 0.1623, NDCG = 0.2232
+24-10-05 15:59-INFO---------------------------------------------------------------------------------
+24-10-05 15:59-INFO-Round 175 starts !
+24-10-05 15:59-INFO-train_autoencoders execute time: 0.09047722816467285 秒
+24-10-05 15:59-INFO-local_train avg execte time: 0.009787565324364639 秒
+24-10-05 15:59-INFO-federate execute time: 0.5684599876403809 秒
+24-10-05 15:59-INFO-[Training Epoch 175] tr_loss = 1030.5232
+24-10-05 15:59-INFO-[Epoch 175] Test_Recall = 0.1605, Test_NDCG = 0.2232,
+test_recall_large = 0.1548, test_recall_medium = 0.1643, test_recall_small = 0.1628, test_ndcg_large = 0.2145, test_ndcg_medium = 0.2292, test_ndcg_small = 0.2269
+24-10-05 15:59-INFO-The Best Test Metrics is at [Epoch 173] Recall = 0.1623, NDCG = 0.2232
+24-10-05 15:59-INFO---------------------------------------------------------------------------------
+24-10-05 15:59-INFO-Round 176 starts !
+24-10-05 15:59-INFO-train_autoencoders execute time: 0.10252928733825684 秒
+24-10-05 15:59-INFO-local_train avg execte time: 0.009587268434931087 秒
+24-10-05 15:59-INFO-federate execute time: 0.6939690113067627 秒
+24-10-05 15:59-INFO-[Training Epoch 176] tr_loss = 1026.7790
+24-10-05 15:59-INFO-[Epoch 176] Test_Recall = 0.1607, Test_NDCG = 0.2228,
+test_recall_large = 0.1541, test_recall_medium = 0.1653, test_recall_small = 0.1634, test_ndcg_large = 0.2132, test_ndcg_medium = 0.2291, test_ndcg_small = 0.2272
+24-10-05 15:59-INFO-The Best Test Metrics is at [Epoch 173] Recall = 0.1623, NDCG = 0.2232
+24-10-05 15:59-INFO---------------------------------------------------------------------------------
+24-10-05 15:59-INFO-Round 177 starts !
+24-10-05 15:59-INFO-train_autoencoders execute time: 0.09307169914245605 秒
+24-10-05 16:00-INFO-local_train avg execte time: 0.011246812937747635 秒
+24-10-05 16:00-INFO-federate execute time: 0.5762720108032227 秒
+24-10-05 16:00-INFO-[Training Epoch 177] tr_loss = 1030.0626
+24-10-05 16:00-INFO-[Epoch 177] Test_Recall = 0.1603, Test_NDCG = 0.2228,
+test_recall_large = 0.1538, test_recall_medium = 0.1646, test_recall_small = 0.1633, test_ndcg_large = 0.2138, test_ndcg_medium = 0.2289, test_ndcg_small = 0.2266
+24-10-05 16:00-INFO-The Best Test Metrics is at [Epoch 173] Recall = 0.1623, NDCG = 0.2232
+24-10-05 16:00-INFO---------------------------------------------------------------------------------
+24-10-05 16:00-INFO-Round 178 starts !
+24-10-05 16:00-INFO-train_autoencoders execute time: 0.09181785583496094 秒
+24-10-05 16:00-INFO-local_train avg execte time: 0.009745501258340393 秒
+24-10-05 16:00-INFO-federate execute time: 0.6004538536071777 秒
+24-10-05 16:00-INFO-[Training Epoch 178] tr_loss = 1026.5289
+24-10-05 16:00-INFO-[Epoch 178] Test_Recall = 0.1608, Test_NDCG = 0.2230,
+test_recall_large = 0.1552, test_recall_medium = 0.1643, test_recall_small = 0.1636, test_ndcg_large = 0.2137, test_ndcg_medium = 0.2288, test_ndcg_small = 0.2275
+24-10-05 16:00-INFO-The Best Test Metrics is at [Epoch 173] Recall = 0.1623, NDCG = 0.2232
+24-10-05 16:00-INFO---------------------------------------------------------------------------------
+24-10-05 16:00-INFO-Round 179 starts !
+24-10-05 16:00-INFO-train_autoencoders execute time: 0.10980844497680664 秒
+24-10-05 16:00-INFO-local_train avg execte time: 0.010789919253497968 秒
+24-10-05 16:00-INFO-federate execute time: 0.5494837760925293 秒
+24-10-05 16:00-INFO-[Training Epoch 179] tr_loss = 1025.9555
+24-10-05 16:00-INFO-[Epoch 179] Test_Recall = 0.1615, Test_NDCG = 0.2237,
+test_recall_large = 0.1544, test_recall_medium = 0.1653, test_recall_small = 0.1657, test_ndcg_large = 0.2137, test_ndcg_medium = 0.2293, test_ndcg_small = 0.2292
+24-10-05 16:00-INFO-The Best Test Metrics is at [Epoch 173] Recall = 0.1623, NDCG = 0.2232
+24-10-05 16:00-INFO---------------------------------------------------------------------------------
+24-10-05 16:00-INFO-Round 180 starts !
+24-10-05 16:00-INFO-train_autoencoders execute time: 0.15777254104614258 秒
+24-10-05 16:00-INFO-local_train avg execte time: 0.009416019676346036 秒
+24-10-05 16:00-INFO-federate execute time: 0.5574896335601807 秒
+24-10-05 16:00-INFO-[Training Epoch 180] tr_loss = 1025.1291
+24-10-05 16:00-INFO-[Epoch 180] Test_Recall = 0.1619, Test_NDCG = 0.2234,
+test_recall_large = 0.1541, test_recall_medium = 0.1659, test_recall_small = 0.1666, test_ndcg_large = 0.2133, test_ndcg_medium = 0.2292, test_ndcg_small = 0.2288
+24-10-05 16:00-INFO-The Best Test Metrics is at [Epoch 173] Recall = 0.1623, NDCG = 0.2232
+24-10-05 16:00-INFO---------------------------------------------------------------------------------
+24-10-05 16:00-INFO-Round 181 starts !
+24-10-05 16:00-INFO-train_autoencoders execute time: 0.09346699714660645 秒
+24-10-05 16:01-INFO-local_train avg execte time: 0.009925452927137356 秒
+24-10-05 16:01-INFO-federate execute time: 0.6658697128295898 秒
+24-10-05 16:01-INFO-[Training Epoch 181] tr_loss = 1023.4599
+24-10-05 16:01-INFO-[Epoch 181] Test_Recall = 0.1631, Test_NDCG = 0.2242,
+test_recall_large = 0.1537, test_recall_medium = 0.1700, test_recall_small = 0.1665, test_ndcg_large = 0.2125, test_ndcg_medium = 0.2332, test_ndcg_small = 0.2282
+24-10-05 16:01-INFO-The Best Test Metrics is at [Epoch 181] Recall = 0.1631, NDCG = 0.2242
+24-10-05 16:01-INFO---------------------------------------------------------------------------------
+24-10-05 16:01-INFO-Round 182 starts !
+24-10-05 16:01-INFO-train_autoencoders execute time: 0.10204243659973145 秒
+24-10-05 16:01-INFO-local_train avg execte time: 0.010281988065037976 秒
+24-10-05 16:01-INFO-federate execute time: 0.4781382083892822 秒
+24-10-05 16:01-INFO-[Training Epoch 182] tr_loss = 1025.4151
+24-10-05 16:01-INFO-[Epoch 182] Test_Recall = 0.1630, Test_NDCG = 0.2239,
+test_recall_large = 0.1540, test_recall_medium = 0.1693, test_recall_small = 0.1667, test_ndcg_large = 0.2123, test_ndcg_medium = 0.2325, test_ndcg_small = 0.2283
+24-10-05 16:01-INFO-The Best Test Metrics is at [Epoch 181] Recall = 0.1631, NDCG = 0.2242
+24-10-05 16:01-INFO---------------------------------------------------------------------------------
+24-10-05 16:01-INFO-Round 183 starts !
+24-10-05 16:01-INFO-train_autoencoders execute time: 0.07703185081481934 秒
+24-10-05 16:01-INFO-local_train avg execte time: 0.009168614259074627 秒
+24-10-05 16:01-INFO-federate execute time: 0.8089561462402344 秒
+24-10-05 16:01-INFO-[Training Epoch 183] tr_loss = 1024.6130
+24-10-05 16:01-INFO-[Epoch 183] Test_Recall = 0.1633, Test_NDCG = 0.2244,
+test_recall_large = 0.1536, test_recall_medium = 0.1701, test_recall_small = 0.1672, test_ndcg_large = 0.2118, test_ndcg_medium = 0.2338, test_ndcg_small = 0.2292
+24-10-05 16:01-INFO-The Best Test Metrics is at [Epoch 183] Recall = 0.1633, NDCG = 0.2244
+24-10-05 16:01-INFO---------------------------------------------------------------------------------
+24-10-05 16:01-INFO-Round 184 starts !
+24-10-05 16:01-INFO-train_autoencoders execute time: 0.28418564796447754 秒
+24-10-05 16:02-INFO-local_train avg execte time: 0.010764692140662151 秒
+24-10-05 16:02-INFO-federate execute time: 0.5787765979766846 秒
+24-10-05 16:02-INFO-[Training Epoch 184] tr_loss = 1023.0321
+24-10-05 16:02-INFO-[Epoch 184] Test_Recall = 0.1633, Test_NDCG = 0.2248,
+test_recall_large = 0.1545, test_recall_medium = 0.1695, test_recall_small = 0.1669, test_ndcg_large = 0.2128, test_ndcg_medium = 0.2335, test_ndcg_small = 0.2293
+24-10-05 16:02-INFO-The Best Test Metrics is at [Epoch 184] Recall = 0.1633, NDCG = 0.2248
+24-10-05 16:02-INFO---------------------------------------------------------------------------------
+24-10-05 16:02-INFO-Round 185 starts !
+24-10-05 16:02-INFO-train_autoencoders execute time: 0.10074114799499512 秒
+24-10-05 16:02-INFO-local_train avg execte time: 0.009463424773635945 秒
+24-10-05 16:02-INFO-federate execute time: 0.5117588043212891 秒
+24-10-05 16:02-INFO-[Training Epoch 185] tr_loss = 1022.9723
+24-10-05 16:02-INFO-[Epoch 185] Test_Recall = 0.1630, Test_NDCG = 0.2239,
+test_recall_large = 0.1540, test_recall_medium = 0.1693, test_recall_small = 0.1668, test_ndcg_large = 0.2114, test_ndcg_medium = 0.2330, test_ndcg_small = 0.2286
+24-10-05 16:02-INFO-The Best Test Metrics is at [Epoch 184] Recall = 0.1633, NDCG = 0.2248
+24-10-05 16:02-INFO---------------------------------------------------------------------------------
+24-10-05 16:02-INFO-Round 186 starts !
+24-10-05 16:02-INFO-train_autoencoders execute time: 0.08446884155273438 秒
+24-10-05 16:02-INFO-local_train avg execte time: 0.009991374526524467 秒
+24-10-05 16:02-INFO-federate execute time: 0.5508167743682861 秒
+24-10-05 16:02-INFO-[Training Epoch 186] tr_loss = 1022.3515
+24-10-05 16:02-INFO-[Epoch 186] Test_Recall = 0.1629, Test_NDCG = 0.2241,
+test_recall_large = 0.1563, test_recall_medium = 0.1672, test_recall_small = 0.1658, test_ndcg_large = 0.2139, test_ndcg_medium = 0.2311, test_ndcg_small = 0.2284
+24-10-05 16:02-INFO-The Best Test Metrics is at [Epoch 184] Recall = 0.1633, NDCG = 0.2248
+24-10-05 16:02-INFO---------------------------------------------------------------------------------
+24-10-05 16:02-INFO-Round 187 starts !
+24-10-05 16:02-INFO-train_autoencoders execute time: 0.09084796905517578 秒
+24-10-05 16:02-INFO-local_train avg execte time: 0.010434096337376065 秒
+24-10-05 16:02-INFO-federate execute time: 1.3645236492156982 秒
+24-10-05 16:02-INFO-[Training Epoch 187] tr_loss = 1018.1570
+24-10-05 16:02-INFO-[Epoch 187] Test_Recall = 0.1629, Test_NDCG = 0.2240,
+test_recall_large = 0.1550, test_recall_medium = 0.1694, test_recall_small = 0.1651, test_ndcg_large = 0.2128, test_ndcg_medium = 0.2323, test_ndcg_small = 0.2281
+24-10-05 16:02-INFO-The Best Test Metrics is at [Epoch 184] Recall = 0.1633, NDCG = 0.2248
+24-10-05 16:02-INFO---------------------------------------------------------------------------------
+24-10-05 16:02-INFO-Round 188 starts !
+24-10-05 16:02-INFO-train_autoencoders execute time: 1.019808053970337 秒
+24-10-05 16:03-INFO-local_train avg execte time: 0.009552047968163597 秒
+24-10-05 16:03-INFO-federate execute time: 0.43384218215942383 秒
+24-10-05 16:03-INFO-[Training Epoch 188] tr_loss = 1020.4416
+24-10-05 16:03-INFO-[Epoch 188] Test_Recall = 0.1634, Test_NDCG = 0.2242,
+test_recall_large = 0.1555, test_recall_medium = 0.1692, test_recall_small = 0.1664, test_ndcg_large = 0.2130, test_ndcg_medium = 0.2327, test_ndcg_small = 0.2281
+24-10-05 16:03-INFO-The Best Test Metrics is at [Epoch 188] Recall = 0.1634, NDCG = 0.2242
+24-10-05 16:03-INFO---------------------------------------------------------------------------------
+24-10-05 16:03-INFO-Round 189 starts !
+24-10-05 16:03-INFO-train_autoencoders execute time: 0.07738995552062988 秒
+24-10-05 16:03-INFO-local_train avg execte time: 0.009861922087118204 秒
+24-10-05 16:03-INFO-federate execute time: 0.7041933536529541 秒
+24-10-05 16:03-INFO-[Training Epoch 189] tr_loss = 1021.0119
+24-10-05 16:03-INFO-[Epoch 189] Test_Recall = 0.1636, Test_NDCG = 0.2234,
+test_recall_large = 0.1543, test_recall_medium = 0.1688, test_recall_small = 0.1688, test_ndcg_large = 0.2118, test_ndcg_medium = 0.2309, test_ndcg_small = 0.2289
+24-10-05 16:03-INFO-The Best Test Metrics is at [Epoch 189] Recall = 0.1636, NDCG = 0.2234
+24-10-05 16:03-INFO---------------------------------------------------------------------------------
+24-10-05 16:03-INFO-Round 190 starts !
+24-10-05 16:03-INFO-train_autoencoders execute time: 0.11761021614074707 秒
+24-10-05 16:03-INFO-local_train avg execte time: 0.009934207414645279 秒
+24-10-05 16:03-INFO-federate execute time: 0.5490846633911133 秒
+24-10-05 16:03-INFO-[Training Epoch 190] tr_loss = 1021.5842
+24-10-05 16:03-INFO-[Epoch 190] Test_Recall = 0.1641, Test_NDCG = 0.2237,
+test_recall_large = 0.1543, test_recall_medium = 0.1691, test_recall_small = 0.1701, test_ndcg_large = 0.2124, test_ndcg_medium = 0.2309, test_ndcg_small = 0.2291
+24-10-05 16:03-INFO-The Best Test Metrics is at [Epoch 190] Recall = 0.1641, NDCG = 0.2237
+24-10-05 16:03-INFO---------------------------------------------------------------------------------
+24-10-05 16:03-INFO-Round 191 starts !
+24-10-05 16:03-INFO-train_autoencoders execute time: 0.09988951683044434 秒
+24-10-05 16:04-INFO-local_train avg execte time: 0.010394295098799284 秒
+24-10-05 16:04-INFO-federate execute time: 0.5848684310913086 秒
+24-10-05 16:04-INFO-[Training Epoch 191] tr_loss = 1022.7556
+24-10-05 16:04-INFO-[Epoch 191] Test_Recall = 0.1630, Test_NDCG = 0.2233,
+test_recall_large = 0.1546, test_recall_medium = 0.1684, test_recall_small = 0.1670, test_ndcg_large = 0.2126, test_ndcg_medium = 0.2315, test_ndcg_small = 0.2270
+24-10-05 16:04-INFO-The Best Test Metrics is at [Epoch 190] Recall = 0.1641, NDCG = 0.2237
+24-10-05 16:04-INFO---------------------------------------------------------------------------------
+24-10-05 16:04-INFO-Round 192 starts !
+24-10-05 16:04-INFO-train_autoencoders execute time: 0.10176634788513184 秒
+24-10-05 16:04-INFO-local_train avg execte time: 0.009929153092466255 秒
+24-10-05 16:04-INFO-federate execute time: 0.5704023838043213 秒
+24-10-05 16:04-INFO-[Training Epoch 192] tr_loss = 1021.2167
+24-10-05 16:04-INFO-[Epoch 192] Test_Recall = 0.1635, Test_NDCG = 0.2236,
+test_recall_large = 0.1547, test_recall_medium = 0.1695, test_recall_small = 0.1671, test_ndcg_large = 0.2128, test_ndcg_medium = 0.2311, test_ndcg_small = 0.2281
+24-10-05 16:04-INFO-The Best Test Metrics is at [Epoch 190] Recall = 0.1641, NDCG = 0.2237
+24-10-05 16:04-INFO---------------------------------------------------------------------------------
+24-10-05 16:04-INFO-Round 193 starts !
+24-10-05 16:04-INFO-train_autoencoders execute time: 0.09256625175476074 秒
+24-10-05 16:04-INFO-local_train avg execte time: 0.009799926430144972 秒
+24-10-05 16:04-INFO-federate execute time: 0.5786621570587158 秒
+24-10-05 16:04-INFO-[Training Epoch 193] tr_loss = 1016.7327
+24-10-05 16:04-INFO-[Epoch 193] Test_Recall = 0.1644, Test_NDCG = 0.2233,
+test_recall_large = 0.1563, test_recall_medium = 0.1705, test_recall_small = 0.1672, test_ndcg_large = 0.2127, test_ndcg_medium = 0.2315, test_ndcg_small = 0.2270
+24-10-05 16:04-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:04-INFO---------------------------------------------------------------------------------
+24-10-05 16:04-INFO-Round 194 starts !
+24-10-05 16:04-INFO-train_autoencoders execute time: 0.09015083312988281 秒
+24-10-05 16:04-INFO-local_train avg execte time: 0.010425003816315377 秒
+24-10-05 16:04-INFO-federate execute time: 0.5951588153839111 秒
+24-10-05 16:04-INFO-[Training Epoch 194] tr_loss = 1020.3357
+24-10-05 16:04-INFO-[Epoch 194] Test_Recall = 0.1629, Test_NDCG = 0.2225,
+test_recall_large = 0.1549, test_recall_medium = 0.1701, test_recall_small = 0.1645, test_ndcg_large = 0.2114, test_ndcg_medium = 0.2314, test_ndcg_small = 0.2259
+24-10-05 16:04-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:04-INFO---------------------------------------------------------------------------------
+24-10-05 16:04-INFO-Round 195 starts !
+24-10-05 16:04-INFO-train_autoencoders execute time: 0.09967041015625 秒
+24-10-05 16:05-INFO-local_train avg execte time: 0.010714559767430812 秒
+24-10-05 16:05-INFO-federate execute time: 0.5459232330322266 秒
+24-10-05 16:05-INFO-[Training Epoch 195] tr_loss = 1021.5104
+24-10-05 16:05-INFO-[Epoch 195] Test_Recall = 0.1635, Test_NDCG = 0.2237,
+test_recall_large = 0.1545, test_recall_medium = 0.1709, test_recall_small = 0.1662, test_ndcg_large = 0.2114, test_ndcg_medium = 0.2336, test_ndcg_small = 0.2273
+24-10-05 16:05-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:05-INFO---------------------------------------------------------------------------------
+24-10-05 16:05-INFO-Round 196 starts !
+24-10-05 16:05-INFO-train_autoencoders execute time: 0.09246110916137695 秒
+24-10-05 16:05-INFO-local_train avg execte time: 0.009643933426663833 秒
+24-10-05 16:05-INFO-federate execute time: 0.5510916709899902 秒
+24-10-05 16:05-INFO-[Training Epoch 196] tr_loss = 1019.9774
+24-10-05 16:05-INFO-[Epoch 196] Test_Recall = 0.1632, Test_NDCG = 0.2236,
+test_recall_large = 0.1545, test_recall_medium = 0.1700, test_recall_small = 0.1660, test_ndcg_large = 0.2117, test_ndcg_medium = 0.2331, test_ndcg_small = 0.2273
+24-10-05 16:05-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:05-INFO---------------------------------------------------------------------------------
+24-10-05 16:05-INFO-Round 197 starts !
+24-10-05 16:05-INFO-train_autoencoders execute time: 0.08963489532470703 秒
+24-10-05 16:05-INFO-local_train avg execte time: 0.01067360714156959 秒
+24-10-05 16:05-INFO-federate execute time: 0.5536239147186279 秒
+24-10-05 16:05-INFO-[Training Epoch 197] tr_loss = 1020.7884
+24-10-05 16:05-INFO-[Epoch 197] Test_Recall = 0.1627, Test_NDCG = 0.2232,
+test_recall_large = 0.1545, test_recall_medium = 0.1700, test_recall_small = 0.1645, test_ndcg_large = 0.2123, test_ndcg_medium = 0.2318, test_ndcg_small = 0.2265
+24-10-05 16:05-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:05-INFO---------------------------------------------------------------------------------
+24-10-05 16:05-INFO-Round 198 starts !
+24-10-05 16:05-INFO-train_autoencoders execute time: 0.09340333938598633 秒
+24-10-05 16:05-INFO-local_train avg execte time: 0.009984390353853099 秒
+24-10-05 16:05-INFO-federate execute time: 0.681556224822998 秒
+24-10-05 16:05-INFO-[Training Epoch 198] tr_loss = 1017.8909
+24-10-05 16:05-INFO-[Epoch 198] Test_Recall = 0.1625, Test_NDCG = 0.2233,
+test_recall_large = 0.1552, test_recall_medium = 0.1697, test_recall_small = 0.1632, test_ndcg_large = 0.2137, test_ndcg_medium = 0.2328, test_ndcg_small = 0.2242
+24-10-05 16:05-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:05-INFO---------------------------------------------------------------------------------
+24-10-05 16:05-INFO-Round 199 starts !
+24-10-05 16:05-INFO-train_autoencoders execute time: 0.1196141242980957 秒
+24-10-05 16:06-INFO-local_train avg execte time: 0.010394249842250335 秒
+24-10-05 16:06-INFO-federate execute time: 0.5801486968994141 秒
+24-10-05 16:06-INFO-[Training Epoch 199] tr_loss = 1019.4628
+24-10-05 16:06-INFO-[Epoch 199] Test_Recall = 0.1627, Test_NDCG = 0.2234,
+test_recall_large = 0.1564, test_recall_medium = 0.1699, test_recall_small = 0.1620, test_ndcg_large = 0.2149, test_ndcg_medium = 0.2325, test_ndcg_small = 0.2236
+24-10-05 16:06-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:06-INFO---------------------------------------------------------------------------------
+24-10-05 16:06-INFO-Round 200 starts !
+24-10-05 16:06-INFO-train_autoencoders execute time: 0.09183239936828613 秒
+24-10-05 16:06-INFO-local_train avg execte time: 0.010995826943681702 秒
+24-10-05 16:06-INFO-federate execute time: 0.5458576679229736 秒
+24-10-05 16:06-INFO-[Training Epoch 200] tr_loss = 1018.6841
+24-10-05 16:06-INFO-[Epoch 200] Test_Recall = 0.1622, Test_NDCG = 0.2222,
+test_recall_large = 0.1557, test_recall_medium = 0.1688, test_recall_small = 0.1627, test_ndcg_large = 0.2139, test_ndcg_medium = 0.2310, test_ndcg_small = 0.2224
+24-10-05 16:06-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:06-INFO---------------------------------------------------------------------------------
+24-10-05 16:06-INFO-Round 201 starts !
+24-10-05 16:06-INFO-train_autoencoders execute time: 0.10951900482177734 秒
+24-10-05 16:06-INFO-local_train avg execte time: 0.010111109702230638 秒
+24-10-05 16:06-INFO-federate execute time: 0.552471399307251 秒
+24-10-05 16:06-INFO-[Training Epoch 201] tr_loss = 1016.8271
+24-10-05 16:06-INFO-[Epoch 201] Test_Recall = 0.1625, Test_NDCG = 0.2223,
+test_recall_large = 0.1552, test_recall_medium = 0.1697, test_recall_small = 0.1634, test_ndcg_large = 0.2135, test_ndcg_medium = 0.2308, test_ndcg_small = 0.2233
+24-10-05 16:06-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:06-INFO---------------------------------------------------------------------------------
+24-10-05 16:06-INFO-Round 202 starts !
+24-10-05 16:06-INFO-train_autoencoders execute time: 0.07261228561401367 秒
+24-10-05 16:07-INFO-local_train avg execte time: 0.011671909724667369 秒
+24-10-05 16:07-INFO-federate execute time: 0.6245100498199463 秒
+24-10-05 16:07-INFO-[Training Epoch 202] tr_loss = 1016.4646
+24-10-05 16:07-INFO-[Epoch 202] Test_Recall = 0.1620, Test_NDCG = 0.2211,
+test_recall_large = 0.1540, test_recall_medium = 0.1694, test_recall_small = 0.1632, test_ndcg_large = 0.2109, test_ndcg_medium = 0.2305, test_ndcg_small = 0.2229
+24-10-05 16:07-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:07-INFO---------------------------------------------------------------------------------
+24-10-05 16:07-INFO-Round 203 starts !
+24-10-05 16:07-INFO-train_autoencoders execute time: 0.08776235580444336 秒
+24-10-05 16:07-INFO-local_train avg execte time: 0.01062710970355749 秒
+24-10-05 16:07-INFO-federate execute time: 0.6671481132507324 秒
+24-10-05 16:07-INFO-[Training Epoch 203] tr_loss = 1018.8573
+24-10-05 16:07-INFO-[Epoch 203] Test_Recall = 0.1623, Test_NDCG = 0.2217,
+test_recall_large = 0.1544, test_recall_medium = 0.1702, test_recall_small = 0.1629, test_ndcg_large = 0.2112, test_ndcg_medium = 0.2314, test_ndcg_small = 0.2234
+24-10-05 16:07-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:07-INFO---------------------------------------------------------------------------------
+24-10-05 16:07-INFO-Round 204 starts !
+24-10-05 16:07-INFO-train_autoencoders execute time: 0.09409379959106445 秒
+24-10-05 16:07-INFO-local_train avg execte time: 0.010361545538472471 秒
+24-10-05 16:07-INFO-federate execute time: 0.5735471248626709 秒
+24-10-05 16:07-INFO-[Training Epoch 204] tr_loss = 1018.9387
+24-10-05 16:07-INFO-[Epoch 204] Test_Recall = 0.1623, Test_NDCG = 0.2221,
+test_recall_large = 0.1540, test_recall_medium = 0.1706, test_recall_small = 0.1631, test_ndcg_large = 0.2119, test_ndcg_medium = 0.2319, test_ndcg_small = 0.2233
+24-10-05 16:07-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:07-INFO---------------------------------------------------------------------------------
+24-10-05 16:07-INFO-Round 205 starts !
+24-10-05 16:07-INFO-train_autoencoders execute time: 0.09294915199279785 秒
+24-10-05 16:07-INFO-local_train avg execte time: 0.010827411649588689 秒
+24-10-05 16:07-INFO-federate execute time: 0.9851818084716797 秒
+24-10-05 16:07-INFO-[Training Epoch 205] tr_loss = 1021.4102
+24-10-05 16:07-INFO-[Epoch 205] Test_Recall = 0.1631, Test_NDCG = 0.2220,
+test_recall_large = 0.1556, test_recall_medium = 0.1722, test_recall_small = 0.1619, test_ndcg_large = 0.2129, test_ndcg_medium = 0.2320, test_ndcg_small = 0.2218
+24-10-05 16:07-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:07-INFO---------------------------------------------------------------------------------
+24-10-05 16:07-INFO-Round 206 starts !
+24-10-05 16:07-INFO-train_autoencoders execute time: 0.09134292602539062 秒
+24-10-05 16:08-INFO-local_train avg execte time: 0.009746662000330484 秒
+24-10-05 16:08-INFO-federate execute time: 0.5765221118927002 秒
+24-10-05 16:08-INFO-[Training Epoch 206] tr_loss = 1019.2406
+24-10-05 16:08-INFO-[Epoch 206] Test_Recall = 0.1626, Test_NDCG = 0.2219,
+test_recall_large = 0.1545, test_recall_medium = 0.1722, test_recall_small = 0.1617, test_ndcg_large = 0.2123, test_ndcg_medium = 0.2333, test_ndcg_small = 0.2208
+24-10-05 16:08-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:08-INFO---------------------------------------------------------------------------------
+24-10-05 16:08-INFO-Round 207 starts !
+24-10-05 16:08-INFO-train_autoencoders execute time: 0.09896254539489746 秒
+24-10-05 16:08-INFO-local_train avg execte time: 0.011220427611220553 秒
+24-10-05 16:08-INFO-federate execute time: 0.6636481285095215 秒
+24-10-05 16:08-INFO-[Training Epoch 207] tr_loss = 1015.4902
+24-10-05 16:08-INFO-[Epoch 207] Test_Recall = 0.1623, Test_NDCG = 0.2209,
+test_recall_large = 0.1546, test_recall_medium = 0.1706, test_recall_small = 0.1623, test_ndcg_large = 0.2122, test_ndcg_medium = 0.2309, test_ndcg_small = 0.2205
+24-10-05 16:08-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:08-INFO---------------------------------------------------------------------------------
+24-10-05 16:08-INFO-Round 208 starts !
+24-10-05 16:08-INFO-train_autoencoders execute time: 0.1509702205657959 秒
+24-10-05 16:08-INFO-local_train avg execte time: 0.010296935114855478 秒
+24-10-05 16:08-INFO-federate execute time: 0.622194766998291 秒
+24-10-05 16:08-INFO-[Training Epoch 208] tr_loss = 1019.4131
+24-10-05 16:08-INFO-[Epoch 208] Test_Recall = 0.1637, Test_NDCG = 0.2211,
+test_recall_large = 0.1564, test_recall_medium = 0.1717, test_recall_small = 0.1635, test_ndcg_large = 0.2130, test_ndcg_medium = 0.2293, test_ndcg_small = 0.2216
+24-10-05 16:08-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:08-INFO---------------------------------------------------------------------------------
+24-10-05 16:08-INFO-Round 209 starts !
+24-10-05 16:08-INFO-train_autoencoders execute time: 0.10065841674804688 秒
+24-10-05 16:09-INFO-local_train avg execte time: 0.011349677281061133 秒
+24-10-05 16:09-INFO-federate execute time: 0.7076973915100098 秒
+24-10-05 16:09-INFO-[Training Epoch 209] tr_loss = 1013.4734
+24-10-05 16:09-INFO-[Epoch 209] Test_Recall = 0.1633, Test_NDCG = 0.2217,
+test_recall_large = 0.1559, test_recall_medium = 0.1708, test_recall_small = 0.1638, test_ndcg_large = 0.2127, test_ndcg_medium = 0.2307, test_ndcg_small = 0.2224
+24-10-05 16:09-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:09-INFO---------------------------------------------------------------------------------
+24-10-05 16:09-INFO-Round 210 starts !
+24-10-05 16:09-INFO-train_autoencoders execute time: 0.13809752464294434 秒
+24-10-05 16:09-INFO-local_train avg execte time: 0.00974775700655115 秒
+24-10-05 16:09-INFO-federate execute time: 1.1922588348388672 秒
+24-10-05 16:09-INFO-[Training Epoch 210] tr_loss = 1016.5872
+24-10-05 16:09-INFO-[Epoch 210] Test_Recall = 0.1635, Test_NDCG = 0.2220,
+test_recall_large = 0.1551, test_recall_medium = 0.1710, test_recall_small = 0.1651, test_ndcg_large = 0.2128, test_ndcg_medium = 0.2309, test_ndcg_small = 0.2231
+24-10-05 16:09-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:09-INFO---------------------------------------------------------------------------------
+24-10-05 16:09-INFO-Round 211 starts !
+24-10-05 16:09-INFO-train_autoencoders execute time: 0.10196256637573242 秒
+24-10-05 16:09-INFO-local_train avg execte time: 0.010604809349440315 秒
+24-10-05 16:09-INFO-federate execute time: 0.5873062610626221 秒
+24-10-05 16:09-INFO-[Training Epoch 211] tr_loss = 1020.0473
+24-10-05 16:09-INFO-[Epoch 211] Test_Recall = 0.1643, Test_NDCG = 0.2225,
+test_recall_large = 0.1555, test_recall_medium = 0.1709, test_recall_small = 0.1672, test_ndcg_large = 0.2125, test_ndcg_medium = 0.2311, test_ndcg_small = 0.2249
+24-10-05 16:09-INFO-The Best Test Metrics is at [Epoch 193] Recall = 0.1644, NDCG = 0.2233
+24-10-05 16:09-INFO---------------------------------------------------------------------------------
+24-10-05 16:09-INFO-Round 212 starts !
+24-10-05 16:09-INFO-train_autoencoders execute time: 0.0921328067779541 秒
+24-10-05 16:10-INFO-local_train avg execte time: 0.010599125228024238 秒
+24-10-05 16:10-INFO-federate execute time: 1.0698933601379395 秒
+24-10-05 16:10-INFO-[Training Epoch 212] tr_loss = 1015.1486
+24-10-05 16:10-INFO-[Epoch 212] Test_Recall = 0.1648, Test_NDCG = 0.2226,
+test_recall_large = 0.1568, test_recall_medium = 0.1714, test_recall_small = 0.1670, test_ndcg_large = 0.2129, test_ndcg_medium = 0.2313, test_ndcg_small = 0.2245
+24-10-05 16:10-INFO-The Best Test Metrics is at [Epoch 212] Recall = 0.1648, NDCG = 0.2226
+24-10-05 16:10-INFO---------------------------------------------------------------------------------
+24-10-05 16:10-INFO-Round 213 starts !
+24-10-05 16:10-INFO-train_autoencoders execute time: 0.48554515838623047 秒
+24-10-05 16:10-INFO-local_train avg execte time: 0.010089135751491639 秒
+24-10-05 16:10-INFO-federate execute time: 0.5632810592651367 秒
+24-10-05 16:10-INFO-[Training Epoch 213] tr_loss = 1015.6028
+24-10-05 16:10-INFO-[Epoch 213] Test_Recall = 0.1634, Test_NDCG = 0.2217,
+test_recall_large = 0.1545, test_recall_medium = 0.1706, test_recall_small = 0.1659, test_ndcg_large = 0.2113, test_ndcg_medium = 0.2314, test_ndcg_small = 0.2234
+24-10-05 16:10-INFO-The Best Test Metrics is at [Epoch 212] Recall = 0.1648, NDCG = 0.2226
+24-10-05 16:10-INFO---------------------------------------------------------------------------------
+24-10-05 16:10-INFO-Round 214 starts !
+24-10-05 16:10-INFO-train_autoencoders execute time: 0.09803032875061035 秒
+24-10-05 16:10-INFO-local_train avg execte time: 0.010545541474068278 秒
+24-10-05 16:10-INFO-federate execute time: 0.4629194736480713 秒
+24-10-05 16:10-INFO-[Training Epoch 214] tr_loss = 1016.5429
+24-10-05 16:10-INFO-[Epoch 214] Test_Recall = 0.1628, Test_NDCG = 0.2213,
+test_recall_large = 0.1551, test_recall_medium = 0.1706, test_recall_small = 0.1634, test_ndcg_large = 0.2113, test_ndcg_medium = 0.2311, test_ndcg_small = 0.2226
+24-10-05 16:10-INFO-The Best Test Metrics is at [Epoch 212] Recall = 0.1648, NDCG = 0.2226
+24-10-05 16:10-INFO---------------------------------------------------------------------------------
+24-10-05 16:10-INFO-Round 215 starts !
+24-10-05 16:10-INFO-train_autoencoders execute time: 0.08198332786560059 秒
