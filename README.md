@@ -29,7 +29,7 @@ All datasets are hosted on Baidu Netdisk :
 
 🔗 [Download Link](https://pan.baidu.com/s/161mG1j6C_SAU4Q3fCFYuHQ?pwd=uxxy ) 
 
-Password/Extraction Code: `uxxy`
+Extraction Code: `uxxy`
 
 
 
